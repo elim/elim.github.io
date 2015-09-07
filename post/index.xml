@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on IDIC - infinite Diversity in Infinite Combinations.</title>
+    <link>http://elim.github.io/post/</link>
+    <description>Recent content in Posts on IDIC - infinite Diversity in Infinite Combinations.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Mon, 18 May 2015 13:36:15 +0000</lastBuildDate>
+    <atom:link href="http://elim.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>chpwd_functions</title>
+      <link>http://elim.github.io/2015/05/18/chpwd_functions</link>
+      <pubDate>Mon, 18 May 2015 13:36:15 +0000</pubDate>
+      
+      <guid>http://elim.github.io/2015/05/18/chpwd_functions</guid>
+      <description>
+
+&lt;h2 id=&#34;tl-dr:b81cb66df3eff6fc109eb65b55182a80&#34;&gt;tl;dr&lt;/h2&gt;
+
+&lt;p&gt;Zsh で一時的に chpwd の hook を無効にしたいときは &lt;code&gt;chpwd_function=&lt;/code&gt; を前置する。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ chpwd_functions= cd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;私の &lt;em&gt;Zsh&lt;/em&gt; 環境で &lt;a href=&#34;https://gist.github.com/bobthecow/757788&#34;&gt;tab.bash&lt;/a&gt; を使ってみたところ、iTerm のタブを作成したあとの &lt;code&gt;cd&lt;/code&gt; に失敗してしまいました。&lt;/p&gt;
+
+&lt;p&gt;chpwd 時に ls する hook を入れていたため &lt;code&gt;$cdto&lt;/code&gt; 内にディレクトリ内のファイルが列挙されてしまっていたようです。&lt;/p&gt;
+
+&lt;p&gt;以下のように書き換えることで、私の環境でも &lt;a href=&#34;https://gist.github.com/bobthecow/757788&#34;&gt;tab.bash&lt;/a&gt; を動作させることができました。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-diff&#34;&gt;diff --git a/tab.bash b/tab.bash
+old mode 100644
+new mode 100755
+index 85a0e2c..d2ddf7a
+--- a/tab.bash
++++ b/tab.bash
+@@ -23,7 +23,7 @@ function tab () {
+     local args=&amp;quot;$@&amp;quot;
+ 
+     if [ -d &amp;quot;$1&amp;quot; ]; then
+-        cdto=`cd &amp;quot;$1&amp;quot;; pwd`
++        cdto=`chpwd_functions= cd &amp;quot;$1&amp;quot;; pwd`
+         args=&amp;quot;${@:2}&amp;quot;
+     fi
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
