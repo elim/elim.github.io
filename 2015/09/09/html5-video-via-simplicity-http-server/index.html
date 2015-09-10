@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>chpwd_functions &middot; IDIC - infinite Diversity in Infinite Combinations.</title>
+    <title>HTML5 video via Simplicity HTTP server &middot; IDIC - infinite Diversity in Infinite Combinations.</title>
     <meta name="author" content="Takeru Naito">
     <meta name="description" content="">
     <meta name="generator" content="Hugo 0.14" />
@@ -45,43 +45,64 @@
     <main class="content" role="main">
 	    <article class="post">
 	        <header>
-	        <h1 class="post-title">chpwd_functions</h1>
-	        <div class="post-meta"><time datetime="18 May 2015">18 May 2015</time></div>
+	        <h1 class="post-title">HTML5 video via Simplicity HTTP server</h1>
+	        <div class="post-meta"><time datetime="09 September 2015">09 September 2015</time></div>
 	        </header>
 
 	        <section class="post-content">
 	            
 
-<h2 id="tl-dr:b81cb66df3eff6fc109eb65b55182a80">tl;dr</h2>
+<h2 id="tl-dr:70a23d34c3b21e65b877f5640c3efeb6">tl;dr</h2>
 
-<p>Zsh で一時的に chpwd の hook を無効にしたいときは <code>chpwd_function=</code> を前置する。</p>
-
-<pre><code>$ chpwd_functions= cd
-</code></pre>
+<p>HTML5 video 再生のテストには WEBrick がいいかも？</p>
 
 <hr />
 
-<p>私の <em>Zsh</em> 環境で <a href="https://gist.github.com/bobthecow/757788">tab.bash</a> を使ってみたところ、iTerm のタブを作成したあとの <code>cd</code> に失敗してしまいました。</p>
+<p>ある LP の HTML5 video 再生をテストしていました。</p>
 
-<p>chpwd 時に ls する hook を入れていたため <code>$cdto</code> 内にディレクトリ内のファイルが列挙されてしまっていたようです。</p>
+<p>Python の <code>SimpleHTTPServer</code>, PHP の <code>Built-in web server</code> そして Ruby の <code>WEBrick</code> を試して、 Safari から正常に再生できたのは <code>WEBrick</code> のみでした。</p>
 
-<p>以下のように書き換えることで、私の環境でも <a href="https://gist.github.com/bobthecow/757788">tab.bash</a> を動作させることができました。</p>
+<p>各環境とコマンドラインはこんな感じです。</p>
 
-<pre><code class="language-diff">diff --git a/tab.bash b/tab.bash
-old mode 100644
-new mode 100755
-index 85a0e2c..d2ddf7a
---- a/tab.bash
-+++ b/tab.bash
-@@ -23,7 +23,7 @@ function tab () {
-     local args=&quot;$@&quot;
- 
-     if [ -d &quot;$1&quot; ]; then
--        cdto=`cd &quot;$1&quot;; pwd`
-+        cdto=`chpwd_functions= cd &quot;$1&quot;; pwd`
-         args=&quot;${@:2}&quot;
-     fi
+<h3 id="safari:70a23d34c3b21e65b877f5640c3efeb6">Safari</h3>
+
+<pre><code>navigator.userAgent
+&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11) AppleWebKit/601.1.37 (KHTML, like Gecko) Version/9.0 Safari/601.1.37&quot; = $1
 </code></pre>
+
+<h3 id="python:70a23d34c3b21e65b877f5640c3efeb6">Python</h3>
+
+<pre><code>python -V
+Python 2.7.10
+
+python -m SimpleHTTPServer 9999
+</code></pre>
+
+<h3 id="php:70a23d34c3b21e65b877f5640c3efeb6">PHP</h3>
+
+<pre><code>php -v
+PHP 5.5.24 (cli) (built: Jun 26 2015 18:17:36)
+Copyright (c) 1997-2015 The PHP Group
+Zend Engine v2.5.0, Copyright (c) 1998-2015 Zend Technologies
+
+php -S 0.0.0.0:9999 -t .
+</code></pre>
+
+<h3 id="ruby:70a23d34c3b21e65b877f5640c3efeb6">Ruby</h3>
+
+<pre><code>ruby -v
+ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-darwin15]
+
+ruby -rwebrick -e 's = WEBrick::HTTPServer.new(BindAddress: &quot;0.0.0.0&quot;, Port: 9999, DocumentRoot: Dir.pwd);trap(&quot;INT&quot;){s.shutdown};s.start'
+</code></pre>
+
+<p>当初ちっとも再生されなくて、「作成した MP4 の形式が不整合を起こしているのかも」等と、無駄な時間を使いました。</p>
+
+<h2 id="ご注意:70a23d34c3b21e65b877f5640c3efeb6">ご注意</h2>
+
+<p><code>WEBrick</code> 以外もコマンドラインオプション等々で回避できそうだけど追ってません。</p>
+
+<p>そもそも Ruby 以外は最新リリースですらない、というのも不公平（？）ですので、できたら追加検証するかもしれません。（きっとやらない）</p>
 
 	        </section>
 
@@ -99,15 +120,15 @@ index 85a0e2c..d2ddf7a
 	        <section class="share">
 	            <p class="backtotop"><a data-scroll href="#site-head"><i class="fa fa-lg fa-fw fa-angle-double-up"></i></a><a data-scroll class="backtotoptext" href="#site-head"> Back to top</a></p>
 	            <p class="info prompt">Share</p>
-	            <a href="http://twitter.com/share?text=chpwd_functions&url=http%3a%2f%2felim.github.io%2f2015%2f05%2f18%2fchpwd_functions" title="Share on Twitter"
+	            <a href="http://twitter.com/share?text=HTML5%20video%20via%20Simplicity%20HTTP%20server&url=http%3a%2f%2felim.github.io%2f2015%2f09%2f09%2fhtml5-video-via-simplicity-http-server" title="Share on Twitter"
 	                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
 	                <i class="fa fa-2x fa-fw fa-twitter-square"></i> <span class="hidden">Twitter</span>
 	            </a>
-	            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2felim.github.io%2f2015%2f05%2f18%2fchpwd_functions" title="Share on Facebook"
+	            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2felim.github.io%2f2015%2f09%2f09%2fhtml5-video-via-simplicity-http-server" title="Share on Facebook"
 	                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
 	                <i class="fa fa-2x fa-fw fa-facebook-square" style="margin-left: -8px"></i> <span class="hidden">Facebook</span>
 	            </a>
-	            <a href="https://plus.google.com/share?url=http%3a%2f%2felim.github.io%2f2015%2f05%2f18%2fchpwd_functions" title="Share on Google+"
+	            <a href="https://plus.google.com/share?url=http%3a%2f%2felim.github.io%2f2015%2f09%2f09%2fhtml5-video-via-simplicity-http-server" title="Share on Google+"
 	               onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
 	                <i class="fa fa-2x fa-fw fa-google-plus-square" style="margin-left: -8px"></i> <span class="hidden">Google+</span>
 	            </a>
