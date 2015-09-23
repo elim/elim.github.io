@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Fix the date and time of the format of the article &middot; IDIC - infinite Diversity in Infinite Combinations.</title>
+    <meta name="author" content="Takeru Naito">
+    <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.14" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <link rel="shortcut icon" href="http://elim.github.io/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://elim.github.io/css/screen.css">
+    <link rel="stylesheet" href="http://elim.github.io/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
+
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #33cc99;}
+    .pagination a {color: #33cc99;}
+    .gist .gist-file .gist-meta a:visited {color: #33cc99 !important;}
+    a:focus, a:hover {color: #178b6b;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #178b6b;}
+    .older-posts:hover, .newer-posts:hover {color: #178b6b;}
+</style>
+</head>
+<body class="post-template">
+
+    <header id="site-head">
+	
+	<h1 class="blog-title"><a href="http://elim.github.io/">IDIC</a></h1>
+	
+	
+	<h1 class="blog-subtitle">infinite Diversity in Infinite Combinations.</h1>
+	
+</header>
+    
+
+    <main class="content" role="main">
+	    <article class="post">
+	        <header>
+	        <h1 class="post-title">Fix the date and time of the format of the article</h1>
+	        <div class="post-meta"><time datetime="09 September 2015">09 September 2015</time></div>
+	        </header>
+
+	        <section class="post-content">
+	            
+
+<p>ここで使わせていただいてるテーマの <a href="https://github.com/digitalcraftsman/hugo-steam-theme">Steam</a> へ <a href="https://github.com/digitalcraftsman/hugo-steam-theme/pull/1">Pull Request を送った</a>ところ、無事取り込んでいただけました。</p>
+
+<h2 id="修正点:f65d36182d99ba90952d3f1aee5db252">修正点</h2>
+
+<p>いずれも投稿日時の表示に関するものです。</p>
+
+<ul>
+<li>投稿日時ではなく、現在日時が使用されていた個所を改める</li>
+<li>日時フォーマットを Go 言語の仕様に合わせる</li>
+</ul>
+
+<h2 id="謝辞:f65d36182d99ba90952d3f1aee5db252">謝辞</h2>
+
+<p>なお、日時フォーマットの仕様確認の際 <a href="http://fuckinggodateformat.com/">Fucking Go Date Format</a> に大変お世話になりました。</p>
+
+<p>同サイトを知るきっかけになった <a href="http://rebuild.fm/81/">Rebuild: 81: Enable The Broken Web (Hajime Morrita)</a> に感謝です。</p>
+
+<hr />
+
+<p>ところで Hugo はテーマと同構造のディレクトリを用意すると、そちらを優先して読んでくれるようです。</p>
+
+<p>たとえば、以下のファイルを変更したい場合は</p>
+
+<pre><code class="language-no-highlight">./themes/hugo-steam-theme/layouts/partials/post-list.html
+./themes/hugo-steam-theme/layouts/post/single.html
+</code></pre>
+
+<p>以下のようにファイルを用意すると、そちらが読み込まれます。</p>
+
+<pre><code class="language-no-highlight">./layouts/partials/post-list.html
+./layouts/post/single.html
+</code></pre>
+
+<p>「ちょっと手を加えたいだけ」といった時にはこちらの方が簡単かも。</p>
+
+	        </section>
+
+	        <section class="post-tags" style="padding-bottom:60px;">
+	            <div class="post-meta tags">
+	            <i class="fa fa-fw fa-tag"></i>
+	            
+	            </div>
+	        </section>
+			
+			
+			
+			
+
+	        <section class="share">
+	            <p class="backtotop"><a data-scroll href="#site-head"><i class="fa fa-lg fa-fw fa-angle-double-up"></i></a><a data-scroll class="backtotoptext" href="#site-head"> Back to top</a></p>
+	            <p class="info prompt">Share</p>
+	            <a href="http://twitter.com/share?text=Fix%20the%20date%20and%20time%20of%20the%20format%20of%20the%20article&url=http%3a%2f%2felim.github.io%2f2015%2f09%2f09%2ffix-the-date-and-time-of-the-format-of-the-article" title="Share on Twitter"
+	                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+	                <i class="fa fa-2x fa-fw fa-twitter-square"></i> <span class="hidden">Twitter</span>
+	            </a>
+	            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2felim.github.io%2f2015%2f09%2f09%2ffix-the-date-and-time-of-the-format-of-the-article" title="Share on Facebook"
+	                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+	                <i class="fa fa-2x fa-fw fa-facebook-square" style="margin-left: -8px"></i> <span class="hidden">Facebook</span>
+	            </a>
+	            <a href="https://plus.google.com/share?url=http%3a%2f%2felim.github.io%2f2015%2f09%2f09%2ffix-the-date-and-time-of-the-format-of-the-article" title="Share on Google+"
+	               onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+	                <i class="fa fa-2x fa-fw fa-google-plus-square" style="margin-left: -8px"></i> <span class="hidden">Google+</span>
+	            </a>
+	        </section>
+
+	        <footer class="post-footer">
+	            <section class="author">
+    <div class="authorimage" style="background: url(http://elim.github.io/img/avatar.jpg)"></div>
+    <h4>Takeru Naito</h4>
+    <p class="bio">
+	        </footer>
+	    </article>
+	</main>
+
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+			
+		    <a href="//twitter.com/elim" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+		    
+		    
+		    <a href="//github.com/elim" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+		    
+		    <a href="" target="_blank" title="RSS"><i class="fa fa-2x fa-fw fa-rss"></i> <span class="hidden">RSS</span></a>
+		</section>
+
+		<section class="copyright">&copy; 2015 <a href="http://elim.github.io/">Takeru Naito</a>. Released under the MIT license.</section>
+	</div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://elim.github.io/js/index.js"></script>
+<script src="http://elim.github.io/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+</body>
+</html>
