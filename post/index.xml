@@ -6,8 +6,83 @@
     <description>Recent content in Posts on IDIC - infinite Diversity in Infinite Combinations.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 09 Sep 2015 11:27:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2015 10:29:19 +0900</lastBuildDate>
     <atom:link href="http://elim.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A Powerline package of the El-Get will be grafted</title>
+      <link>http://elim.github.io/2015/09/22/a-powerline-package-of-the-el-get-will-be-grafted</link>
+      <pubDate>Tue, 22 Sep 2015 10:29:19 +0900</pubDate>
+      
+      <guid>http://elim.github.io/2015/09/22/a-powerline-package-of-the-el-get-will-be-grafted</guid>
+      <description>
+
+&lt;p&gt;BYOD していた現場から&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;よかったらこの Mac Pro 使ってください&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;という願ってもないお話をいただきまして。&lt;/p&gt;
+
+&lt;p&gt;喜び勇んで Xcode やら Homebrew やら Emacs やらを入れていたわけですが、どうにも Emacs 用 powerline の表示がおかしい。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://elim.github.io/img/2015-09-22_powerline/broken.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;まったく同じ .emacs.d を使っているのになぜだろうなー&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;と思っていろいろ追っていたところ、このコミットを見付けました。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/dimitri/el-get/commit/803e2f71de62a4503671b704c3b9084e4c5d8a3a&#34;&gt;Use milkypostman&amp;rsquo;s powerline fork&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-diff&#34;&gt;commit 803e2f71de62a4503671b704c3b9084e4c5d8a3a
+Author: Fabián Ezequiel Gallina &amp;lt;galli.87@gmail.com&amp;gt;
+Date:   Sat Aug 24 00:03:49 2013 -0300
+
+    Use milkypostman&#39;s powerline fork
+
+    This one is actively maintained as opposed to jonathanchu&#39;s version.
+---
+ recipes/powerline.rcp | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+diff --git a/recipes/powerline.rcp b/recipes/powerline.rcp
+index f3eb1bb..d23b67e 100644
+--- a/recipes/powerline.rcp
++++ b/recipes/powerline.rcp
+@@ -1,6 +1,8 @@
+ (:name powerline
+-       :website &amp;quot;https://github.com/jonathanchu/emacs-powerline&amp;quot;
++       :website &amp;quot;https://github.com/milkypostman/powerline&amp;quot;
++       :depends (cl-lib)
+        :description &amp;quot;Powerline for Emacs&amp;quot;
+        :type github
+-       :pkgname &amp;quot;jonathanchu/emacs-powerline&amp;quot;
++       :pkgname &amp;quot;milkypostman/powerline&amp;quot;
++       :load-path &amp;quot;.&amp;quot;
+        :features powerline)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;おお……アップストリームが変更されている……&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;それぞれのリポジトリをクローンしてきて、ざっと git log を比べたり diff -uw
+してみたりしましたが、共通項のが少ない……というより機能以外に共通しているところが &lt;strong&gt;見当りません&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;それにしてもこれは 2013 年の変更なのですね。今まで何度も &lt;code&gt;el-get-update-all&lt;/code&gt; を実行していたのに、 mode-line の表示がこわれなかったところを見ると、レシピのアップストリーム変更までは追従しないようですね。&lt;/p&gt;
+
+&lt;p&gt;新しい環境では、変更後のレシピを使ったので表示が崩れた、と。&lt;/p&gt;
+
+&lt;h2 id=&#34;結局:40c0f6c6ae720d9c27db3694f99291ff&#34;&gt;結局&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/milkypostman/powerline#installation&#34;&gt;@milkypostman 版は &lt;code&gt;(powerline-default-theme)&lt;/code&gt; を呼べばいい感じに表示してくれる&lt;/a&gt;ようなので、とりあえず手持ちの Emacs 環境はそれで揃えることにしました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://elim.github.io/img/2015-09-22_powerline/normal.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;めでたし、めでたし。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>HTML5 video via Simplicity HTTP server</title>
