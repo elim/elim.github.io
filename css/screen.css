@@ -48,6 +48,9 @@ dd {
   font-weight: 100;
   line-height: 28px;
 }
+p {
+  text-align: justify;
+}
 dt {
   font-weight: 400;
 }
