@@ -1,0 +1,8 @@
+(function(window) {
+  'use strict';
+
+  var host = 'elim.github.io';
+  if ((host === window.location.host) && (window.location.protocol !== 'https:')) {
+    window.location.protocol = 'https';
+  }
+}(window));
