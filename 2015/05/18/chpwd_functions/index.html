@@ -1,75 +1,10 @@
-<!DOCTYPE html>
-<html lang="ja-jp">
-<head>
-    <script src="/js/enforce_ssl.js"></script>
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-    <title>chpwd_functions &middot; IDIC - infinite Diversity in Infinite Combinations.</title>
-    <meta name="author" content="Takeru Naito">
-    <meta name="description" content="">
-    <meta name="generator" content="Hugo 0.14" />
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-
-    <link rel="shortcut icon" href="https://elim.github.io/img/favicon.ico">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css">
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://elim.github.io/css/screen.css">
-    <link rel="stylesheet" href="https://elim.github.io/css/github.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
-
-    <!-- Stylesheet for theme color -->
-    <style type="text/css">
-    a, a:visited {color: #33cc99;}
+<!DOCTYPE html><html lang="ja-jp"><head><script src="/js/enforce_ssl.js"></script><meta http-equiv="Content-Type" content="text/html" charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>chpwd_functions &middot; IDIC - infinite Diversity in Infinite Combinations.</title><meta name="author" content="Takeru Naito"><meta name="description" content=""><meta name="generator" content="Hugo 0.14"><meta name="HandheldFriendly" content="True"><meta name="MobileOptimized" content="320"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><link rel="shortcut icon" href="https://elim.github.io/img/favicon.ico"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css"><!-- Stylesheets --><link rel="stylesheet" href="https://elim.github.io/css/screen.css"><link rel="stylesheet" href="https://elim.github.io/css/github.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css"><!-- Stylesheet for theme color --><style type="text/css">a, a:visited {color: #33cc99;}
     .pagination a {color: #33cc99;}
     .gist .gist-file .gist-meta a:visited {color: #33cc99 !important;}
     a:focus, a:hover {color: #178b6b;}
     h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #178b6b;}
-    .older-posts:hover, .newer-posts:hover {color: #178b6b;}
-</style>
-</head>
-
-<body class="post-template">
-
-    <header id="site-head">
-	
-	<h1 class="blog-title"><a href="https://elim.github.io/">IDIC</a></h1>
-	
-	
-	<h1 class="blog-subtitle">infinite Diversity in Infinite Combinations.</h1>
-	
-</header>
-    
-
-    <main class="content" role="main">
-	    <article class="post">
-	        <header>
-	        <h1 class="post-title">chpwd_functions</h1>
-	        <div class="post-meta"><time datetime="18 May 2015">18 May 2015</time></div>
-	        </header>
-
-	        <section class="post-content">
-	            
-
-<h2 id="tl-dr:b81cb66df3eff6fc109eb65b55182a80">tl;dr</h2>
-
-<p>Zsh で一時的に chpwd の hook を無効にしたいときは <code>chpwd_function=</code> を前置する。</p>
-
-<pre><code>$ chpwd_functions= cd
-</code></pre>
-
-<hr />
-
-<p>私の <em>Zsh</em> 環境で <a href="https://gist.github.com/bobthecow/757788">tab.bash</a> を使ってみたところ、iTerm のタブを作成したあとの <code>cd</code> に失敗してしまいました。</p>
-
-<p>chpwd 時に ls する hook を入れていたため <code>$cdto</code> 内にディレクトリ内のファイルが列挙されてしまっていたようです。</p>
-
-<p>以下のように書き換えることで、私の環境でも <a href="https://gist.github.com/bobthecow/757788">tab.bash</a> を動作させることができました。</p>
-
-<pre><code class="language-diff">diff --git a/tab.bash b/tab.bash
+    .older-posts:hover, .newer-posts:hover {color: #178b6b;}</style></head><body class="post-template"><header id="site-head"><h1 class="blog-title"><a href="https://elim.github.io/">IDIC</a></h1><h1 class="blog-subtitle">infinite Diversity in Infinite Combinations.</h1></header><main class="content" role="main"><article class="post"><header><h1 class="post-title">chpwd_functions</h1><div class="post-meta"><time datetime="18 May 2015">18 May 2015</time></div></header><section class="post-content"><h2 id="tl-dr:b81cb66df3eff6fc109eb65b55182a80">tl;dr</h2><p>Zsh で一時的に chpwd の hook を無効にしたいときは <code>chpwd_function=</code> を前置する。</p><pre><code>$ chpwd_functions= cd
+</code></pre><hr><p>私の <em>Zsh</em> 環境で <a href="https://gist.github.com/bobthecow/757788">tab.bash</a> を使ってみたところ、iTerm のタブを作成したあとの <code>cd</code> に失敗してしまいました。</p><p>chpwd 時に ls する hook を入れていたため <code>$cdto</code> 内にディレクトリ内のファイルが列挙されてしまっていたようです。</p><p>以下のように書き換えることで、私の環境でも <a href="https://gist.github.com/bobthecow/757788">tab.bash</a> を動作させることができました。</p><pre><code class="language-diff">diff --git a/tab.bash b/tab.bash
 old mode 100644
 new mode 100755
 index 85a0e2c..d2ddf7a
@@ -83,78 +18,9 @@ index 85a0e2c..d2ddf7a
 +        cdto=`chpwd_functions= cd &quot;$1&quot;; pwd`
          args=&quot;${@:2}&quot;
      fi
-</code></pre>
-
-	        </section>
-
-	        <section class="post-tags" style="padding-bottom:60px;">
-	            <div class="post-meta tags">
-	            <i class="fa fa-fw fa-tag"></i>
-	            
-	            </div>
-	        </section>
-			
-			
-			
-			
-
-	        <section class="share">
-	            <p class="backtotop"><a data-scroll href="#site-head"><i class="fa fa-lg fa-fw fa-angle-double-up"></i></a><a data-scroll class="backtotoptext" href="#site-head"> Back to top</a></p>
-	            <p class="info prompt">Share</p>
-	            <a href="http://twitter.com/share?text=chpwd_functions&url=https%3a%2f%2felim.github.io%2f2015%2f05%2f18%2fchpwd_functions" title="Share on Twitter"
-	                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-	                <i class="fa fa-2x fa-fw fa-twitter-square"></i> <span class="hidden">Twitter</span>
-	            </a>
-	            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2felim.github.io%2f2015%2f05%2f18%2fchpwd_functions" title="Share on Facebook"
-	                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-	                <i class="fa fa-2x fa-fw fa-facebook-square" style="margin-left: -8px"></i> <span class="hidden">Facebook</span>
-	            </a>
-	            <a href="https://plus.google.com/share?url=https%3a%2f%2felim.github.io%2f2015%2f05%2f18%2fchpwd_functions" title="Share on Google+"
-	               onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-	                <i class="fa fa-2x fa-fw fa-google-plus-square" style="margin-left: -8px"></i> <span class="hidden">Google+</span>
-	            </a>
-	        </section>
-
-	        <footer class="post-footer">
-	            <section class="author">
-    <div class="authorimage" style="background: url(https://elim.github.io/img/avatar.jpg)"></div>
-    <h4>Takeru Naito</h4>
-    <p class="bio">
-	        </footer>
-	    </article>
-	</main>
-
-    <footer class="site-footer">
-	<div class="inner">
-		<section class="footer-social">
-			
-		    <a href="//twitter.com/elim" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
-		    
-		    
-		    <a href="//github.com/elim" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
-		    
-		    <a href="" target="_blank" title="RSS"><i class="fa fa-2x fa-fw fa-rss"></i> <span class="hidden">RSS</span></a>
-		</section>
-
-		<section class="copyright">&copy; 2015 <a href="https://elim.github.io/">Takeru Naito</a>. Released under the MIT license.</section>
-	</div>
-</footer>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://elim.github.io/js/index.js"></script>
-<script src="https://elim.github.io/js/smooth-scroll.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
-
-<script>
-    smoothScroll.init({
+</code></pre></section><section class="post-tags" style="padding-bottom:60px"><div class="post-meta tags"><i class="fa fa-fw fa-tag"></i></div></section><section class="share"><p class="backtotop"><a data-scroll href="#site-head"><i class="fa fa-lg fa-fw fa-angle-double-up"></i></a><a data-scroll class="backtotoptext" href="#site-head">Back to top</a></p><p class="info prompt">Share</p><a href="http://twitter.com/share?text=chpwd_functions&url=https%3a%2f%2felim.github.io%2f2015%2f05%2f18%2fchpwd_functions" title="Share on Twitter" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false"><i class="fa fa-2x fa-fw fa-twitter-square"></i> <span class="hidden">Twitter</span></a> <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2felim.github.io%2f2015%2f05%2f18%2fchpwd_functions" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false"><i class="fa fa-2x fa-fw fa-facebook-square" style="margin-left: -8px"></i> <span class="hidden">Facebook</span></a> <a href="https://plus.google.com/share?url=https%3a%2f%2felim.github.io%2f2015%2f05%2f18%2fchpwd_functions" title="Share on Google+" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false"><i class="fa fa-2x fa-fw fa-google-plus-square" style="margin-left: -8px"></i> <span class="hidden">Google+</span></a></section><footer class="post-footer"><section class="author"><div class="authorimage" style="background: url(https://elim.github.io/img/avatar.jpg)"></div><h4>Takeru Naito</h4><p class="bio"></p></section></footer></article></main><footer class="site-footer"><div class="inner"><section class="footer-social"><a href="//twitter.com/elim" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp; <a href="//github.com/elim" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp; <a href="" target="_blank" title="RSS"><i class="fa fa-2x fa-fw fa-rss"></i> <span class="hidden">RSS</span></a></section><section class="copyright">&copy; 2015 <a href="https://elim.github.io/">Takeru Naito</a>. Released under the MIT license.</section></div></footer><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><script src="https://elim.github.io/js/index.js"></script><script src="https://elim.github.io/js/smooth-scroll.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script><script>smoothScroll.init({
         speed: 800,
         easing: 'easeInOutCubic',
         updateURL: false,
         offset: 125,
-    });
-</script>
-<script>hljs.initHighlightingOnLoad();</script>
-
-
-
-</body>
-</html>
+    });</script><script>hljs.initHighlightingOnLoad();</script></body></html>

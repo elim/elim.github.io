@@ -1,8 +1,2 @@
-(function(window) {
-  'use strict';
-
-  var host = 'elim.github.io';
-  if ((host === window.location.host) && (window.location.protocol !== 'https:')) {
-    window.location.protocol = 'https';
-  }
-}(window));
+!function(o){"use strict";var t="elim.github.io";t===o.location.host&&"https:"!==o.location.protocol&&(o.location.protocol="https")}(window);
+//# sourceMappingURL=../maps/enforce_ssl.js.map
