@@ -1,2 +1,2 @@
 !function(n){"use strict";n(document).ready(function(){})}(jQuery);
-//# sourceMappingURL=../maps/index.js.map
+//# sourceMappingURL=../maps/js/index.js.map
