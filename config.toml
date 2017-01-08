@@ -1,50 +1,48 @@
-baseurl = "https://example.com/"
-title = "mytitle"
+baseurl = "https://elim.github.io/"
+title = "IDIC"
 theme = "ghostwriter"
-languageCode = "en-us"
-copyright = "My Name"
-googleAnalytics = "XXX"
-disqusShortname = "XXX"
+languageCode = "ja-jp"
+copyright = "Takeru Naito"
+googleAnalytics = "UA-90004615-1"
+# disqusShortname = "XXX"
 
 [Author]
-    name = "My Name"
-    profile = "https://google.com/+XXX"
+    name = "Takeru Naito"
+    profile = "https://facebook.com/takeru"
 
 [Taxonomies]
     tag = "tags"
 
 [Params]
     intro = true
-    headline = "My headline"
-    description = "My description"
-    github = "https://github.com/XXX"
-    gitlab = "https://gitlab.com/XXX"
-    linkedin = "https://linkedin.com/in/XXX/"
-    gplus = "https://google.com/+XXX"
-    twitter = "https://twitter.com/XXX"
-    stackoverflow = "https://stackoverflow.com/users/XXX/YYY"
-    email = "XXX@example.com"
+    headline = "IDIC"
+    description = "Infinite Diversity in Infinite Combinations."
+    github = "https://github.com/elim"
+    linkedin = "https://www.linkedin.com/in/takerunaito/"
+    gplus = "https://google.com/+takerunaito"
+    twitter = "https://twitter.com/elim"
     opengraph = true
 
 [Permalinks]
-    post = "/:year/:month/:day/:filename/"
+    post  = "/:year/:month/:day/:slug"
+    fixed = "/:slug"
 
 [[menu.main]]
     name = "Blog"
     url = "/"
     weight = 1
 
-[[menu.main]]
-    name = "Projects"
-    url = "/project/"
-    weight = 2
+# [[menu.main]]
+#     name = "Projects"
+#     url = "/project/"
+#     weight = 2
 
-[[menu.main]]
-    name = "Contact"
-    url = "/page/contact/"
-    weight = 3
+# [[menu.main]]
+#     name = "Contact"
+#     url = "/page/contact/"
+#     weight = 3
 
-[[menu.main]]
-    name = "About"
-    url = "/page/about/"
-    weight = 4
+# [[menu.main]]
+#     name = "About"
+#     url = "/page/about/"
+#     weight = 4
