@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Emacs 用 Powerline を別なパッケージにした &middot; Takeru Naito</title>
+        <meta name="description" content="BYOD していた現場から「よかったらこの Mac Pro 使ってください」という願ってもないお話をいただきまして。
+喜び勇んで Xcode やら Homebrew やら Emacs やらを入れていたわけですが、どうにも Emacs 用 powerline の表示がおかしい。
+「まったく同じ .emacs.d を使っているのになぜだろうなー」と思っていろいろ追っていたところ、このコミットを見付けました。
+803e2f7 - Use milkypostman&rsquo;s powerline fork
+commit 803e2f71de62a4503671b704c3b9084e4c5d8a3a Author: Fabián Ezequiel Gallina &lt;galli.87@gmail.com&gt; Date: Sat Aug 24 00:03:49 2013 -0300 Use milkypostman&#39;s powerline fork This one is actively maintained as opposed to jonathanchu&#39;s version. --- recipes/powerline.rcp | 6 &#43;&#43;&#43;&#43;-- 1 file changed, 4 insertions(&#43;), 2 deletions(-) diff --git a/recipes/powerline.rcp b/recipes/powerline.rcp index f3eb1bb.">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.18.1" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Emacs 用 Powerline を別なパッケージにした">
+<meta property="og:description" content="BYOD していた現場から「よかったらこの Mac Pro 使ってください」という願ってもないお話をいただきまして。
+喜び勇んで Xcode やら Homebrew やら Emacs やらを入れていたわけですが、どうにも Emacs 用 powerline の表示がおかしい。
+「まったく同じ .emacs.d を使っているのになぜだろうなー」と思っていろいろ追っていたところ、このコミットを見付けました。
+803e2f7 - Use milkypostman&rsquo;s powerline fork
+commit 803e2f71de62a4503671b704c3b9084e4c5d8a3a Author: Fabián Ezequiel Gallina &lt;galli.87@gmail.com&gt; Date: Sat Aug 24 00:03:49 2013 -0300 Use milkypostman&#39;s powerline fork This one is actively maintained as opposed to jonathanchu&#39;s version. --- recipes/powerline.rcp | 6 &#43;&#43;&#43;&#43;-- 1 file changed, 4 insertions(&#43;), 2 deletions(-) diff --git a/recipes/powerline.rcp b/recipes/powerline.rcp index f3eb1bb.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://elim.github.io/2015/09/22/selects-another-powerline-for-emacs-package">
+        <link rel="stylesheet" href="https://elim.github.io/dist/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+        
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-90004615-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="IDIC" href="https://elim.github.io/">IDIC</a>
+                            </h1>
+                        
+                        <a class="button-square" href="https://elim.github.io/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/elim">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/elim">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="LinkedIn" title="LinkedIn" href="https://www.linkedin.com/in/takerunaito/">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Google+" title="Google+" href="https://google.com/&#43;takerunaito">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Blog" href="/">Blog</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Emacs 用 Powerline を別なパッケージにした</h1>
+    
+    <p class="post-date">
+        <span>Published <time datetime="2015-09-22" itemprop="datePublished">Tue, Sep 22, 2015</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="https://facebook.com/takeru" itemprop="url" rel="author">Takeru Naito</a>
+            </span>
+        </span>
+    </p>
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    
+
+<p>BYOD していた現場から「よかったらこの Mac Pro 使ってください」という願ってもないお話をいただきまして。</p>
+
+<p>喜び勇んで Xcode やら Homebrew やら Emacs やらを入れていたわけですが、どうにも Emacs 用 powerline の表示がおかしい。</p>
+
+<p><img src="/media/2015-09-22_powerline/broken.png" alt="" /></p>
+
+<p>「まったく同じ .emacs.d を使っているのになぜだろうなー」と思っていろいろ追っていたところ、このコミットを見付けました。</p>
+
+<p><a href="https://github.com/dimitri/el-get/commit/803e2f7">803e2f7 - Use milkypostman&rsquo;s powerline fork</a></p>
+
+<pre><code class="language-diff">commit 803e2f71de62a4503671b704c3b9084e4c5d8a3a
+Author: Fabián Ezequiel Gallina &lt;galli.87@gmail.com&gt;
+Date:   Sat Aug 24 00:03:49 2013 -0300
+
+    Use milkypostman's powerline fork
+
+    This one is actively maintained as opposed to jonathanchu's version.
+---
+ recipes/powerline.rcp | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+diff --git a/recipes/powerline.rcp b/recipes/powerline.rcp
+index f3eb1bb..d23b67e 100644
+--- a/recipes/powerline.rcp
++++ b/recipes/powerline.rcp
+@@ -1,6 +1,8 @@
+ (:name powerline
+-       :website &quot;https://github.com/jonathanchu/emacs-powerline&quot;
++       :website &quot;https://github.com/milkypostman/powerline&quot;
++       :depends (cl-lib)
+        :description &quot;Powerline for Emacs&quot;
+        :type github
+-       :pkgname &quot;jonathanchu/emacs-powerline&quot;
++       :pkgname &quot;milkypostman/powerline&quot;
++       :load-path &quot;.&quot;
+        :features powerline)
+</code></pre>
+
+<p><strong>おお……アップストリームが変更されている……</strong></p>
+
+<p>それぞれのリポジトリをクローンしてきて、ざっと <code>git log</code> を比べたり <code>diff -uw</code> してみたりしましたが、共通項のが少ない……というより機能以外に共通しているところが <strong>見当りません</strong>。</p>
+
+<p>それにしてもこれは 2013 年の変更なのですね。今まで何度も <code>M-x el-get-update-all</code> を実行していたのに、 mode-line の表示がこわれなかったところを見ると、レシピのアップストリーム変更までは追従しないようですね。</p>
+
+<p>新しい環境では、変更後のレシピを使ったので表示が崩れた、と。</p>
+
+<h2 id="結局">結局</h2>
+
+<p><a href="https://github.com/milkypostman/powerline#installation">@milkypostman 版は <code>(powerline-default-theme)</code> を呼べばいい感じに表示してくれる</a>ようなので、とりあえず手持ちの Emacs 環境はそれで揃えることにしました。</p>
+
+<p><img src="/media/2015-09-22_powerline/normal.png" alt="" /></p>
+
+<p>めでたし、めでたし。</p>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+        <p class="post-tags">
+            <span>Tagged:</span>
+            
+            
+                <a href="/tags/emacs/">emacs</a>
+            
+        </p>
+    
+
+    <div class="share">
+        <a class="icon-twitter" href="https://twitter.com/share?text=Emacs%20%e7%94%a8%20Powerline%20%e3%82%92%e5%88%a5%e3%81%aa%e3%83%91%e3%83%83%e3%82%b1%e3%83%bc%e3%82%b8%e3%81%ab%e3%81%97%e3%81%9f&url=https%3a%2f%2felim.github.io%2f2015%2f09%2f22%2fselects-another-powerline-for-emacs-package"
+            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <i class="fa fa-twitter"></i>
+            <span class="hidden">Twitter</span>
+        </a>
+
+        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2felim.github.io%2f2015%2f09%2f22%2fselects-another-powerline-for-emacs-package"
+            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+            <i class="fa fa-facebook"></i>
+            <span class="hidden">Facebook</span>
+        </a>
+
+        <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2felim.github.io%2f2015%2f09%2f22%2fselects-another-powerline-for-emacs-package"
+           onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+           <i class="fa fa-google-plus"></i>
+            <span class="hidden">Google+</span>
+        </a>
+    </div>
+</footer>
+
+        
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="IDIC" href="https://elim.github.io/">IDIC</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2015 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://elim.github.io/js/jquery-1.11.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+        <script src="https://elim.github.io/js/jquery.fitvids.js"></script>
+        <script src="https://elim.github.io/js/scripts.js"></script>
+    </body>
+</html>
+
