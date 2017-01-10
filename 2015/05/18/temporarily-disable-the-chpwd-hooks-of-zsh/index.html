@@ -22,7 +22,8 @@ chpwd 時に ls する hook を入れていたため $cdto 内にディレクト
 diff --git a/tab.bash b/tab.bash old mode 100644 new mode 100755 index 85a0e2c..d2ddf7a --- a/tab.bash &#43;&#43;&#43; b/tab.bash @@ -23,7 &#43;23,7 @@ function tab () { local args=&quot;$@&quot; if [ -d &quot;$1&quot; ]; then - cdto=`cd &quot;$1&quot;; pwd` &#43; cdto=`chpwd_functions= cd &quot;$1&quot;; pwd` args=&quot;${@:2}&quot; fi  ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://elim.github.io/2015/05/18/temporarily-disable-the-chpwd-hooks-of-zsh">
-        <link rel="apple-touch-icon"      sizes="57x57"   href="/media/favicons/apple-icon-57x57.png">
+        <scrpt>'use strict';var host='elim.github.io',location=window.location;(function(){host===location.host&&'https:'!==location.protocol&&(location.protocol='https')})();</scrpt>
+<link rel="apple-touch-icon"      sizes="57x57"   href="/media/favicons/apple-icon-57x57.png">
 <link rel="apple-touch-icon"      sizes="60x60"   href="/media/favicons/apple-icon-60x60.png">
 <link rel="apple-touch-icon"      sizes="72x72"   href="/media/favicons/apple-icon-72x72.png">
 <link rel="apple-touch-icon"      sizes="76x76"   href="/media/favicons/apple-icon-76x76.png">
