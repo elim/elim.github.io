@@ -32,6 +32,11 @@ googleAnalytics = "UA-90004615-1"
     url = "/"
     weight = 1
 
+[[menu.main]]
+    name = "About"
+    url = "/page/about/"
+    weight = 2
+
 # [[menu.main]]
 #     name = "Projects"
 #     url = "/project/"
@@ -42,7 +47,3 @@ googleAnalytics = "UA-90004615-1"
 #     url = "/page/contact/"
 #     weight = 3
 
-# [[menu.main]]
-#     name = "About"
-#     url = "/page/about/"
-#     weight = 4
