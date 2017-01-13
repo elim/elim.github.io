@@ -4,8 +4,8 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 # Build the project.
 # hugo # if using a theme, replace by `hugo -t <yourtheme>`
-# しばらく RSS や Sitemap 生成は止めておく
-hugo --disableRSS --disableSitemap
+# 記事が増えるまでしばらく RSS 生成は止めておく
+hugo --disableRSS
 
 # Go To Public folder
 cd public
