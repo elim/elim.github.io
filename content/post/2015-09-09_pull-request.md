@@ -1,6 +1,6 @@
 ---
 aliases:
-    - /2015/09/09/fix-the-date-and-time-of-the-format-of-the-article/
+  - /2015/09/09/fix-the-date-and-time-of-the-format-of-the-article/
 date: 2015-09-09T11:27:00Z
 slug: Pull Reqest was incorporated
 tags:
