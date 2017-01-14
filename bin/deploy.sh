@@ -7,6 +7,16 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 # 記事が増えるまでしばらく RSS 生成は止めておく
 hugo --disableRSS
 
+find public -name \*html -print0 \
+  | xargs -0 yarn run html-beautify -- \
+          --editorconfig \
+          --indent-inner-html=true \
+          --indent-size=2 \
+          --replace \
+          --type=html \
+          --unformatted=script \
+          --unformatted=style \
+
 (
   # Go To Public folder
   cd public
