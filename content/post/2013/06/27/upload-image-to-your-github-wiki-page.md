@@ -1,6 +1,6 @@
 ---
 aliases:
-  - /tech/2013/06/28/upload-image-to-your-github-wiki-page/
+  - /tech/2013/06/27/upload-image-to-your-github-wiki-page/
 category: tech
 date: 2013-06-28T02:00:00+09:00
 slug: Upload image to your github wiki page
