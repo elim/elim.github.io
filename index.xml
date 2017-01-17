@@ -7,13 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Takeru Naito</copyright>
-    <lastBuildDate>Tue, 17 Jan 2017 03:31:19 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Jan 2017 12:31:19 +0900</lastBuildDate>
     <atom:link href="https://elim.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>esa のクライアントをいろいろ試す</title>
       <link>https://elim.github.io/2017/01/17/esa-clients</link>
-      <pubDate>Tue, 17 Jan 2017 03:31:19 +0000</pubDate>
+      <pubDate>Tue, 17 Jan 2017 12:31:19 +0900</pubDate>
       
       <guid>https://elim.github.io/2017/01/17/esa-clients</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://mgi.hatenablog.com/entry/2017/01/07/200028&#34;&gt;esa.io クライアントを kotori から Quail に乗り換えた&lt;/a&gt; を見て &lt;a href=&#34;https://github.com/1000ch/quail/&#34;&gt;Quail&lt;/a&gt; を試しています。&lt;/p&gt;
