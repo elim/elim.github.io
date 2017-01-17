@@ -8,6 +8,7 @@ find public -not -name .git\* -delete
 # Generate the contents.
 hugo
 
+# Beautifying the HTML files.
 find public -name \*html -print0 \
   | xargs -0 yarn run html-beautify -- \
           --editorconfig \
