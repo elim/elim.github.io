@@ -5,8 +5,8 @@ echo -e "\033[0;32Generates site contents...\033[0m"
 # Clean up the existing contents.
 find public -not -name .git\* -delete
 
-# 記事が増えるまでしばらく RSS 生成は止めておく
-hugo --disableRSS
+# Generate the contents.
+hugo
 
 find public -name \*html -print0 \
   | xargs -0 yarn run html-beautify -- \
