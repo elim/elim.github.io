@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pull Request on IDIC</title>
+    <link>https://elim.github.io/tags/pull-request/index.xml</link>
+    <description>Recent content in Pull Request on IDIC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>Takeru Naito</copyright>
+    <atom:link href="https://elim.github.io/tags/pull-request/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Pull Reqest が取り込まれた</title>
+      <link>https://elim.github.io/2015/09/09/pull-reqest-was-incorporated</link>
+      <pubDate>Wed, 09 Sep 2015 11:27:00 +0000</pubDate>
+      
+      <guid>https://elim.github.io/2015/09/09/pull-reqest-was-incorporated</guid>
+      <description>
+
+&lt;p&gt;ここで使わせていただいてるテーマの &lt;a href=&#34;https://github.com/digitalcraftsman/hugo-steam-theme&#34;&gt;Steam&lt;/a&gt; へ &lt;a href=&#34;https://github.com/digitalcraftsman/hugo-steam-theme/pull/1&#34;&gt;Pull Request を送った&lt;/a&gt;ところ、無事取り込んでいただけました。&lt;/p&gt;
+
+&lt;h2 id=&#34;修正点&#34;&gt;修正点&lt;/h2&gt;
+
+&lt;p&gt;いずれも投稿日時の表示に関するものです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;投稿日時ではなく、現在日時が使用されていた個所を改める&lt;/li&gt;
+&lt;li&gt;日時フォーマットを Go 言語の仕様に合わせる&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;謝辞&#34;&gt;謝辞&lt;/h2&gt;
+
+&lt;p&gt;なお、日時フォーマットの仕様確認の際 &lt;a href=&#34;http://fuckinggodateformat.com/&#34;&gt;Fucking Go Date Format&lt;/a&gt; に大変お世話になりました。&lt;/p&gt;
+
+&lt;p&gt;同サイトを知るきっかけになった &lt;a href=&#34;http://rebuild.fm/81/&#34;&gt;Rebuild: 81: Enable The Broken Web (Hajime Morrita)&lt;/a&gt; に感謝です。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;ところで &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; はテーマと同構造のディレクトリを用意すると、そちらを優先して読んでくれるようです。&lt;/p&gt;
+
+&lt;p&gt;たとえば、以下のファイルを変更したい場合は&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./themes/hugo-steam-theme/layouts/partials/post-list.html
+./themes/hugo-steam-theme/layouts/post/single.html
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;以下のようにファイルを用意すると、そちらが読み込まれます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./layouts/partials/post-list.html
+./layouts/post/single.html
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;「ちょっと手を加えたいだけ」といった時にはこちらの方が簡単かも。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

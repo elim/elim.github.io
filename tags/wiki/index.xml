@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wiki on IDIC</title>
+    <link>https://elim.github.io/tags/wiki/index.xml</link>
+    <description>Recent content in Wiki on IDIC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>Takeru Naito</copyright>
+    <atom:link href="https://elim.github.io/tags/wiki/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>GitHub の Wiki に表示する画像を git で上げる</title>
+      <link>https://elim.github.io/2013/06/28/upload-image-to-your-github-wiki-page</link>
+      <pubDate>Fri, 28 Jun 2013 02:00:00 +0900</pubDate>
+      
+      <guid>https://elim.github.io/2013/06/28/upload-image-to-your-github-wiki-page</guid>
+      <description>
+
+&lt;h1 id=&#34;tl-dr&#34;&gt;tl;dr&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;$ git clone git@github.com:&amp;lt;username&amp;gt;/&amp;lt;repository&amp;gt;.wiki.git
+$ cd &amp;lt;repository&amp;gt;.wiki
+$ mkdir images
+$ cp path/to/image_file images
+$ git -a -m &#39;Attach images&#39;
+$ open https://github.com/&amp;lt;username&amp;gt;/&amp;lt;repository&amp;gt;/wiki/&amp;lt;pagename&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And put &lt;code&gt;[[/images/image_file]]&lt;/code&gt; to your wiki page.&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s it.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;情報元: &lt;a href=&#34;https://github.com/wicketstuff/core/wiki/Editing-Wiki-Locally&#34;&gt;Editing Wiki Locally&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;この方法を使えば、好きな画像を wiki に貼り付けることができます :)&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

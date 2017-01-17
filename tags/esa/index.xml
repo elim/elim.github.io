@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Esa on IDIC</title>
+    <link>https://elim.github.io/tags/esa/index.xml</link>
+    <description>Recent content in Esa on IDIC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>Takeru Naito</copyright>
+    <atom:link href="https://elim.github.io/tags/esa/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>esa のクライアントをいろいろ試す</title>
+      <link>https://elim.github.io/2017/01/17/esa-clients</link>
+      <pubDate>Tue, 17 Jan 2017 03:31:19 +0000</pubDate>
+      
+      <guid>https://elim.github.io/2017/01/17/esa-clients</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://mgi.hatenablog.com/entry/2017/01/07/200028&#34;&gt;esa.io クライアントを kotori から Quail に乗り換えた&lt;/a&gt; を見て &lt;a href=&#34;https://github.com/1000ch/quail/&#34;&gt;Quail&lt;/a&gt; を試しています。&lt;/p&gt;
+
+&lt;p&gt;ブラウザと ⌘-TAB で切り替えて作業できるのが良いですね。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;おや。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;この記事のお陰かkotoriがアップデートされてリンク先が別ウィンドウで表示されるようになってました！！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;( &lt;a href=&#34;http://b.hatena.ne.jp/tsub511/20170108#bookmark-315193989&#34;&gt;http://b.hatena.ne.jp/tsub511/20170108#bookmark-315193989&lt;/a&gt; )&lt;/p&gt;
+
+&lt;p&gt;ほんとだ &lt;a href=&#34;https://github.com/Watson1978/kotori/releases/&#34;&gt;kotori&lt;/a&gt; の開発が活発になってる &lt;a href=&#34;https://github.com/Watson1978/kotori/releases&#34;&gt;https://github.com/Watson1978/kotori/releases&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;タブ機能がついていて便利ですし kotori も試してみます。気持ちこちらのがサクサク動くようなー。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
