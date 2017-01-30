@@ -4,17 +4,17 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Posts &middot; IDIC</title>
-    <meta name="description" content="Infinite Diversity in Infinite Combinations.">
+    <title>Sierra 上の iTerm2 上の tmux &middot; IDIC</title>
+    <meta name="description" content="iTerm2 &#43; tmux で 2 つ目のタブをつくると最初のタブの描画がこわれるの、 2 つ目のタブができた時点でタブバーが表示されて、描画域がかわるからだった。どうも">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="generator" content="Hugo 0.18.1" />
     <meta name="robots" content="index,follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Posts">
-    <meta property="og:description" content="Infinite Diversity in Infinite Combinations.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://elim.github.io/post/">
+    <meta property="og:title" content="Sierra 上の iTerm2 上の tmux">
+    <meta property="og:description" content="iTerm2 &#43; tmux で 2 つ目のタブをつくると最初のタブの描画がこわれるの、 2 つ目のタブができた時点でタブバーが表示されて、描画域がかわるからだった。どうも">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://elim.github.io/2017/01/27/iterm2-with-tmux-on-sierra">
     <script>!function(){var b="elim.github.io",c=window.location;b===c.host&&"https:"!==c.protocol&&(c.protocol="https")}()</script>
     <link rel="apple-touch-icon" sizes="57x57" href="/media/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/media/favicons/apple-icon-60x60.png">
@@ -37,8 +37,6 @@
     <link rel="stylesheet" href="https://elim.github.io/dist/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link href="https://elim.github.io/post/index.xml" rel="alternate" type="application/rss+xml">
 
   </head>
 
@@ -109,87 +107,81 @@ ga('send', 'pageview');
       <div id="container">
 
 
-        <div id="post-index" class="container">
+        <div class="container">
+          <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+            <header class="post-header">
+              <h1 class="post-title" itemprop="name headline">Sierra 上の iTerm2 上の tmux</h1>
 
-          <header class="post-header">
-            <h1 class="post-title">IDIC</h1>
-            <p>Infinite Diversity in Infinite Combinations.</p>
-          </header>
+              <p class="post-date">
+                <span>Published
+                  <time datetime="2017-01-27" itemprop="datePublished">Fri, Jan 27, 2017</time>
+                </span>
+                <span>by</span>
+                <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+                  <span itemprop="name">
+                    <a href="https://facebook.com/takeru" itemprop="url" rel="author">Takeru Naito</a>
+                  </span>
+                </span>
+              </p>
+            </header>
 
-
-          <ol class="post-list">
-
-
-            <li class="post-stub">
-              <a href="https://elim.github.io/2017/01/27/iterm2-with-tmux-on-sierra">
-                <h4 class="post-stub-title">Sierra 上の iTerm2 上の tmux</h4>
-
-
-              </a>
-            </li>
-
-            <li class="post-stub">
-              <a href="https://elim.github.io/2017/01/17/detach-keys">
-                <h4 class="post-stub-title">detach keys</h4>
+            <div class="post-content clearfix" itemprop="articleBody">
 
 
-              </a>
-            </li>
+              <blockquote class="twitter-tweet">
+                <p lang="ja" dir="ltr">iTerm2 + tmux で 2 つ目のタブをつくると最初のタブの描画がこわれるの、 2 つ目のタブができた時点でタブバーが表示されて、描画域がかわるからだった。どうも tmux がそれに追従できなくて 1 行たらない状態になるみたい。なぜ Sierra だけで起きるんだろう。</p>&mdash; えりむ (@elim)
+                <a href="https://twitter.com/elim/status/824846849840254977">January 27, 2017</a>
+              </blockquote>
+              <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-            <li class="post-stub">
-              <a href="https://elim.github.io/2017/01/17/esa-clients">
-                <h4 class="post-stub-title">esa のクライアントをいろいろ試す</h4>
+              <p>
+                <blockquote class="twitter-tweet">
+                  <p lang="ja" dir="ltr">とりあえずの解決策としては、&quot;Preferences&quot; =&gt; &quot;Appearance&quot; =&gt; &quot;Show tab bar even when there is only one tab&quot; をオンにして、常にタブバーを表示すること。</p>&mdash; えりむ (@elim)
+                  <a href="https://twitter.com/elim/status/824847217118679040">January 27, 2017</a>
+                </blockquote>
+                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
 
+              <p>
+                <img src="/media/2017/02/27/iterm2-appearance.png" alt="iTerm2 の Appearance 設定の画面。 &quot;Show tab bar even when there is only one tab&quot; にチェックを入れている" title="iTerm2 の Appearance 設定" />
+              </p>
 
-              </a>
-            </li>
+            </div>
 
-            <li class="post-stub">
-              <a href="https://elim.github.io/2017/01/13/retrospective">
-                <h4 class="post-stub-title">ふりかえり</h4>
+            <footer class="post-footer clearfix">
 
-
-              </a>
-            </li>
-
-            <li class="post-stub">
-              <a href="https://elim.github.io/2015/09/22/selects-another-powerline-for-emacs-package">
-                <h4 class="post-stub-title">Emacs 用 Powerline を別なパッケージにした</h4>
-
-
-              </a>
-            </li>
-
-            <li class="post-stub">
-              <a href="https://elim.github.io/2015/09/09/pull-reqest-was-incorporated">
-                <h4 class="post-stub-title">Pull Reqest が取り込まれた</h4>
+              <p class="post-tags">
+                <span>Tagged:</span>
 
 
-              </a>
-            </li>
+                <a href="/tags/iterm2/">iterm2</a>,
 
-            <li class="post-stub">
-              <a href="https://elim.github.io/2015/05/18/temporarily-disable-the-chpwd-hooks-of-zsh">
-                <h4 class="post-stub-title">chpwd_functions</h4>
+                <a href="/tags/sierra/">sierra</a>,
 
+                <a href="/tags/tmux/">tmux</a>
 
-              </a>
-            </li>
-
-            <li class="post-stub">
-              <a href="https://elim.github.io/2013/06/28/upload-image-to-your-github-wiki-page">
-                <h4 class="post-stub-title">GitHub の Wiki に表示する画像を git で上げる</h4>
+              </p>
 
 
-              </a>
-            </li>
+              <div class="share">
+                <a class="icon-twitter" href="https://twitter.com/share?text=Sierra%20%e4%b8%8a%e3%81%ae%20iTerm2%20%e4%b8%8a%e3%81%ae%20tmux&url=https%3a%2f%2felim.github.io%2f2017%2f01%2f27%2fiterm2-with-tmux-on-sierra" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                  <i class="fa fa-twitter"></i>
+                  <span class="hidden">Twitter</span>
+                </a>
 
-          </ol>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2felim.github.io%2f2017%2f01%2f27%2fiterm2-with-tmux-on-sierra" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                  <i class="fa fa-facebook"></i>
+                  <span class="hidden">Facebook</span>
+                </a>
 
-          <div class="post-navigation">
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2felim.github.io%2f2017%2f01%2f27%2fiterm2-with-tmux-on-sierra" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                  <i class="fa fa-google-plus"></i>
+                  <span class="hidden">Google+</span>
+                </a>
+              </div>
+            </footer>
 
 
-          </div>
+          </article>
         </div>
 
       </div>
