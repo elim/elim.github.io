@@ -1,5 +1,6 @@
 ---
 date: 2017-01-30T14:00:00+09:00
+description: 気づいたら Emacs が終了している環境になってしまったため、 ad-hoc な対応を入れました。
 slug: Confirm before killing Emacs
 tags:
   - emacs
