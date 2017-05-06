@@ -16,3 +16,23 @@ title: Emacs を終了する前に確認する
     (setq confirm-kill-emacs 'y-or-n-p)
 
 こうすると `Really exit Emacs? (y or n) ` と聞いてくれて便利です。
+
+* * *
+
+## 2017-03-13 追記
+
+Emacs を起動したシェルで何度か C-c を発行すると Emacs が音もなく死ぬことを確認……。
+
+## 2017-05-06 追記
+
+`open -a Emacs` といった形で呼び出すと問題ないことを確認しました。
+
+私は macOS では GUI でしか起動しませんし、勢いでエイリアスも変更してしまいました。
+
+```sh
+if [[ $(uname) == "Darwin" ]]; then
+  alias emacs="open -a Emacs"
+else
+  alias emacs="XMODIFIERS='@im=none' emacs"
+fi
+```
