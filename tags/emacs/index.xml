@@ -2,94 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Emacs on IDIC</title>
-    <link>https://elim.github.io/tags/emacs/index.xml</link>
+    <link>https://elim.github.io/tags/emacs/</link>
     <description>Recent content in Emacs on IDIC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Takeru Naito</copyright>
-    <atom:link href="https://elim.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Jan 2017 14:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://elim.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Emacs を終了する前に確認する</title>
-      <link>https://elim.github.io/2017/01/30/confirm-before-killing-emacs</link>
+      <link>https://elim.github.io/2017/01/30/confirm-before-killing-emacs/</link>
       <pubDate>Mon, 30 Jan 2017 14:00:00 +0900</pubDate>
       
-      <guid>https://elim.github.io/2017/01/30/confirm-before-killing-emacs</guid>
-      <description>&lt;p&gt;どうも最近、知らずしらずのうちにアプリケーションを落としてしまうのです。どうやら Hammerspoon の設定がわるいようで、ふとした拍子に Cmd+q か何かを送ってしまう模様。&lt;/p&gt;
-
-&lt;p&gt;特に、気づいたら Emacs がいなくなっているので大問題です。（私は Emacs を GUI で使っています。）&lt;/p&gt;
-
-&lt;p&gt;ということで当座の対処として以下を追加しました。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;(setq confirm-kill-emacs &#39;y-or-n-p)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;こうすると &lt;code&gt;Really exit Emacs? (y or n)&lt;/code&gt; と聞いてくれて便利です。&lt;/p&gt;
-</description>
+      <guid>https://elim.github.io/2017/01/30/confirm-before-killing-emacs/</guid>
+      <description>どうも最近、知らずしらずのうちにアプリケーションを落としてしまうのです。どうやら Hammerspoon の設定がわるいようで、ふとした拍子に Cmd+q か何かを送ってしまう</description>
     </item>
     
     <item>
       <title>Emacs 用 Powerline を別なパッケージにした</title>
-      <link>https://elim.github.io/2015/09/22/selects-another-powerline-for-emacs-package</link>
+      <link>https://elim.github.io/2015/09/22/selects-another-powerline-for-emacs-package/</link>
       <pubDate>Tue, 22 Sep 2015 10:29:19 +0900</pubDate>
       
-      <guid>https://elim.github.io/2015/09/22/selects-another-powerline-for-emacs-package</guid>
-      <description>
-
-&lt;p&gt;BYOD していた現場から「よかったらこの Mac Pro 使ってください」という願ってもないお話をいただきまして。&lt;/p&gt;
-
-&lt;p&gt;喜び勇んで Xcode やら Homebrew やら Emacs やらを入れていたわけですが、どうにも Emacs 用 powerline の表示がおかしい。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://elim.github.io/media/2015-09-22_powerline/broken.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;「まったく同じ .emacs.d を使っているのになぜだろうなー」と思っていろいろ追っていたところ、このコミットを見付けました。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/dimitri/el-get/commit/803e2f7&#34;&gt;803e2f7 - Use milkypostman&amp;rsquo;s powerline fork&lt;/a&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-diff&#34;&gt;commit 803e2f71de62a4503671b704c3b9084e4c5d8a3a
-Author: Fabián Ezequiel Gallina &amp;lt;galli.87@gmail.com&amp;gt;
-Date:   Sat Aug 24 00:03:49 2013 -0300
-
-    Use milkypostman&#39;s powerline fork
-
-    This one is actively maintained as opposed to jonathanchu&#39;s version.
----
- recipes/powerline.rcp | 6 ++++--
- 1 file changed, 4 insertions(+), 2 deletions(-)
-
-diff --git a/recipes/powerline.rcp b/recipes/powerline.rcp
-index f3eb1bb..d23b67e 100644
---- a/recipes/powerline.rcp
-+++ b/recipes/powerline.rcp
-@@ -1,6 +1,8 @@
- (:name powerline
--       :website &amp;quot;https://github.com/jonathanchu/emacs-powerline&amp;quot;
-+       :website &amp;quot;https://github.com/milkypostman/powerline&amp;quot;
-+       :depends (cl-lib)
-        :description &amp;quot;Powerline for Emacs&amp;quot;
-        :type github
--       :pkgname &amp;quot;jonathanchu/emacs-powerline&amp;quot;
-+       :pkgname &amp;quot;milkypostman/powerline&amp;quot;
-+       :load-path &amp;quot;.&amp;quot;
-        :features powerline)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;おお……アップストリームが変更されている……&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;それぞれのリポジトリをクローンしてきて、ざっと &lt;code&gt;git log&lt;/code&gt; を比べたり &lt;code&gt;diff -uw&lt;/code&gt; してみたりしましたが、共通項のが少ない……というより機能以外に共通しているところが &lt;strong&gt;見当りません&lt;/strong&gt;。&lt;/p&gt;
-
-&lt;p&gt;それにしてもこれは 2013 年の変更なのですね。今まで何度も &lt;code&gt;M-x el-get-update-all&lt;/code&gt; を実行していたのに、 mode-line の表示がこわれなかったところを見ると、レシピのアップストリーム変更までは追従しないようですね。&lt;/p&gt;
-
-&lt;p&gt;新しい環境では、変更後のレシピを使ったので表示が崩れた、と。&lt;/p&gt;
-
-&lt;h2 id=&#34;結局&#34;&gt;結局&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/milkypostman/powerline#installation&#34;&gt;@milkypostman 版は &lt;code&gt;(powerline-default-theme)&lt;/code&gt; を呼べばいい感じに表示してくれる&lt;/a&gt;ようなので、とりあえず手持ちの Emacs 環境はそれで揃えることにしました。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://elim.github.io/media/2015-09-22_powerline/normal.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;めでたし、めでたし。&lt;/p&gt;
-</description>
+      <guid>https://elim.github.io/2015/09/22/selects-another-powerline-for-emacs-package/</guid>
+      <description>BYOD していた現場から「よかったらこの Mac Pro 使ってください」という願ってもないお話をいただきまして。 喜び勇んで Xcode やら Homebrew やら Emacs やらを入れていたわけで</description>
     </item>
     
   </channel>
