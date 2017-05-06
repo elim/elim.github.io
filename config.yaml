@@ -1,25 +1,15 @@
 ---
 Author:
+  facebook: takeru
+  github: elim
+  instagram: tailor.elim
   name: Takeru Naito
-  profile: https://facebook.com/takeru
-MetaDataFormat: yaml
-Params:
-  description: Infinite Diversity in Infinite Combinations.
-  github: https://github.com/elim
-  gplus: https://google.com/+takerunaito
-  headline: IDIC
-  intro: true
-  linkedin: https://www.linkedin.com/in/takerunaito/
-  opengraph: true
-  twitter: https://twitter.com/elim
-Permalinks:
-  fixed: "/:slug"
-  post: "/:year/:month/:day/:slug"
-Taxonomies:
-  tag: tags
+  twitter: elim
 BaseURL: https://elim.github.io/
 Copyright: Takeru Naito
+DefaultContentLanguage: en
 GoogleAnalytics: UA-90004615-1
+hasCJKLanguage: true
 LanguageCode: ja-jp
 Menu:
   Main:
@@ -29,6 +19,16 @@ Menu:
   - name: About
     url: "/page/about/"
     weight: 2
-hasCJKLanguage: true
-theme: ghostwriter
+MetaDataFormat: yaml
+Params:
+  subtitle: Infinite Diversity in Infinite Combinations
+  logo: media/favicons/favicon-96x96.png
+Permalinks:
+  fixed: "/:slug"
+  post: "/:year/:month/:day/:slug"
+PygmentsUseClasses: true
+PygmentCodeFences: true
+Taxonomies:
+  tag: tags
+theme: beautifulhugo
 title: IDIC
