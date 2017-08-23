@@ -22,7 +22,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="IDIC" />
 
-    <meta name="generator" content="Hugo 0.20.7" />
+    <meta name="generator" content="Hugo 0.26" />
     <link rel="canonical" href="https://elim.github.io/2017/01/27/iterm2-with-tmux-on-sierra/" />
     <link rel="alternate" href="https://elim.github.io/index.xml" type="application/rss+xml" title="IDIC">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -51,6 +51,56 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/media/favicons/ms-icon-144x144.png">
 
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+
+
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+      <div class="pswp__bg"></div>
+
+      <div class="pswp__scroll-wrap">
+
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+
+            <div class="pswp__counter"></div>
+            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+            <button class="pswp__button pswp__button--share" title="Share"></button>
+            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+            <div class="pswp__share-tooltip"></div>
+          </div>
+          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+          </button>
+          <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+          </button>
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script>
 window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
@@ -145,7 +195,7 @@ ga('send', 'pageview');
 
 
 
-    <div class="container">
+    <div class="container" role="main">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           <article role="main" class="blog-post">
@@ -156,14 +206,14 @@ ga('send', 'pageview');
             </p>
 
             <blockquote class="twitter-tweet">
-              <p lang="ja" dir="ltr">iTerm2 + tmux で 2 つ目のタブをつくると最初のタブの描画がこわれるの、 2 つ目のタブができた時点でタブバーが表示されて、描画域がかわるからだった。どうも tmux がそれに追従できなくて 1 行たらない状態になるみたい。なぜ Sierra だけで起きるんだろう。</p>&mdash; lint厨👮🏻 (@elim)
+              <p lang="ja" dir="ltr">iTerm2 + tmux で 2 つ目のタブをつくると最初のタブの描画がこわれるの、 2 つ目のタブができた時点でタブバーが表示されて、描画域がかわるからだった。どうも tmux がそれに追従できなくて 1 行たらない状態になるみたい。なぜ Sierra だけで起きるんだろう。</p>&mdash; カフェイン中毒 (@elim)
               <a href="https://twitter.com/elim/status/824846849840254977">January 27, 2017</a>
             </blockquote>
             <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
             <p>
               <blockquote class="twitter-tweet">
-                <p lang="ja" dir="ltr">とりあえずの解決策としては、&quot;Preferences&quot; =&gt; &quot;Appearance&quot; =&gt; &quot;Show tab bar even when there is only one tab&quot; をオンにして、常にタブバーを表示すること。</p>&mdash; lint厨👮🏻 (@elim)
+                <p lang="ja" dir="ltr">とりあえずの解決策としては、&quot;Preferences&quot; =&gt; &quot;Appearance&quot; =&gt; &quot;Show tab bar even when there is only one tab&quot; をオンにして、常にタブバーを表示すること。</p>&mdash; カフェイン中毒 (@elim)
                 <a href="https://twitter.com/elim/status/824847217118679040">January 27, 2017</a>
               </blockquote>
               <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
@@ -230,13 +280,15 @@ ga('send', 'pageview');
 
             </ul>
             <p class="credits copyright text-muted">
+
+
               Takeru Naito &nbsp;&bull;&nbsp; 2017 &nbsp;&bull;&nbsp;
               <a href="https://elim.github.io/">IDIC</a>
 
             </p>
 
             <p class="credits theme-by text-muted">
-              <a href="http://gohugo.io">Hugo v0.20.7</a> powered &nbsp;&bull;&nbsp; Theme by
+              <a href="http://gohugo.io">Hugo v0.26</a> powered &nbsp;&bull;&nbsp; Theme by
               <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to
               <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
 
@@ -254,8 +306,9 @@ ga('send', 'pageview');
     <script src="https://elim.github.io/js/highlight.min.js"></script>
     <script> hljs.initHighlightingOnLoad(); </script>
     <script> renderMathInElement(document.body); </script>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+    <script src="https://elim.github.io/js/load-photoswipe.js"></script>
 
     <div id="fb-root"></div>
     <script>(function(d, s, id) {

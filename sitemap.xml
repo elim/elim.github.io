@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>https://elim.github.io/2017/01/30/confirm-before-killing-emacs/</loc>
@@ -44,6 +45,11 @@
   <url>
     <loc>https://elim.github.io/2015/05/18/temporarily-disable-the-chpwd-hooks-of-zsh/</loc>
     <lastmod>2015-05-18T22:36:15+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://elim.github.io/2014/01/01/quote/</loc>
+    <lastmod>2014-01-01T19:36:40+09:00</lastmod>
   </url>
   
   <url>
@@ -102,6 +108,12 @@
   <url>
     <loc>https://elim.github.io/tags/pull-request/</loc>
     <lastmod>2015-09-09T11:27:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://elim.github.io/tags/quote/</loc>
+    <lastmod>2014-01-01T19:36:40+09:00</lastmod>
     <priority>0</priority>
   </url>
   

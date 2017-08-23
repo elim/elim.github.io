@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quote on IDIC</title>
+    <link>https://elim.github.io/tags/quote/</link>
+    <description>Recent content in Quote on IDIC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>Takeru Naito</copyright>
+    <lastBuildDate>Wed, 01 Jan 2014 19:36:40 +0900</lastBuildDate>
+    
+	<atom:link href="https://elim.github.io/tags/quote/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Quote</title>
+      <link>https://elim.github.io/2014/01/01/quote/</link>
+      <pubDate>Wed, 01 Jan 2014 19:36:40 +0900</pubDate>
+      
+      <guid>https://elim.github.io/2014/01/01/quote/</guid>
+      <description> Change is the essential process of all existence.
+ By Spock, &amp;ldquo;Let That Be Your Last Battlefield&amp;rdquo;, stardate 5730.2
+Posted by Star Trek on&amp;nbsp;Wednesday, January 1, 2014   </description>
+    </item>
+    
+  </channel>
+</rss>
