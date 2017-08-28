@@ -30,5 +30,6 @@ PygmentsUseClasses: true
 PygmentCodeFences: true
 Taxonomies:
   tag: tags
+rssLimit: 1
 theme: beautifulhugo
 title: IDIC
