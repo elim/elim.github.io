@@ -6,21 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <title>Posts</title>
-    <meta property="og:title" content="Posts" />
-    <meta name="twitter:title" content="Posts" />
+    <title>Atomic Emacs</title>
+    <meta property="og:title" content="Atomic Emacs" />
+    <meta name="twitter:title" content="Atomic Emacs" />
+    <meta name="description" content="GhostText クッソ便利だ……。 https://t.co/u6VH1Qd2Xl &mdash; Takafumi ONAKA (@onk) August 26, 2017 Emacs 用があるかなーと思って探したらありました。 atomic-emacs. README では melpa からインストールする例がありましたが、私は el-get 使いな">
+    <meta property="og:description" content="GhostText クッソ便利だ……。 https://t.co/u6VH1Qd2Xl &mdash; Takafumi ONAKA (@onk) August 26, 2017 Emacs 用があるかなーと思って探したらありました。 atomic-emacs. README では melpa からインストールする例がありましたが、私は el-get 使いな">
+    <meta name="twitter:description" content="GhostText クッソ便利だ……。 https://t.co/u6VH1Qd2Xl &mdash; Takafumi ONAKA (@onk) August 26, 2017 Emacs 用があるかなーと思って探したらありました。 atomic-emacs. README では melpa からインストールする例がありましたが、私は el-get 使いな">
     <meta name="author" content="Takeru Naito" />
     <meta property="og:image" content="https://elim.github.io/media/favicons/favicon-96x96.png" />
     <meta name="twitter:image" content="https://elim.github.io/media/favicons/favicon-96x96.png" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@elim" />
     <meta name="twitter:creator" content="@elim" />
-    <meta property="og:url" content="https://elim.github.io/post/" />
+    <meta property="og:url" content="https://elim.github.io/2017/08/28/atomic-emacs/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="IDIC" />
 
     <meta name="generator" content="Hugo 0.26" />
-    <link rel="canonical" href="https://elim.github.io/post/" />
+    <link rel="canonical" href="https://elim.github.io/2017/08/28/atomic-emacs/" />
     <link rel="alternate" href="https://elim.github.io/index.xml" type="application/rss+xml" title="IDIC">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -160,14 +163,29 @@ ga('send', 'pageview');
 
 
 
+
+
+
+
+
     <header class="header-section ">
+
       <div class="intro-header no-img">
+
         <div class="container">
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-              <div class="page-heading">
-                <h1>Posts</h1>
-                <hr class="small">
+              <div class="post-heading">
+                <h1>Atomic Emacs</h1>
+
+
+                <span class="post-meta">
+                  Posted on August 28, 2017
+
+                </span>
+
+
+
               </div>
             </div>
           </div>
@@ -176,144 +194,69 @@ ga('send', 'pageview');
     </header>
 
 
+
     <div class="container" role="main">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <article role="main" class="blog-post">
+            <blockquote class="twitter-tweet">
+              <p lang="ja" dir="ltr">GhostText クッソ便利だ……。
+                <a href="https://t.co/u6VH1Qd2Xl">https://t.co/u6VH1Qd2Xl</a>
+              </p>&mdash; Takafumi ONAKA (@onk)
+              <a href="https://twitter.com/onk/status/901329085976109057">August 26, 2017</a>
+            </blockquote>
+            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-          <div class="posts-list">
+            <p>Emacs 用があるかなーと思って探したらありました。
+              <a href="https://github.com/alpha22jp/atomic-chrome" title="atomic-emacs">atomic-emacs</a>.</p>
 
-            <article class="post-preview">
-              <a href="https://elim.github.io/2015/05/18/temporarily-disable-the-chpwd-hooks-of-zsh/">
-                <h2 class="post-title">chpwd_functions</h2>
+            <p>README では melpa からインストールする例がありましたが、私は el-get 使いなので以下のようにしました。</p>
 
+            <p>
+              <a href="https://github.com/elim/dotemacs/commit/8a6a234">https://github.com/elim/dotemacs/commit/8a6a234</a>
+            </p>
 
-              </a>
+            <pre><code class="language-diff">diff --git a/config/packages.el b/config/packages.el
+index d93a5ba..bbadba6 100644
+--- a/config/packages.el
++++ b/config/packages.el
+@@ -19,6 +19,7 @@
+ (el-get-bundle tarao/with-eval-after-load-feature-el)
 
-              <p class="post-meta">
-                Posted on May 18, 2015
-              </p>
-              <div class="post-entry">
-
-                tl;dr Zsh で一時的に chpwd の hook を無効にしたいときは chpwd_function= を前置する。 $ chpwd_functions= cd 私の Zsh 環境で tab.bash を使ってみたところ、iTerm のタブを作成したあとの cd に失敗してし
-                <a href="https://elim.github.io/2015/05/18/temporarily-disable-the-chpwd-hooks-of-zsh/" class="post-read-more">[Read More]</a>
-
-              </div>
-
-
-              <span class="post-meta">
-
-                #
-                <a href="https://elim.github.io/tags/zsh/">zsh</a>&nbsp;
-
-              </span>
-
-
-            </article>
-
-            <article class="post-preview">
-              <a href="https://elim.github.io/2014/01/01/quote/">
-                <h2 class="post-title">Quote</h2>
-
-
-              </a>
-
-              <p class="post-meta">
-                Posted on January 1, 2014
-              </p>
-              <div class="post-entry">
-
-                <blockquote>
-                  <p>Change is the essential process of all existence.</p>
-                </blockquote>
-
-                <p>By Spock, &ldquo;Let That Be Your Last Battlefield&rdquo;, stardate 5730.2</p>
-
-                <div class="fb-post" data-href="https://www.facebook.com/StarTrek/photos/a.131005510249296.24356.122908054392375/887940221222484/?type=3" data-width="500" data-show-text="false">
-                  <blockquote cite="https://www.facebook.com/StarTrek/photos/a.131005510249296.24356.122908054392375/887940221222484/?type=3" class="fb-xfbml-parse-ignore">Posted by
-                    <a href="https://www.facebook.com/StarTrek/">Star Trek</a> on&nbsp;
-                    <a href="https://www.facebook.com/StarTrek/photos/a.131005510249296.24356.122908054392375/887940221222484/?type=3">Wednesday, January 1, 2014</a>
-                  </blockquote>
-                </div>
-
-
-              </div>
-
-
-              <span class="post-meta">
-
-                #
-                <a href="https://elim.github.io/tags/quote/">quote</a>&nbsp;
-
-              </span>
-
-
-            </article>
-
-            <article class="post-preview">
-              <a href="https://elim.github.io/2013/06/28/upload-image-to-your-github-wiki-page/">
-                <h2 class="post-title">GitHub の Wiki に表示する画像を git で上げる</h2>
-
-
-              </a>
-
-              <p class="post-meta">
-                Posted on June 28, 2013
-              </p>
-              <div class="post-entry">
-
-
-
-                <h1 id="tl-dr">tl;dr</h1>
-
-                <pre><code>$ git clone git@github.com:&lt;username&gt;/&lt;repository&gt;.wiki.git
-$ cd &lt;repository&gt;.wiki
-$ mkdir images
-$ cp path/to/image_file images
-$ git -a -m 'Attach images'
-$ open https://github.com/&lt;username&gt;/&lt;repository&gt;/wiki/&lt;pagename&gt;
+ (el-get-bundle ag)
++(el-get-bundle alpha22jp/atomic-chrome :depends (let-alist websocket))
+ (el-get-bundle anzu)
+ (el-get-bundle buffer-move)
+ (el-get-bundle company-mode)
+diff --git a/config/packages/init-atomic-chrome.el b/config/packages/init-atomic-chrome.el
+new file mode 100644
+index 0000000..0fae668
+--- /dev/null
++++ b/config/packages/init-atomic-chrome.el
+@@ -0,0 +1,9 @@
++;;; init-atomic-chrome.el --- A setting of the atomic-chrome.
++;;; Commentary:
++;;; Code:
++
++(require 'atomic-chrome)
++(atomic-chrome-start-server)
++
++(provide 'init-atomic-chrome)
++;;; init-atomic-chrome.el ends here
 </code></pre>
 
-                <p>And put
-                  <code>[[/images/image_file]]</code> to your wiki page.</p>
+          </article>
 
-                <p>That&rsquo;s it.</p>
-
-                <hr />
-
-                <p>情報元:
-                  <a href="https://github.com/wicketstuff/core/wiki/Editing-Wiki-Locally">Editing Wiki Locally</a>
-                </p>
-
-                <p>この方法を使えば、好きな画像を wiki に貼り付けることができます :)</p>
-
-                <hr />
-
-
-              </div>
-
-
-              <span class="post-meta">
-
-                #
-                <a href="https://elim.github.io/tags/github/">github</a>&nbsp; #
-
-                <a href="https://elim.github.io/tags/wiki/">wiki</a>&nbsp;
-
-              </span>
-
-
-            </article>
-
-          </div>
-
-          <ul class="pager main-pager">
+          <ul class="pager blog-pager">
 
             <li class="previous">
-              <a href="/post/page/1">&larr; Newer Posts</a>
+              <a href="https://elim.github.io/2017/08/28/specify-formula/" data-toggle="tooltip" data-placement="top" title="salt-ssh で formula を指定して適用する">&larr; Previous Post</a>
             </li>
 
 
           </ul>
+
+
 
         </div>
       </div>
