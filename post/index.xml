@@ -7,25 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Takeru Naito</copyright>
-    <lastBuildDate>Wed, 23 Aug 2017 15:49:27 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 Aug 2017 16:24:53 +0000</lastBuildDate>
     
         <atom:link href="https://elim.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>salt-ssh で TemplateNotFound がでたら</title>
-      <link>https://elim.github.io/2017/08/23/extra_filerefs/</link>
-      <pubDate>Wed, 23 Aug 2017 15:49:27 +0000</pubDate>
+      <title>salt-ssh で formula を指定して適用する</title>
+      <link>https://elim.github.io/2017/08/28/specify-formula/</link>
+      <pubDate>Mon, 28 Aug 2017 16:24:53 +0000</pubDate>
       
-      <guid>https://elim.github.io/2017/08/23/extra_filerefs/</guid>
-      <description>&lt;p&gt;&lt;code&gt;salt/master&lt;/code&gt; で extra_filerefs を設定すると、解決できるようになる。&lt;/p&gt;
+      <guid>https://elim.github.io/2017/08/28/specify-formula/</guid>
+      <description>&lt;p&gt;&lt;code&gt;state.apply&lt;/code&gt; に formula を渡す。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;extra_filerefs:
-  - salt://logrotate/map.jinja
-  - salt://logrotate/defaults.yaml
+&lt;pre&gt;&lt;code&gt;salt-ssh [options] &#39;&amp;lt;target&amp;gt;&#39; state.apply users
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Ref: &lt;a href=&#34;https://github.com/saltstack/salt/issues/21370&#34;&gt;saltstack/salt#21370&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2 つ以上渡す場合はカンマで区切る。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;salt-ssh [options] &#39;&amp;lt;target&amp;gt;&#39; state.apply users,logrotate
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

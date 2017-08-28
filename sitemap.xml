@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://elim.github.io/2017/08/28/specify-formula/</loc>
+    <lastmod>2017-08-28T16:24:53+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://elim.github.io/2017/08/23/extra_filerefs/</loc>
     <lastmod>2017-08-23T15:49:27+00:00</lastmod>
   </url>
@@ -88,7 +93,7 @@
   
   <url>
     <loc>https://elim.github.io/</loc>
-    <lastmod>2017-08-23T15:49:27+00:00</lastmod>
+    <lastmod>2017-08-28T16:24:53+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -106,7 +111,7 @@
   
   <url>
     <loc>https://elim.github.io/post/</loc>
-    <lastmod>2017-08-23T15:49:27+00:00</lastmod>
+    <lastmod>2017-08-28T16:24:53+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -124,13 +129,13 @@
   
   <url>
     <loc>https://elim.github.io/tags/salt-ssh/</loc>
-    <lastmod>2017-08-23T15:49:27+00:00</lastmod>
+    <lastmod>2017-08-28T16:24:53+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://elim.github.io/tags/saltstack/</loc>
-    <lastmod>2017-08-23T15:49:27+00:00</lastmod>
+    <lastmod>2017-08-28T16:24:53+00:00</lastmod>
     <priority>0</priority>
   </url>
   

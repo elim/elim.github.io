@@ -183,6 +183,45 @@ ga('send', 'pageview');
           <div class="posts-list">
 
             <article class="post-preview">
+              <a href="https://elim.github.io/2017/08/28/specify-formula/">
+                <h2 class="post-title">salt-ssh で formula を指定して適用する</h2>
+
+
+              </a>
+
+              <p class="post-meta">
+                Posted on August 28, 2017
+              </p>
+              <div class="post-entry">
+
+                <p>
+                  <code>state.apply</code> に formula を渡す。</p>
+
+                <pre><code>salt-ssh [options] '&lt;target&gt;' state.apply users
+</code></pre>
+
+                <p>2 つ以上渡す場合はカンマで区切る。</p>
+
+                <pre><code>salt-ssh [options] '&lt;target&gt;' state.apply users,logrotate
+</code></pre>
+
+
+              </div>
+
+
+              <span class="post-meta">
+
+                #
+                <a href="https://elim.github.io/tags/saltstack/">saltstack</a>&nbsp; #
+
+                <a href="https://elim.github.io/tags/salt-ssh/">salt-ssh</a>&nbsp;
+
+              </span>
+
+
+            </article>
+
+            <article class="post-preview">
               <a href="https://elim.github.io/2017/08/23/extra_filerefs/">
                 <h2 class="post-title">salt-ssh で TemplateNotFound がでたら</h2>
 
@@ -451,45 +490,6 @@ ga('send', 'pageview');
 
                 #
                 <a href="https://elim.github.io/tags/zsh/">zsh</a>&nbsp;
-
-              </span>
-
-
-            </article>
-
-            <article class="post-preview">
-              <a href="https://elim.github.io/2014/01/01/quote/">
-                <h2 class="post-title">Quote</h2>
-
-
-              </a>
-
-              <p class="post-meta">
-                Posted on January 1, 2014
-              </p>
-              <div class="post-entry">
-
-                <blockquote>
-                  <p>Change is the essential process of all existence.</p>
-                </blockquote>
-
-                <p>By Spock, &ldquo;Let That Be Your Last Battlefield&rdquo;, stardate 5730.2</p>
-
-                <div class="fb-post" data-href="https://www.facebook.com/StarTrek/photos/a.131005510249296.24356.122908054392375/887940221222484/?type=3" data-width="500" data-show-text="false">
-                  <blockquote cite="https://www.facebook.com/StarTrek/photos/a.131005510249296.24356.122908054392375/887940221222484/?type=3" class="fb-xfbml-parse-ignore">Posted by
-                    <a href="https://www.facebook.com/StarTrek/">Star Trek</a> on&nbsp;
-                    <a href="https://www.facebook.com/StarTrek/photos/a.131005510249296.24356.122908054392375/887940221222484/?type=3">Wednesday, January 1, 2014</a>
-                  </blockquote>
-                </div>
-
-
-              </div>
-
-
-              <span class="post-meta">
-
-                #
-                <a href="https://elim.github.io/tags/quote/">quote</a>&nbsp;
 
               </span>
 
