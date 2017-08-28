@@ -9,7 +9,7 @@
     <copyright>Takeru Naito</copyright>
     <lastBuildDate>Wed, 01 Jan 2014 19:36:40 +0900</lastBuildDate>
     
-	<atom:link href="https://elim.github.io/tags/quote/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://elim.github.io/tags/quote/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,9 +18,21 @@
       <pubDate>Wed, 01 Jan 2014 19:36:40 +0900</pubDate>
       
       <guid>https://elim.github.io/2014/01/01/quote/</guid>
-      <description> Change is the essential process of all existence.
- By Spock, &amp;ldquo;Let That Be Your Last Battlefield&amp;rdquo;, stardate 5730.2
-Posted by Star Trek on&amp;nbsp;Wednesday, January 1, 2014   </description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Change is the essential process of all existence.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;By Spock, &amp;ldquo;Let That Be Your Last Battlefield&amp;rdquo;, stardate 5730.2&lt;/p&gt;
+
+&lt;div class=&#34;fb-post&#34;
+     data-href=&#34;https://www.facebook.com/StarTrek/photos/a.131005510249296.24356.122908054392375/887940221222484/?type=3&#34;
+     data-width=&#34;500&#34;
+     data-show-text=&#34;false&#34;&gt;
+    &lt;blockquote cite=&#34;https://www.facebook.com/StarTrek/photos/a.131005510249296.24356.122908054392375/887940221222484/?type=3&#34;
+                class=&#34;fb-xfbml-parse-ignore&#34;&gt;Posted by &lt;a href=&#34;https://www.facebook.com/StarTrek/&#34;&gt;Star Trek&lt;/a&gt; on&amp;nbsp;&lt;a href=&#34;https://www.facebook.com/StarTrek/photos/a.131005510249296.24356.122908054392375/887940221222484/?type=3&#34;&gt;Wednesday, January 1, 2014&lt;/a&gt;
+    &lt;/blockquote&gt;
+&lt;/div&gt;
+</description>
     </item>
     
   </channel>

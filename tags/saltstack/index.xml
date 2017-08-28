@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on IDIC</title>
-    <link>https://elim.github.io/post/</link>
-    <description>Recent content in Posts on IDIC</description>
+    <title>Saltstack on IDIC</title>
+    <link>https://elim.github.io/tags/saltstack/</link>
+    <description>Recent content in Saltstack on IDIC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Takeru Naito</copyright>
     <lastBuildDate>Wed, 23 Aug 2017 15:49:27 +0000</lastBuildDate>
     
-        <atom:link href="https://elim.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://elim.github.io/tags/saltstack/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

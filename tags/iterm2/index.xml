@@ -9,7 +9,7 @@
     <copyright>Takeru Naito</copyright>
     <lastBuildDate>Fri, 27 Jan 2017 14:30:00 +0900</lastBuildDate>
     
-	<atom:link href="https://elim.github.io/tags/iterm2/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://elim.github.io/tags/iterm2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,7 +18,16 @@
       <pubDate>Fri, 27 Jan 2017 14:30:00 +0900</pubDate>
       
       <guid>https://elim.github.io/2017/01/27/iterm2-with-tmux-on-sierra/</guid>
-      <description>ここの設定を変えると幸せになれます。 iTerm2 + tmux で 2 つ目のタブをつくると最初のタブの描画がこわれるの、 2 つ目のタブができた時点でタブバーが表示され</description>
+      <description>&lt;p&gt;ここの設定を変えると幸せになれます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://elim.github.io/media/2017/02/27/iterm2-appearance.png&#34; alt=&#34;iTerm2 の Appearance 設定の画面。 &amp;quot;Show tab bar even when there is only one tab&amp;quot; にチェックを入れている&#34; title=&#34;iTerm2 の Appearance 設定&#34; /&gt;&lt;/p&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;iTerm2 + tmux で 2 つ目のタブをつくると最初のタブの描画がこわれるの、 2 つ目のタブができた時点でタブバーが表示されて、描画域がかわるからだった。どうも tmux がそれに追従できなくて 1 行たらない状態になるみたい。なぜ Sierra だけで起きるんだろう。&lt;/p&gt;&amp;mdash; カフェイン中毒 (@elim) &lt;a href=&#34;https://twitter.com/elim/status/824846849840254977&#34;&gt;January 27, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;とりあえずの解決策としては、&amp;quot;Preferences&amp;quot; =&amp;gt; &amp;quot;Appearance&amp;quot; =&amp;gt; &amp;quot;Show tab bar even when there is only one tab&amp;quot; をオンにして、常にタブバーを表示すること。&lt;/p&gt;&amp;mdash; カフェイン中毒 (@elim) &lt;a href=&#34;https://twitter.com/elim/status/824847217118679040&#34;&gt;January 27, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+</description>
     </item>
     
   </channel>

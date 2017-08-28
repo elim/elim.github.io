@@ -6,21 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <title>Tags</title>
-    <meta property="og:title" content="Tags" />
-    <meta name="twitter:title" content="Tags" />
+    <title>Saltstack</title>
+    <meta property="og:title" content="Saltstack" />
+    <meta name="twitter:title" content="Saltstack" />
     <meta name="author" content="Takeru Naito" />
     <meta property="og:image" content="https://elim.github.io/media/favicons/favicon-96x96.png" />
     <meta name="twitter:image" content="https://elim.github.io/media/favicons/favicon-96x96.png" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@elim" />
     <meta name="twitter:creator" content="@elim" />
-    <meta property="og:url" content="https://elim.github.io/tags/" />
+    <meta property="og:url" content="https://elim.github.io/tags/saltstack/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="IDIC" />
 
     <meta name="generator" content="Hugo 0.26" />
-    <link rel="canonical" href="https://elim.github.io/tags/" />
+    <link rel="canonical" href="https://elim.github.io/tags/saltstack/" />
     <link rel="alternate" href="https://elim.github.io/index.xml" type="application/rss+xml" title="IDIC">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -160,22 +160,14 @@ ga('send', 'pageview');
 
 
 
-
-
-
-
-
     <header class="header-section ">
-
       <div class="intro-header no-img">
-
         <div class="container">
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
               <div class="page-heading">
-                <h1>Tags</h1>
-
-
+                <h1>#Saltstack</h1>
+                <hr class="small">
               </div>
             </div>
           </div>
@@ -184,79 +176,56 @@ ga('send', 'pageview');
     </header>
 
 
-
-
     <div class="container" role="main">
-      <article class="post-preview">
-        <div class="list-group col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-          <a href="https://elim.github.io/tags/emacs/" class="list-group-item">
-            emacs
-            <span class="badge">2</span>
-          </a>
+          <div class="posts-list">
 
-          <a href="https://elim.github.io/tags/github/" class="list-group-item">
-            github
-            <span class="badge">2</span>
-          </a>
+            <article class="post-preview">
+              <a href="https://elim.github.io/2017/08/23/extra_filerefs/">
+                <h2 class="post-title">salt-ssh で TemplateNotFound がでたら</h2>
 
-          <a href="https://elim.github.io/tags/docker/" class="list-group-item">
-            docker
-            <span class="badge">1</span>
-          </a>
 
-          <a href="https://elim.github.io/tags/esa/" class="list-group-item">
-            esa
-            <span class="badge">1</span>
-          </a>
+              </a>
 
-          <a href="https://elim.github.io/tags/iterm2/" class="list-group-item">
-            iterm2
-            <span class="badge">1</span>
-          </a>
+              <p class="post-meta">
+                Posted on August 23, 2017
+              </p>
+              <div class="post-entry">
 
-          <a href="https://elim.github.io/tags/pull-request/" class="list-group-item">
-            pull-request
-            <span class="badge">1</span>
-          </a>
+                <p>
+                  <code>salt/master</code> で extra_filerefs を設定すると、解決できるようになる。</p>
 
-          <a href="https://elim.github.io/tags/quote/" class="list-group-item">
-            quote
-            <span class="badge">1</span>
-          </a>
+                <pre><code class="language-yaml">extra_filerefs:
+  - salt://logrotate/map.jinja
+  - salt://logrotate/defaults.yaml
+</code></pre>
 
-          <a href="https://elim.github.io/tags/salt-ssh/" class="list-group-item">
-            salt-ssh
-            <span class="badge">1</span>
-          </a>
+                <p>Ref:
+                  <a href="https://github.com/saltstack/salt/issues/21370">saltstack/salt#21370</a>
+                </p>
 
-          <a href="https://elim.github.io/tags/saltstack/" class="list-group-item">
-            saltstack
-            <span class="badge">1</span>
-          </a>
 
-          <a href="https://elim.github.io/tags/sierra/" class="list-group-item">
-            sierra
-            <span class="badge">1</span>
-          </a>
+              </div>
 
-          <a href="https://elim.github.io/tags/tmux/" class="list-group-item">
-            tmux
-            <span class="badge">1</span>
-          </a>
 
-          <a href="https://elim.github.io/tags/wiki/" class="list-group-item">
-            wiki
-            <span class="badge">1</span>
-          </a>
+              <span class="post-meta">
 
-          <a href="https://elim.github.io/tags/zsh/" class="list-group-item">
-            zsh
-            <span class="badge">1</span>
-          </a>
+                #
+                <a href="https://elim.github.io/tags/saltstack/">saltstack</a>&nbsp; #
+
+                <a href="https://elim.github.io/tags/salt-ssh/">salt-ssh</a>&nbsp;
+
+              </span>
+
+
+            </article>
+
+          </div>
 
         </div>
-      </article>
+      </div>
     </div>
 
     <footer>

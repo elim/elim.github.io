@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://elim.github.io/2017/08/23/extra_filerefs/</loc>
+    <lastmod>2017-08-23T15:49:27+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://elim.github.io/2017/01/30/confirm-before-killing-emacs/</loc>
     <lastmod>2017-01-30T14:00:00+09:00</lastmod>
   </url>
@@ -83,7 +88,7 @@
   
   <url>
     <loc>https://elim.github.io/</loc>
-    <lastmod>2017-01-30T14:00:00+09:00</lastmod>
+    <lastmod>2017-08-23T15:49:27+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -101,7 +106,7 @@
   
   <url>
     <loc>https://elim.github.io/post/</loc>
-    <lastmod>2017-01-30T14:00:00+09:00</lastmod>
+    <lastmod>2017-08-23T15:49:27+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -114,6 +119,18 @@
   <url>
     <loc>https://elim.github.io/tags/quote/</loc>
     <lastmod>2014-01-01T19:36:40+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://elim.github.io/tags/salt-ssh/</loc>
+    <lastmod>2017-08-23T15:49:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://elim.github.io/tags/saltstack/</loc>
+    <lastmod>2017-08-23T15:49:27+00:00</lastmod>
     <priority>0</priority>
   </url>
   

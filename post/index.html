@@ -183,6 +183,46 @@ ga('send', 'pageview');
           <div class="posts-list">
 
             <article class="post-preview">
+              <a href="https://elim.github.io/2017/08/23/extra_filerefs/">
+                <h2 class="post-title">salt-ssh で TemplateNotFound がでたら</h2>
+
+
+              </a>
+
+              <p class="post-meta">
+                Posted on August 23, 2017
+              </p>
+              <div class="post-entry">
+
+                <p>
+                  <code>salt/master</code> で extra_filerefs を設定すると、解決できるようになる。</p>
+
+                <pre><code class="language-yaml">extra_filerefs:
+  - salt://logrotate/map.jinja
+  - salt://logrotate/defaults.yaml
+</code></pre>
+
+                <p>Ref:
+                  <a href="https://github.com/saltstack/salt/issues/21370">saltstack/salt#21370</a>
+                </p>
+
+
+              </div>
+
+
+              <span class="post-meta">
+
+                #
+                <a href="https://elim.github.io/tags/saltstack/">saltstack</a>&nbsp; #
+
+                <a href="https://elim.github.io/tags/salt-ssh/">salt-ssh</a>&nbsp;
+
+              </span>
+
+
+            </article>
+
+            <article class="post-preview">
               <a href="https://elim.github.io/2017/01/30/confirm-before-killing-emacs/">
                 <h2 class="post-title">Emacs を終了する前に確認する</h2>
 
@@ -456,62 +496,16 @@ ga('send', 'pageview');
 
             </article>
 
-            <article class="post-preview">
-              <a href="https://elim.github.io/2013/06/28/upload-image-to-your-github-wiki-page/">
-                <h2 class="post-title">GitHub の Wiki に表示する画像を git で上げる</h2>
-
-
-              </a>
-
-              <p class="post-meta">
-                Posted on June 28, 2013
-              </p>
-              <div class="post-entry">
-
-
-
-                <h1 id="tl-dr">tl;dr</h1>
-
-                <pre><code>$ git clone git@github.com:&lt;username&gt;/&lt;repository&gt;.wiki.git
-$ cd &lt;repository&gt;.wiki
-$ mkdir images
-$ cp path/to/image_file images
-$ git -a -m 'Attach images'
-$ open https://github.com/&lt;username&gt;/&lt;repository&gt;/wiki/&lt;pagename&gt;
-</code></pre>
-
-                <p>And put
-                  <code>[[/images/image_file]]</code> to your wiki page.</p>
-
-                <p>That&rsquo;s it.</p>
-
-                <hr />
-
-                <p>情報元:
-                  <a href="https://github.com/wicketstuff/core/wiki/Editing-Wiki-Locally">Editing Wiki Locally</a>
-                </p>
-
-                <p>この方法を使えば、好きな画像を wiki に貼り付けることができます :)</p>
-
-                <hr />
-
-
-              </div>
-
-
-              <span class="post-meta">
-
-                #
-                <a href="https://elim.github.io/tags/github/">github</a>&nbsp; #
-
-                <a href="https://elim.github.io/tags/wiki/">wiki</a>&nbsp;
-
-              </span>
-
-
-            </article>
-
           </div>
+
+          <ul class="pager main-pager">
+
+
+            <li class="next">
+              <a href="/post/page/2">Older Posts &rarr;</a>
+            </li>
+
+          </ul>
 
         </div>
       </div>

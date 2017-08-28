@@ -7,110 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Takeru Naito</copyright>
-    <lastBuildDate>Mon, 30 Jan 2017 14:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 23 Aug 2017 15:49:27 +0000</lastBuildDate>
     
-	<atom:link href="https://elim.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://elim.github.io/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Emacs を終了する前に確認する</title>
-      <link>https://elim.github.io/2017/01/30/confirm-before-killing-emacs/</link>
-      <pubDate>Mon, 30 Jan 2017 14:00:00 +0900</pubDate>
-      
-      <guid>https://elim.github.io/2017/01/30/confirm-before-killing-emacs/</guid>
-      <description>どうも最近、知らずしらずのうちにアプリケーションを落としてしまうのです。どうやら Hammerspoon の設定がわるいようで、ふとした拍子に Cmd+q か何かを送ってしまう</description>
-    </item>
     
     <item>
-      <title>Sierra 上の iTerm2 上の tmux</title>
-      <link>https://elim.github.io/2017/01/27/iterm2-with-tmux-on-sierra/</link>
-      <pubDate>Fri, 27 Jan 2017 14:30:00 +0900</pubDate>
+      <title>salt-ssh で TemplateNotFound がでたら</title>
+      <link>https://elim.github.io/2017/08/23/extra_filerefs/</link>
+      <pubDate>Wed, 23 Aug 2017 15:49:27 +0000</pubDate>
       
-      <guid>https://elim.github.io/2017/01/27/iterm2-with-tmux-on-sierra/</guid>
-      <description>ここの設定を変えると幸せになれます。 iTerm2 + tmux で 2 つ目のタブをつくると最初のタブの描画がこわれるの、 2 つ目のタブができた時点でタブバーが表示され</description>
-    </item>
-    
-    <item>
-      <title>detach keys</title>
-      <link>https://elim.github.io/2017/01/17/detach-keys/</link>
-      <pubDate>Tue, 17 Jan 2017 23:08:18 +0900</pubDate>
-      
-      <guid>https://elim.github.io/2017/01/17/detach-keys/</guid>
-      <description>docker-compose run や docker-compose exec をすると C-p の動作がおかしくてずっと困っていました。 これは Docker のデタッチが C-p C-q だったからなんですね。 デタッチ機能はときどき使っていたの</description>
-    </item>
-    
-    <item>
-      <title>esa のクライアントをいろいろ試す</title>
-      <link>https://elim.github.io/2017/01/17/esa-clients/</link>
-      <pubDate>Tue, 17 Jan 2017 12:31:19 +0900</pubDate>
-      
-      <guid>https://elim.github.io/2017/01/17/esa-clients/</guid>
-      <description>esa.io クライアントを kotori から Quail に乗り換えた を見て Quail を試しています。 ブラウザと ⌘-TAB で切り替えて作業できるのが良いですね。 おや。 この記事のお陰か</description>
-    </item>
-    
-    <item>
-      <title>ふりかえり</title>
-      <link>https://elim.github.io/2017/01/13/retrospective/</link>
-      <pubDate>Fri, 13 Jan 2017 10:15:07 +0000</pubDate>
-      
-      <guid>https://elim.github.io/2017/01/13/retrospective/</guid>
-      <description>3 年前の自分がいいこと言ってた。 &amp;#x300e;&amp;#x4e0e;&amp;#x3048;&amp;#x3089;&amp;#x308c;&amp;#x305f;&amp;#x74b0;&amp;#x5883;&amp;#x3067;&amp;#x6700;&amp;#x5584;&amp;#x3092;&amp;#x5c3d;&amp;#x304f;&amp;#x3059;&amp;#x300f;&amp;#x3053;&amp;#x3068;&amp;#x306e;&amp;#x4e2d;&amp;#x306b;&amp;#x300e;&amp;#x4e0e;&amp;#x3048;&amp;#x3089;&amp;#x308c;&amp;#x305f;&amp;#x74b0;&amp;#x5883;&amp;#x306e;&amp;#x5909;&amp;#x5316;&amp;#x3092;&amp;#x4fc3;&amp;#x3059;&amp;#x300f;&amp;#x3053;&amp;#x3068;&amp;#x3082;&amp;#x542b;&amp;#x307e;&amp;#x308c;&amp;#x308b;&amp;#x3093;&amp;#x3060;&amp;#x306a;&amp;#x3042;&amp;#x3068;&amp;#x3001;&amp;#x4eca;&amp;#x66f4;&amp;#x306a;&amp;#x304c;&amp;#x3089;&amp;#x3002; Posted by Takeru Naito on&amp;nbsp;Monday, January 13, 2014 どこかでこのこと、忘れちゃってたなあ。 これからの 3 年間はこれに努めよう。</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://elim.github.io/page/about/</link>
-      <pubDate>Wed, 30 Dec 2015 20:00:00 +0000</pubDate>
-      
-      <guid>https://elim.github.io/page/about/</guid>
-      <description>とりあえず StrengthsFinder の結果でも。 概要 収集心 共感性 信念 運命思考 内省 概要 The Gallup Organizationが長年に渡って実施してきた調査によると、仕事を最も効</description>
-    </item>
-    
-    <item>
-      <title>Emacs 用 Powerline を別なパッケージにした</title>
-      <link>https://elim.github.io/2015/09/22/selects-another-powerline-for-emacs-package/</link>
-      <pubDate>Tue, 22 Sep 2015 10:29:19 +0900</pubDate>
-      
-      <guid>https://elim.github.io/2015/09/22/selects-another-powerline-for-emacs-package/</guid>
-      <description>BYOD していた現場から「よかったらこの Mac Pro 使ってください」という願ってもないお話をいただきまして。 喜び勇んで Xcode やら Homebrew やら Emacs やらを入れていたわけで</description>
-    </item>
-    
-    <item>
-      <title>Pull Reqest が取り込まれた</title>
-      <link>https://elim.github.io/2015/09/09/pull-reqest-was-incorporated/</link>
-      <pubDate>Wed, 09 Sep 2015 11:27:00 +0000</pubDate>
-      
-      <guid>https://elim.github.io/2015/09/09/pull-reqest-was-incorporated/</guid>
-      <description>ここで使わせていただいてるテーマの Steam へ Pull Request を送ったところ、無事取り込んでいただけました。 修正点 いずれも投稿日時の表示に関するものです。 投稿日</description>
-    </item>
-    
-    <item>
-      <title>chpwd_functions</title>
-      <link>https://elim.github.io/2015/05/18/temporarily-disable-the-chpwd-hooks-of-zsh/</link>
-      <pubDate>Mon, 18 May 2015 22:36:15 +0900</pubDate>
-      
-      <guid>https://elim.github.io/2015/05/18/temporarily-disable-the-chpwd-hooks-of-zsh/</guid>
-      <description>tl;dr Zsh で一時的に chpwd の hook を無効にしたいときは chpwd_function= を前置する。 $ chpwd_functions= cd 私の Zsh 環境で tab.bash を使ってみたところ、iTerm のタブを作成したあとの cd に失敗してし</description>
-    </item>
-    
-    <item>
-      <title>Quote</title>
-      <link>https://elim.github.io/2014/01/01/quote/</link>
-      <pubDate>Wed, 01 Jan 2014 19:36:40 +0900</pubDate>
-      
-      <guid>https://elim.github.io/2014/01/01/quote/</guid>
-      <description> Change is the essential process of all existence.
- By Spock, &amp;ldquo;Let That Be Your Last Battlefield&amp;rdquo;, stardate 5730.2
-Posted by Star Trek on&amp;nbsp;Wednesday, January 1, 2014   </description>
-    </item>
-    
-    <item>
-      <title>GitHub の Wiki に表示する画像を git で上げる</title>
-      <link>https://elim.github.io/2013/06/28/upload-image-to-your-github-wiki-page/</link>
-      <pubDate>Fri, 28 Jun 2013 02:00:00 +0900</pubDate>
-      
-      <guid>https://elim.github.io/2013/06/28/upload-image-to-your-github-wiki-page/</guid>
-      <description>tl;dr $ git clone git@github.com:&amp;lt;username&amp;gt;/&amp;lt;repository&amp;gt;.wiki.git $ cd &amp;lt;repository&amp;gt;.wiki $ mkdir images $ cp path/to/image_file images $ git -a -m &#39;Attach images&#39; $ open https://github.com/&amp;lt;username&amp;gt;/&amp;lt;repository&amp;gt;/wiki/&amp;lt;pagename&amp;gt; And put [[/images/image_file]] to your wiki page. That&amp;rsquo;s it. 情報元: Editing Wiki Locally この方法を使えば、好きな画像を wiki に貼り付けることができます :)</description>
+      <guid>https://elim.github.io/2017/08/23/extra_filerefs/</guid>
+      <description>&lt;p&gt;&lt;code&gt;salt/master&lt;/code&gt; で extra_filerefs を設定すると、解決できるようになる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;extra_filerefs:
+  - salt://logrotate/map.jinja
+  - salt://logrotate/defaults.yaml
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ref: &lt;a href=&#34;https://github.com/saltstack/salt/issues/21370&#34;&gt;saltstack/salt#21370&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
   </channel>

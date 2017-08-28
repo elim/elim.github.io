@@ -9,7 +9,7 @@
     <copyright>Takeru Naito</copyright>
     <lastBuildDate>Mon, 18 May 2015 22:36:15 +0900</lastBuildDate>
     
-	<atom:link href="https://elim.github.io/tags/zsh/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://elim.github.io/tags/zsh/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,7 +18,39 @@
       <pubDate>Mon, 18 May 2015 22:36:15 +0900</pubDate>
       
       <guid>https://elim.github.io/2015/05/18/temporarily-disable-the-chpwd-hooks-of-zsh/</guid>
-      <description>tl;dr Zsh で一時的に chpwd の hook を無効にしたいときは chpwd_function= を前置する。 $ chpwd_functions= cd 私の Zsh 環境で tab.bash を使ってみたところ、iTerm のタブを作成したあとの cd に失敗してし</description>
+      <description>
+
+&lt;h2 id=&#34;tl-dr&#34;&gt;tl;dr&lt;/h2&gt;
+
+&lt;p&gt;Zsh で一時的に chpwd の hook を無効にしたいときは &lt;code&gt;chpwd_function=&lt;/code&gt; を前置する。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ chpwd_functions= cd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;私の &lt;em&gt;Zsh&lt;/em&gt; 環境で &lt;a href=&#34;https://gist.github.com/bobthecow/757788&#34;&gt;tab.bash&lt;/a&gt; を使ってみたところ、iTerm のタブを作成したあとの &lt;code&gt;cd&lt;/code&gt; に失敗してしまいました。&lt;/p&gt;
+
+&lt;p&gt;chpwd 時に ls する hook を入れていたため &lt;code&gt;$cdto&lt;/code&gt; 内にディレクトリ内のファイルが列挙されてしまっていたようです。&lt;/p&gt;
+
+&lt;p&gt;以下のように書き換えることで、私の環境でも &lt;a href=&#34;https://gist.github.com/bobthecow/757788&#34;&gt;tab.bash&lt;/a&gt; を動作させることができました。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-diff&#34;&gt;diff --git a/tab.bash b/tab.bash
+old mode 100644
+new mode 100755
+index 85a0e2c..d2ddf7a
+--- a/tab.bash
++++ b/tab.bash
+@@ -23,7 +23,7 @@ function tab () {
+     local args=&amp;quot;$@&amp;quot;
+
+     if [ -d &amp;quot;$1&amp;quot; ]; then
+-        cdto=`cd &amp;quot;$1&amp;quot;; pwd`
++        cdto=`chpwd_functions= cd &amp;quot;$1&amp;quot;; pwd`
+         args=&amp;quot;${@:2}&amp;quot;
+     fi
+&lt;/code&gt;&lt;/pre&gt;
+</description>
     </item>
     
   </channel>
