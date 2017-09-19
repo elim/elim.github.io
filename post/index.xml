@@ -7,10 +7,68 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Takeru Naito</copyright>
-    <lastBuildDate>Mon, 28 Aug 2017 16:33:35 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 Sep 2017 05:01:28 +0000</lastBuildDate>
     
         <atom:link href="https://elim.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Essential Process</title>
+      <link>https://elim.github.io/2017/09/19/essential-process/</link>
+      <pubDate>Tue, 19 Sep 2017 05:01:28 +0000</pubDate>
+      
+      <guid>https://elim.github.io/2017/09/19/essential-process/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.cbs.com/shows/star-trek-discovery/&#34; title=&#34;Star Trek: Discovery | Official Site | Trailer and Cast Info - CBS.com&#34;&gt;Star Trek: Discovery&lt;/a&gt; のトレイラーを見ていたら聞き覚えのある言葉が流れてきました。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/oWnYtyNKPsA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;p&gt;&lt;a href=&#34;https://youtu.be/oWnYtyNKPsA?t=67&#34; title=&#34;Star Trek: Discovery | Official Trailer [HD] | Netflix - YouTube&#34;&gt;01:07 の時点&lt;/a&gt;で、サレクと思われるヴァルカン男性が &amp;ldquo;Change is the essential process of all existence.&amp;rdquo; と言っています。&lt;/p&gt;
+
+&lt;p&gt;これはかつてスポックが言った台詞でもあります&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;。そのエピソードでは、他星における人種衝突が描かれていました。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;劇中、一方に属する男がこう言います。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;He cannot change.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;と。そして、それを受けてスポックが発した言葉が&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Change is the essential process of all existence.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;です。 (&lt;a href=&#34;http://www.startrek.com/database_article/let-that-be-your-last-battlefield&#34; title=&#34;Star Trek Let That Be Your Last Battlefield&#34;&gt;&amp;ldquo;Let That Be Your Last Battlefield&amp;rdquo;&lt;/a&gt; stardate 5730.2.)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;私はこの言葉が好きで、&lt;a href=&#34;https://elim.github.io/2014/01/01/quote/&#34; title=&#34;Quote&#34;&gt;以前ここでも取り上げています&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;時々、その男のように「あの人は変わりっこない」と考えてしまうことがあります。しかしスポックたちが言うように、存在はむしろ変化せずにはいられないものです。彼我のいずれも、それを取り巻く世界も。&lt;/p&gt;
+
+&lt;p&gt;変化が避けられないものであるならば、どのように変化していきたいか、作用したいかを定めて生きていきたいと思います。これは案外、論理的🖖🏻なのではないでしょうか :-)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;そうそう、 Discovery のサレクは TOS のスポックとはまったく異なった意図で同じ言葉を使っている可能性もあります。それはそれで楽しみにしたいと思います。&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;Discovery は &lt;a href=&#34;https://ja.wikipedia.org/wiki/%E5%AE%87%E5%AE%99%E5%A4%A7%E4%BD%9C%E6%88%A6&#34; title=&#34;宇宙大作戦 - Wikipedia&#34;&gt;TOS&lt;/a&gt; より 10 年程前の話とのことですので「彼は父の言葉を受け継いでいた」ということにするのでしょうか。 あるいはヴァルカン哲学の警句なのかもしれないですね。
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
+    </item>
     
     <item>
       <title>Atomic Emacs</title>
@@ -74,23 +132,6 @@ index 0000000..0fae668
 
 &lt;pre&gt;&lt;code&gt;salt-ssh [options] &#39;&amp;lt;target&amp;gt;&#39; state.apply users,logrotate
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>salt-ssh で TemplateNotFound がでたら</title>
-      <link>https://elim.github.io/2017/08/23/extra_filerefs/</link>
-      <pubDate>Wed, 23 Aug 2017 15:49:27 +0000</pubDate>
-      
-      <guid>https://elim.github.io/2017/08/23/extra_filerefs/</guid>
-      <description>&lt;p&gt;&lt;code&gt;salt/master&lt;/code&gt; で extra_filerefs を設定すると、解決できるようになる。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;extra_filerefs:
-  - salt://logrotate/map.jinja
-  - salt://logrotate/defaults.yaml
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Ref: &lt;a href=&#34;https://github.com/saltstack/salt/issues/21370&#34;&gt;saltstack/salt#21370&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

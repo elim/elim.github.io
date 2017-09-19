@@ -6,24 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <title>Atomic Emacs</title>
-    <meta property="og:title" content="Atomic Emacs" />
-    <meta name="twitter:title" content="Atomic Emacs" />
-    <meta name="description" content="@onk さんが GhostText なる Chrome 拡張を紹介されていました。">
-    <meta property="og:description" content="@onk さんが GhostText なる Chrome 拡張を紹介されていました。">
-    <meta name="twitter:description" content="@onk さんが GhostText なる Chrome 拡張を紹介されていました。">
+    <title>Startrek</title>
+    <meta property="og:title" content="Startrek" />
+    <meta name="twitter:title" content="Startrek" />
     <meta name="author" content="Takeru Naito" />
     <meta property="og:image" content="https://elim.github.io/media/favicons/favicon-96x96.png" />
     <meta name="twitter:image" content="https://elim.github.io/media/favicons/favicon-96x96.png" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@elim" />
     <meta name="twitter:creator" content="@elim" />
-    <meta property="og:url" content="https://elim.github.io/2017/08/28/atomic-emacs/" />
+    <meta property="og:url" content="https://elim.github.io/tags/startrek/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="IDIC" />
 
     <meta name="generator" content="Hugo 0.27.1" />
-    <link rel="canonical" href="https://elim.github.io/2017/08/28/atomic-emacs/" />
+    <link rel="canonical" href="https://elim.github.io/tags/startrek/" />
     <link rel="alternate" href="https://elim.github.io/index.xml" type="application/rss+xml" title="IDIC">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -163,29 +160,14 @@ ga('send', 'pageview');
 
 
 
-
-
-
-
-
     <header class="header-section ">
-
       <div class="intro-header no-img">
-
         <div class="container">
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-              <div class="post-heading">
-                <h1>Atomic Emacs</h1>
-
-
-                <span class="post-meta">
-                  Posted on August 28, 2017
-
-                </span>
-
-
-
+              <div class="page-heading">
+                <h1>#Startrek</h1>
+                <hr class="small">
               </div>
             </div>
           </div>
@@ -194,74 +176,44 @@ ga('send', 'pageview');
     </header>
 
 
-
     <div class="container" role="main">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          <article role="main" class="blog-post">
-            <p>@onk さんが GhostText なる Chrome 拡張を紹介されていました。</p>
 
-            <blockquote class="twitter-tweet">
-              <p lang="ja" dir="ltr">GhostText クッソ便利だ……。
-                <a href="https://t.co/u6VH1Qd2Xl">https://t.co/u6VH1Qd2Xl</a>
-              </p>&mdash; Takafumi ONAKA (@onk)
-              <a href="https://twitter.com/onk/status/901329085976109057">August 26, 2017</a>
-            </blockquote>
-            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <div class="posts-list">
 
-            <p>Emacs 用があるかなーと思って探したらありました。
-              <a href="https://github.com/alpha22jp/atomic-chrome" title="atomic-emacs">atomic-emacs</a>.</p>
-
-            <p>README では melpa からインストールする例がありましたが、私は el-get 使いなので以下のようにしました。</p>
-
-            <p>
-              <a href="https://github.com/elim/dotemacs/commit/8a6a234">https://github.com/elim/dotemacs/commit/8a6a234</a>
-            </p>
-
-            <pre><code class="language-diff">diff --git a/config/packages.el b/config/packages.el
-index d93a5ba..bbadba6 100644
---- a/config/packages.el
-+++ b/config/packages.el
-@@ -19,6 +19,7 @@
- (el-get-bundle tarao/with-eval-after-load-feature-el)
-
- (el-get-bundle ag)
-+(el-get-bundle alpha22jp/atomic-chrome :depends (let-alist websocket))
- (el-get-bundle anzu)
- (el-get-bundle buffer-move)
- (el-get-bundle company-mode)
-diff --git a/config/packages/init-atomic-chrome.el b/config/packages/init-atomic-chrome.el
-new file mode 100644
-index 0000000..0fae668
---- /dev/null
-+++ b/config/packages/init-atomic-chrome.el
-@@ -0,0 +1,9 @@
-+;;; init-atomic-chrome.el --- A setting of the atomic-chrome.
-+;;; Commentary:
-+;;; Code:
-+
-+(require 'atomic-chrome)
-+(atomic-chrome-start-server)
-+
-+(provide 'init-atomic-chrome)
-+;;; init-atomic-chrome.el ends here
-</code></pre>
-          </article>
-
-          <ul class="pager blog-pager">
-
-            <li class="previous">
-              <a href="https://elim.github.io/2017/08/28/specify-formula/" data-toggle="tooltip" data-placement="top" title="salt-ssh で formula を指定して適用する">&larr; Previous Post</a>
-            </li>
+            <article class="post-preview">
+              <a href="https://elim.github.io/2017/09/19/essential-process/">
+                <h2 class="post-title">Essential Process</h2>
 
 
-            <li class="next">
-              <a href="https://elim.github.io/2017/09/19/essential-process/" data-toggle="tooltip" data-placement="top" title="Essential Process">Next Post &rarr;</a>
-            </li>
+              </a>
 
-          </ul>
+              <p class="post-meta">
+                Posted on September 19, 2017
+              </p>
+              <div class="post-entry">
+
+                <p>
+                  <a href="http://www.cbs.com/shows/star-trek-discovery/" title="Star Trek: Discovery | Official Site | Trailer and Cast Info - CBS.com">Star Trek: Discovery</a> のトレイラーを見ていたら聞き覚えのある言葉が流れてきました。</p>
+
+                <p></p>
+                <a href="https://elim.github.io/2017/09/19/essential-process/" class="post-read-more">[Read More]</a>
+
+              </div>
 
 
+              <span class="post-meta">
+
+                #
+                <a href="https://elim.github.io/tags/startrek/">startrek</a>&nbsp;
+
+              </span>
+
+
+            </article>
+
+          </div>
 
         </div>
       </div>

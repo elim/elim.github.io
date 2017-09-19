@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>IDIC</title>
-    <link>https://elim.github.io/</link>
-    <description>Recent content on IDIC</description>
+    <title>Startrek on IDIC</title>
+    <link>https://elim.github.io/tags/startrek/</link>
+    <description>Recent content in Startrek on IDIC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Takeru Naito</copyright>
     <lastBuildDate>Tue, 19 Sep 2017 05:01:28 +0000</lastBuildDate>
     
-        <atom:link href="https://elim.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://elim.github.io/tags/startrek/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -68,71 +68,6 @@
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Atomic Emacs</title>
-      <link>https://elim.github.io/2017/08/28/atomic-emacs/</link>
-      <pubDate>Mon, 28 Aug 2017 16:33:35 +0000</pubDate>
-      
-      <guid>https://elim.github.io/2017/08/28/atomic-emacs/</guid>
-      <description>&lt;p&gt;@onk さんが GhostText なる Chrome 拡張を紹介されていました。&lt;/p&gt;
-
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;GhostText クッソ便利だ……。 &lt;a href=&#34;https://t.co/u6VH1Qd2Xl&#34;&gt;https://t.co/u6VH1Qd2Xl&lt;/a&gt;&lt;/p&gt;&amp;mdash; Takafumi ONAKA (@onk) &lt;a href=&#34;https://twitter.com/onk/status/901329085976109057&#34;&gt;August 26, 2017&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;Emacs 用があるかなーと思って探したらありました。 &lt;a href=&#34;https://github.com/alpha22jp/atomic-chrome&#34; title=&#34;atomic-emacs&#34;&gt;atomic-emacs&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;README では melpa からインストールする例がありましたが、私は el-get 使いなので以下のようにしました。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/elim/dotemacs/commit/8a6a234&#34;&gt;https://github.com/elim/dotemacs/commit/8a6a234&lt;/a&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-diff&#34;&gt;diff --git a/config/packages.el b/config/packages.el
-index d93a5ba..bbadba6 100644
---- a/config/packages.el
-+++ b/config/packages.el
-@@ -19,6 +19,7 @@
- (el-get-bundle tarao/with-eval-after-load-feature-el)
-
- (el-get-bundle ag)
-+(el-get-bundle alpha22jp/atomic-chrome :depends (let-alist websocket))
- (el-get-bundle anzu)
- (el-get-bundle buffer-move)
- (el-get-bundle company-mode)
-diff --git a/config/packages/init-atomic-chrome.el b/config/packages/init-atomic-chrome.el
-new file mode 100644
-index 0000000..0fae668
---- /dev/null
-+++ b/config/packages/init-atomic-chrome.el
-@@ -0,0 +1,9 @@
-+;;; init-atomic-chrome.el --- A setting of the atomic-chrome.
-+;;; Commentary:
-+;;; Code:
-+
-+(require &#39;atomic-chrome)
-+(atomic-chrome-start-server)
-+
-+(provide &#39;init-atomic-chrome)
-+;;; init-atomic-chrome.el ends here
-&lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-    
-    <item>
-      <title>salt-ssh で formula を指定して適用する</title>
-      <link>https://elim.github.io/2017/08/28/specify-formula/</link>
-      <pubDate>Mon, 28 Aug 2017 16:24:53 +0000</pubDate>
-      
-      <guid>https://elim.github.io/2017/08/28/specify-formula/</guid>
-      <description>&lt;p&gt;&lt;code&gt;state.apply&lt;/code&gt; に formula を渡す。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;salt-ssh [options] &#39;&amp;lt;target&amp;gt;&#39; state.apply users
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;2 つ以上渡す場合はカンマで区切る。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;salt-ssh [options] &#39;&amp;lt;target&amp;gt;&#39; state.apply users,logrotate
-&lt;/code&gt;&lt;/pre&gt;
-</description>
     </item>
     
   </channel>
