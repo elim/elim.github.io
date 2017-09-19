@@ -8,6 +8,8 @@ tags:
   - chrome
 ---
 
+@onk さんが GhostText なる Chrome 拡張を紹介されていました。<!--more-->
+
 {{< tweet 901329085976109057 >}} 
 
 Emacs 用があるかなーと思って探したらありました。 [atomic-emacs](https://github.com/alpha22jp/atomic-chrome "atomic-emacs").
