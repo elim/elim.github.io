@@ -7,10 +7,61 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Takeru Naito</copyright>
-    <lastBuildDate>Tue, 19 Sep 2017 05:01:28 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Nov 2017 14:49:25 +0000</lastBuildDate>
     
         <atom:link href="https://elim.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Keychafin 2.8.4</title>
+      <link>https://elim.github.io/2017/11/21/keychain-2.8.4/</link>
+      <pubDate>Tue, 21 Nov 2017 14:49:25 +0000</pubDate>
+      
+      <guid>https://elim.github.io/2017/11/21/keychain-2.8.4/</guid>
+      <description>&lt;p&gt;久し振りに &lt;a href=&#34;https://www.funtoo.org/Keychain&#34; title=&#34;Keychain : Official Project Page&#34;&gt;keychain&lt;/a&gt; がバージョンアップしているのを発見しました&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/funtoo/keychain/blob/2.8.4/ChangeLog&#34; title=&#34;keychain/ChangeLog at 2.8.4 · funtoo/keychain&#34;&gt;Changelog&lt;/a&gt; を見ると実に 1 年振りのようです&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Keychain 2.8.4 (19 Oct 2017)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;ndash;snip&amp;ndash;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;keychain 2.8.3 (24 Jun 2016)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;このバージョンから正式に &lt;a href=&#34;https://www.gnupg.org/&#34; title=&#34;The GNU Privacy Guard&#34;&gt;GPG2&lt;/a&gt; をサポートするようになったとのことです。また &lt;a href=&#34;https://github.com/funtoo/keychain/compare/2.8.3...2.8.4&#34; title=&#34;Comparing 2.8.3...2.8.4 · funtoo/keychain&#34;&gt;2.8.3 からの差分&lt;/a&gt; を確認したところ、他にも細々とした調整が入っていました&lt;/p&gt;
+
+&lt;p&gt;いままで Ubuntu 17.04 上では手パッチした keychain を使っていたのですが、こちらに差し替えることにしました&lt;/p&gt;
+
+&lt;p&gt;きちんと .deb を作って差し替えようかとも思ったのですが、実体は man と sh が 1 つずつのシンプルなコマンドですので、以下で済ませました&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ghq get -p git@github.com:funtoo/keychain.git
+$ cd path/to/keychain
+$ git checkout 2.8.4
+$ sudo cp -v keychain.1 $(locate keychain.1)
+$ sudo cp -v keychain $(where keychain)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ひとまず正常に動いているようです&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ exec $SHELL -l
+
+* keychain 2.8.4 ~ http://www.funtoo.org
+* Found existing gpg-agent: 2833
+* Found existing ssh-agent: 2859
+* Known ssh key: /home/takeru/.ssh/id_ed25519
+* Known gpg key: 0A2D3E0E
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
     
     <item>
       <title>Essential Process</title>
@@ -116,24 +167,6 @@ index 0000000..0fae668
 +(provide &#39;init-atomic-chrome)
 +;;; init-atomic-chrome.el ends here
 &lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-    
-    <item>
-      <title>salt-ssh で formula を指定して適用する</title>
-      <link>https://elim.github.io/2017/08/28/specify-formula/</link>
-      <pubDate>Mon, 28 Aug 2017 16:24:53 +0000</pubDate>
-      
-      <guid>https://elim.github.io/2017/08/28/specify-formula/</guid>
-      <description>&lt;p&gt;&lt;code&gt;state.apply&lt;/code&gt; に formula を渡す。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;salt-ssh [options] &#39;&amp;lt;target&amp;gt;&#39; state.apply users
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;2 つ以上渡す場合はカンマで区切る。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;salt-ssh [options] &#39;&amp;lt;target&amp;gt;&#39; state.apply users,logrotate
-&lt;/code&gt;&lt;/pre&gt;
-</description>
     </item>
     
   </channel>

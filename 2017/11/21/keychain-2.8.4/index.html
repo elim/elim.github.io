@@ -6,21 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <title>Posts</title>
-    <meta property="og:title" content="Posts" />
-    <meta name="twitter:title" content="Posts" />
+    <title>Keychafin 2.8.4</title>
+    <meta property="og:title" content="Keychafin 2.8.4" />
+    <meta name="twitter:title" content="Keychafin 2.8.4" />
+    <meta name="description" content="Support to GPG2">
+    <meta property="og:description" content="Support to GPG2">
+    <meta name="twitter:description" content="Support to GPG2">
     <meta name="author" content="Takeru Naito" />
     <meta property="og:image" content="https://elim.github.io/media/favicons/favicon-96x96.png" />
     <meta name="twitter:image" content="https://elim.github.io/media/favicons/favicon-96x96.png" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@elim" />
     <meta name="twitter:creator" content="@elim" />
-    <meta property="og:url" content="https://elim.github.io/post/" />
+    <meta property="og:url" content="https://elim.github.io/2017/11/21/keychain-2.8.4/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="IDIC" />
 
     <meta name="generator" content="Hugo 0.30.2" />
-    <link rel="canonical" href="https://elim.github.io/post/" />
+    <link rel="canonical" href="https://elim.github.io/2017/11/21/keychain-2.8.4/" />
     <link rel="alternate" href="https://elim.github.io/index.xml" type="application/rss+xml" title="IDIC">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -160,14 +163,33 @@ ga('send', 'pageview');
 
 
 
+
+
+
+
+
     <header class="header-section ">
+
       <div class="intro-header no-img">
+
         <div class="container">
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-              <div class="page-heading">
-                <h1>Posts</h1>
-                <hr class="small">
+              <div class="post-heading">
+                <h1>Keychafin 2.8.4</h1>
+
+
+                <h2 class="post-subheading">Support to GPG2</h2>
+
+
+
+                <span class="post-meta">
+                  Posted on November 21, 2017
+
+                </span>
+
+
+
               </div>
             </div>
           </div>
@@ -176,202 +198,70 @@ ga('send', 'pageview');
     </header>
 
 
+
     <div class="container" role="main">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <article role="main" class="blog-post">
+            <p>久し振りに
+              <a href="https://www.funtoo.org/Keychain" title="Keychain : Official Project Page">keychain</a> がバージョンアップしているのを発見しました</p>
 
-          <div class="posts-list">
+            <p>
+              <a href="https://github.com/funtoo/keychain/blob/2.8.4/ChangeLog" title="keychain/ChangeLog at 2.8.4 · funtoo/keychain">Changelog</a> を見ると実に 1 年振りのようです</p>
 
-            <article class="post-preview">
-              <a href="https://elim.github.io/2015/09/22/selects-another-powerline-for-emacs-package/">
-                <h2 class="post-title">Emacs 用 Powerline を別なパッケージにした</h2>
+            <p></p>
 
+            <hr />
 
-              </a>
+            <blockquote>
+              <p>Keychain 2.8.4 (19 Oct 2017)</p>
+            </blockquote>
 
-              <p class="post-meta">
-                Posted on September 22, 2015
-              </p>
-              <div class="post-entry">
+            <p>&ndash;snip&ndash;</p>
 
-                BYOD していた現場から「よかったらこの Mac Pro 使ってください」という願ってもないお話をいただきまして。 喜び勇んで Xcode やら Homebrew やら Emacs やらを入れていたわけで
-                <a href="https://elim.github.io/2015/09/22/selects-another-powerline-for-emacs-package/" class="post-read-more">[Read More]</a>
+            <blockquote>
+              <p>keychain 2.8.3 (24 Jun 2016)</p>
+            </blockquote>
 
-              </div>
+            <hr />
 
+            <p>このバージョンから正式に
+              <a href="https://www.gnupg.org/" title="The GNU Privacy Guard">GPG2</a> をサポートするようになったとのことです。また
+              <a href="https://github.com/funtoo/keychain/compare/2.8.3...2.8.4" title="Comparing 2.8.3...2.8.4 · funtoo/keychain">2.8.3 からの差分</a> を確認したところ、他にも細々とした調整が入っていました</p>
 
-              <span class="post-meta">
+            <p>いままで Ubuntu 17.04 上では手パッチした keychain を使っていたのですが、こちらに差し替えることにしました</p>
 
-                #
-                <a href="https://elim.github.io/tags/emacs/">emacs</a>&nbsp;
+            <p>きちんと .deb を作って差し替えようかとも思ったのですが、実体は man と sh が 1 つずつのシンプルなコマンドですので、以下で済ませました</p>
 
-              </span>
-
-
-            </article>
-
-            <article class="post-preview">
-              <a href="https://elim.github.io/2015/09/09/pull-reqest-was-incorporated/">
-                <h2 class="post-title">Pull Reqest が取り込まれた</h2>
-
-
-              </a>
-
-              <p class="post-meta">
-                Posted on September 9, 2015
-              </p>
-              <div class="post-entry">
-
-                ここで使わせていただいてるテーマの Steam へ Pull Request を送ったところ、無事取り込んでいただけました。 修正点 いずれも投稿日時の表示に関するものです。 投稿日
-                <a href="https://elim.github.io/2015/09/09/pull-reqest-was-incorporated/" class="post-read-more">[Read More]</a>
-
-              </div>
-
-
-              <span class="post-meta">
-
-                #
-                <a href="https://elim.github.io/tags/github/">github</a>&nbsp; #
-
-                <a href="https://elim.github.io/tags/pull-request/">pull-request</a>&nbsp;
-
-              </span>
-
-
-            </article>
-
-            <article class="post-preview">
-              <a href="https://elim.github.io/2015/05/18/temporarily-disable-the-chpwd-hooks-of-zsh/">
-                <h2 class="post-title">chpwd_functions</h2>
-
-
-              </a>
-
-              <p class="post-meta">
-                Posted on May 18, 2015
-              </p>
-              <div class="post-entry">
-
-                tl;dr Zsh で一時的に chpwd の hook を無効にしたいときは chpwd_function= を前置する。 $ chpwd_functions= cd 私の Zsh 環境で tab.bash を使ってみたところ、iTerm のタブを作成したあとの cd に失敗してし
-                <a href="https://elim.github.io/2015/05/18/temporarily-disable-the-chpwd-hooks-of-zsh/" class="post-read-more">[Read More]</a>
-
-              </div>
-
-
-              <span class="post-meta">
-
-                #
-                <a href="https://elim.github.io/tags/zsh/">zsh</a>&nbsp;
-
-              </span>
-
-
-            </article>
-
-            <article class="post-preview">
-              <a href="https://elim.github.io/2014/01/01/quote/">
-                <h2 class="post-title">Quote</h2>
-
-
-              </a>
-
-              <p class="post-meta">
-                Posted on January 1, 2014
-              </p>
-              <div class="post-entry">
-
-                <blockquote>
-                  <p>Change is the essential process of all existence.</p>
-                </blockquote>
-
-                <p>By Spock, &ldquo;Let That Be Your Last Battlefield&rdquo;, stardate 5730.2</p>
-
-                <div class="fb-post" data-href="https://www.facebook.com/StarTrek/photos/a.131005510249296.24356.122908054392375/887940221222484/?type=3" data-width="500" data-show-text="false">
-                  <blockquote cite="https://www.facebook.com/StarTrek/photos/a.131005510249296.24356.122908054392375/887940221222484/?type=3" class="fb-xfbml-parse-ignore">Posted by
-                    <a href="https://www.facebook.com/StarTrek/">Star Trek</a> on&nbsp;
-                    <a href="https://www.facebook.com/StarTrek/photos/a.131005510249296.24356.122908054392375/887940221222484/?type=3">Wednesday, January 1, 2014</a>
-                  </blockquote>
-                </div>
-
-
-              </div>
-
-
-              <span class="post-meta">
-
-                #
-                <a href="https://elim.github.io/tags/quote/">quote</a>&nbsp;
-
-              </span>
-
-
-            </article>
-
-            <article class="post-preview">
-              <a href="https://elim.github.io/2013/06/28/upload-image-to-your-github-wiki-page/">
-                <h2 class="post-title">GitHub の Wiki に表示する画像を git で上げる</h2>
-
-
-              </a>
-
-              <p class="post-meta">
-                Posted on June 28, 2013
-              </p>
-              <div class="post-entry">
-
-
-
-                <h1 id="tl-dr">tl;dr</h1>
-
-                <pre><code>$ git clone git@github.com:&lt;username&gt;/&lt;repository&gt;.wiki.git
-$ cd &lt;repository&gt;.wiki
-$ mkdir images
-$ cp path/to/image_file images
-$ git -a -m 'Attach images'
-$ open https://github.com/&lt;username&gt;/&lt;repository&gt;/wiki/&lt;pagename&gt;
+            <pre><code>$ ghq get -p git@github.com:funtoo/keychain.git
+$ cd path/to/keychain
+$ git checkout 2.8.4
+$ sudo cp -v keychain.1 $(locate keychain.1)
+$ sudo cp -v keychain $(where keychain)
 </code></pre>
 
-                <p>And put
-                  <code>[[/images/image_file]]</code> to your wiki page.</p>
+            <p>ひとまず正常に動いているようです</p>
 
-                <p>That&rsquo;s it.</p>
+            <pre><code>$ exec $SHELL -l
 
-                <hr />
+* keychain 2.8.4 ~ http://www.funtoo.org
+* Found existing gpg-agent: 2833
+* Found existing ssh-agent: 2859
+* Known ssh key: /home/takeru/.ssh/id_ed25519
+* Known gpg key: 0A2D3E0E
+</code></pre>
+          </article>
 
-                <p>情報元:
-                  <a href="https://github.com/wicketstuff/core/wiki/Editing-Wiki-Locally">Editing Wiki Locally</a>
-                </p>
-
-                <p>この方法を使えば、好きな画像を wiki に貼り付けることができます :)</p>
-
-                <hr />
-
-
-              </div>
-
-
-              <span class="post-meta">
-
-                #
-                <a href="https://elim.github.io/tags/github/">github</a>&nbsp; #
-
-                <a href="https://elim.github.io/tags/wiki/">wiki</a>&nbsp;
-
-              </span>
-
-
-            </article>
-
-          </div>
-
-          <ul class="pager main-pager">
+          <ul class="pager blog-pager">
 
             <li class="previous">
-              <a href="/post/page/1">&larr; Newer Posts</a>
+              <a href="https://elim.github.io/2017/09/19/essential-process/" data-toggle="tooltip" data-placement="top" title="Essential Process">&larr; Previous Post</a>
             </li>
 
 
           </ul>
+
+
 
         </div>
       </div>

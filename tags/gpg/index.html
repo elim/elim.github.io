@@ -6,21 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <title>Posts</title>
-    <meta property="og:title" content="Posts" />
-    <meta name="twitter:title" content="Posts" />
+    <title>Gpg</title>
+    <meta property="og:title" content="Gpg" />
+    <meta name="twitter:title" content="Gpg" />
     <meta name="author" content="Takeru Naito" />
     <meta property="og:image" content="https://elim.github.io/media/favicons/favicon-96x96.png" />
     <meta name="twitter:image" content="https://elim.github.io/media/favicons/favicon-96x96.png" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@elim" />
     <meta name="twitter:creator" content="@elim" />
-    <meta property="og:url" content="https://elim.github.io/post/" />
+    <meta property="og:url" content="https://elim.github.io/tags/gpg/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="IDIC" />
 
     <meta name="generator" content="Hugo 0.30.2" />
-    <link rel="canonical" href="https://elim.github.io/post/" />
+    <link rel="canonical" href="https://elim.github.io/tags/gpg/" />
     <link rel="alternate" href="https://elim.github.io/index.xml" type="application/rss+xml" title="IDIC">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -166,7 +166,7 @@ ga('send', 'pageview');
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
               <div class="page-heading">
-                <h1>Posts</h1>
+                <h1>#Gpg</h1>
                 <hr class="small">
               </div>
             </div>
@@ -222,305 +222,7 @@ ga('send', 'pageview');
 
             </article>
 
-            <article class="post-preview">
-              <a href="https://elim.github.io/2017/09/19/essential-process/">
-                <h2 class="post-title">Essential Process</h2>
-
-
-              </a>
-
-              <p class="post-meta">
-                Posted on September 19, 2017
-              </p>
-              <div class="post-entry">
-
-                <p>
-                  <a href="http://www.cbs.com/shows/star-trek-discovery/" title="Star Trek: Discovery | Official Site | Trailer and Cast Info - CBS.com">Star Trek: Discovery</a> のトレイラーを見ていたら聞き覚えのある言葉が流れてきました。</p>
-
-                <p></p>
-                <a href="https://elim.github.io/2017/09/19/essential-process/" class="post-read-more">[Read More]</a>
-
-              </div>
-
-
-              <span class="post-meta">
-
-                #
-                <a href="https://elim.github.io/tags/startrek/">startrek</a>&nbsp;
-
-              </span>
-
-
-            </article>
-
-            <article class="post-preview">
-              <a href="https://elim.github.io/2017/08/28/atomic-emacs/">
-                <h2 class="post-title">Atomic Emacs</h2>
-
-
-              </a>
-
-              <p class="post-meta">
-                Posted on August 28, 2017
-              </p>
-              <div class="post-entry">
-
-                <p>@onk さんが GhostText なる Chrome 拡張を紹介されていました。</p>
-                <a href="https://elim.github.io/2017/08/28/atomic-emacs/" class="post-read-more">[Read More]</a>
-
-              </div>
-
-
-              <span class="post-meta">
-
-                #
-                <a href="https://elim.github.io/tags/emacs/">emacs</a>&nbsp; #
-
-                <a href="https://elim.github.io/tags/chrome/">chrome</a>&nbsp;
-
-              </span>
-
-
-            </article>
-
-            <article class="post-preview">
-              <a href="https://elim.github.io/2017/08/28/specify-formula/">
-                <h2 class="post-title">salt-ssh で formula を指定して適用する</h2>
-
-
-              </a>
-
-              <p class="post-meta">
-                Posted on August 28, 2017
-              </p>
-              <div class="post-entry">
-
-                <p>
-                  <code>state.apply</code> に formula を渡す。</p>
-
-                <pre><code>salt-ssh [options] '&lt;target&gt;' state.apply users
-</code></pre>
-
-                <p>2 つ以上渡す場合はカンマで区切る。</p>
-
-                <pre><code>salt-ssh [options] '&lt;target&gt;' state.apply users,logrotate
-</code></pre>
-
-
-              </div>
-
-
-              <span class="post-meta">
-
-                #
-                <a href="https://elim.github.io/tags/saltstack/">saltstack</a>&nbsp; #
-
-                <a href="https://elim.github.io/tags/salt-ssh/">salt-ssh</a>&nbsp;
-
-              </span>
-
-
-            </article>
-
-            <article class="post-preview">
-              <a href="https://elim.github.io/2017/08/23/extra_filerefs/">
-                <h2 class="post-title">salt-ssh で TemplateNotFound がでたら</h2>
-
-
-              </a>
-
-              <p class="post-meta">
-                Posted on August 23, 2017
-              </p>
-              <div class="post-entry">
-
-                <p>
-                  <code>salt/master</code> で extra_filerefs を設定すると、解決できるようになる。</p>
-
-                <pre><code class="language-yaml">extra_filerefs:
-  - salt://logrotate/map.jinja
-  - salt://logrotate/defaults.yaml
-</code></pre>
-
-                <p>Ref:
-                  <a href="https://github.com/saltstack/salt/issues/21370">saltstack/salt#21370</a>
-                </p>
-
-
-              </div>
-
-
-              <span class="post-meta">
-
-                #
-                <a href="https://elim.github.io/tags/saltstack/">saltstack</a>&nbsp; #
-
-                <a href="https://elim.github.io/tags/salt-ssh/">salt-ssh</a>&nbsp;
-
-              </span>
-
-
-            </article>
-
-            <article class="post-preview">
-              <a href="https://elim.github.io/2017/01/30/confirm-before-killing-emacs/">
-                <h2 class="post-title">Emacs を終了する前に確認する</h2>
-
-
-              </a>
-
-              <p class="post-meta">
-                Posted on January 30, 2017
-              </p>
-              <div class="post-entry">
-
-                どうも最近、知らずしらずのうちにアプリケーションを落としてしまうのです。どうやら Hammerspoon の設定がわるいようで、ふとした拍子に Cmd+q か何かを送ってしまう
-                <a href="https://elim.github.io/2017/01/30/confirm-before-killing-emacs/" class="post-read-more">[Read More]</a>
-
-              </div>
-
-
-              <span class="post-meta">
-
-                #
-                <a href="https://elim.github.io/tags/emacs/">emacs</a>&nbsp;
-
-              </span>
-
-
-            </article>
-
-            <article class="post-preview">
-              <a href="https://elim.github.io/2017/01/27/iterm2-with-tmux-on-sierra/">
-                <h2 class="post-title">Sierra 上の iTerm2 上の tmux</h2>
-
-
-              </a>
-
-              <p class="post-meta">
-                Posted on January 27, 2017
-              </p>
-              <div class="post-entry">
-
-                ここの設定を変えると幸せになれます。 iTerm2 + tmux で 2 つ目のタブをつくると最初のタブの描画がこわれるの、 2 つ目のタブができた時点でタブバーが表示され
-                <a href="https://elim.github.io/2017/01/27/iterm2-with-tmux-on-sierra/" class="post-read-more">[Read More]</a>
-
-              </div>
-
-
-              <span class="post-meta">
-
-                #
-                <a href="https://elim.github.io/tags/iterm2/">iterm2</a>&nbsp; #
-
-                <a href="https://elim.github.io/tags/sierra/">sierra</a>&nbsp; #
-
-                <a href="https://elim.github.io/tags/tmux/">tmux</a>&nbsp;
-
-              </span>
-
-
-            </article>
-
-            <article class="post-preview">
-              <a href="https://elim.github.io/2017/01/17/detach-keys/">
-                <h2 class="post-title">detach keys</h2>
-
-
-              </a>
-
-              <p class="post-meta">
-                Posted on January 17, 2017
-              </p>
-              <div class="post-entry">
-
-                docker-compose run や docker-compose exec をすると C-p の動作がおかしくてずっと困っていました。 これは Docker のデタッチが C-p C-q だったからなんですね。 デタッチ機能はときどき使っていたの
-                <a href="https://elim.github.io/2017/01/17/detach-keys/" class="post-read-more">[Read More]</a>
-
-              </div>
-
-
-              <span class="post-meta">
-
-                #
-                <a href="https://elim.github.io/tags/docker/">docker</a>&nbsp;
-
-              </span>
-
-
-            </article>
-
-            <article class="post-preview">
-              <a href="https://elim.github.io/2017/01/17/esa-clients/">
-                <h2 class="post-title">esa のクライアントをいろいろ試す</h2>
-
-
-              </a>
-
-              <p class="post-meta">
-                Posted on January 17, 2017
-              </p>
-              <div class="post-entry">
-
-                esa.io クライアントを kotori から Quail に乗り換えた を見て Quail を試しています。 ブラウザと ⌘-TAB で切り替えて作業できるのが良いですね。 おや。 この記事のお陰か
-                <a href="https://elim.github.io/2017/01/17/esa-clients/" class="post-read-more">[Read More]</a>
-
-              </div>
-
-
-              <span class="post-meta">
-
-                #
-                <a href="https://elim.github.io/tags/esa/">esa</a>&nbsp;
-
-              </span>
-
-
-            </article>
-
-            <article class="post-preview">
-              <a href="https://elim.github.io/2017/01/13/retrospective/">
-                <h2 class="post-title">ふりかえり</h2>
-
-
-              </a>
-
-              <p class="post-meta">
-                Posted on January 13, 2017
-              </p>
-              <div class="post-entry">
-
-                <p>3 年前の自分がいいこと言ってた。</p>
-
-                <div class="fb-post" data-href="https://www.facebook.com/takeru/posts/10203109646004127" data-width="500" data-show-text="true">
-                  <blockquote cite="https://www.facebook.com/takeru/posts/10203109646004127" class="fb-xfbml-parse-ignore">
-                    <p>&#x300e;&#x4e0e;&#x3048;&#x3089;&#x308c;&#x305f;&#x74b0;&#x5883;&#x3067;&#x6700;&#x5584;&#x3092;&#x5c3d;&#x304f;&#x3059;&#x300f;&#x3053;&#x3068;&#x306e;&#x4e2d;&#x306b;&#x300e;&#x4e0e;&#x3048;&#x3089;&#x308c;&#x305f;&#x74b0;&#x5883;&#x306e;&#x5909;&#x5316;&#x3092;&#x4fc3;&#x3059;&#x300f;&#x3053;&#x3068;&#x3082;&#x542b;&#x307e;&#x308c;&#x308b;&#x3093;&#x3060;&#x306a;&#x3042;&#x3068;&#x3001;&#x4eca;&#x66f4;&#x306a;&#x304c;&#x3089;&#x3002;</p>Posted by
-                    <a href="#" role="button">Takeru Naito</a> on&nbsp;
-                    <a href="https://www.facebook.com/takeru/posts/10203109646004127">Monday, January 13, 2014</a>
-                  </blockquote>
-                </div>
-
-                <p>どこかでこのこと、忘れちゃってたなあ。</p>
-
-                <p>これからの 3 年間はこれに努めよう。</p>
-
-
-              </div>
-
-
-
-            </article>
-
           </div>
-
-          <ul class="pager main-pager">
-
-
-            <li class="next">
-              <a href="/post/page/2">Older Posts &rarr;</a>
-            </li>
-
-          </ul>
 
         </div>
       </div>
