@@ -20,8 +20,9 @@
       <guid>https://elim.github.io/2017/08/28/atomic-emacs/</guid>
       <description>&lt;p&gt;@onk さんが GhostText なる Chrome 拡張を紹介されていました。&lt;/p&gt;
 
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;GhostText クッソ便利だ……。 &lt;a href=&#34;https://t.co/u6VH1Qd2Xl&#34;&gt;https://t.co/u6VH1Qd2Xl&lt;/a&gt;&lt;/p&gt;&amp;mdash; Takafumi ONAKA (@onk) &lt;a href=&#34;https://twitter.com/onk/status/901329085976109057&#34;&gt;August 26, 2017&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;GhostText クッソ便利だ……。 &lt;a href=&#34;https://t.co/u6VH1Qd2Xl&#34;&gt;https://t.co/u6VH1Qd2Xl&lt;/a&gt;&lt;/p&gt;&amp;mdash; Takafumi ONAKA (@onk) &lt;a href=&#34;https://twitter.com/onk/status/901329085976109057?ref_src=twsrc%5Etfw&#34;&gt;August 26, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
 
 &lt;p&gt;Emacs 用があるかなーと思って探したらありました。 &lt;a href=&#34;https://github.com/alpha22jp/atomic-chrome&#34; title=&#34;atomic-emacs&#34;&gt;atomic-emacs&lt;/a&gt;.&lt;/p&gt;
 
