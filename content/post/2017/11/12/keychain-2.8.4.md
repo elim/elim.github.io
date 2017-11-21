@@ -1,5 +1,5 @@
 ---
-title: "Keychafin 2.8.4"
+title: "Keychain 2.8.4"
 date: 2017-11-21T14:49:25Z
 slug: keychain 2.8.4
 subtitle: "Support to GPG2"

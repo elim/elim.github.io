@@ -1,5 +1,5 @@
 ---
-title: "Atomic Emacs"
+title: "Atomic Chrome for Emacs"
 date: 2017-08-28T16:33:35Z
 slug: atomic emacs
 subtitle: ""
