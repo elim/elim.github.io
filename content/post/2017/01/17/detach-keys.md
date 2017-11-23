@@ -1,5 +1,6 @@
 ---
 date: 2017-01-17T23:08:18+09:00
+description: docker-compose run や docker-compose exec をすると C-p の動作がおかしくてずっと困っていました
 tags:
   - docker
 title: detach keys
@@ -11,7 +12,7 @@ title: detach keys
 
 デタッチ機能はときどき使っていたのに、頭の中でまったく結びついていませんでした。そうじゃないかと言ってくれたチームメイトに感謝。
 
-で、デタッチキーは変更できるのだそうです
+で、デタッチキーは変更できるのだそうです<!--more-->
 
 > Following is a sample config.json file:
 

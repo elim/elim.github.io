@@ -1,5 +1,6 @@
 ---
 date: 2017-01-17T12:31:19+09:00
+description:  esa のクライアントである Quail と Kotori をさわってみました
 slug: esa clients
 tags:
   - esa
@@ -8,7 +9,7 @@ title: esa のクライアントをいろいろ試す
 
 [esa.io クライアントを kotori から Quail に乗り換えた](http://mgi.hatenablog.com/entry/2017/01/07/200028) を見て [Quail][quail] を試しています。
 
-ブラウザと ⌘-TAB で切り替えて作業できるのが良いですね。
+ブラウザと ⌘-TAB で切り替えて作業できるのが良いですね。<!--more-->
 
 ---
 

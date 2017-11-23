@@ -11,7 +11,7 @@ title: Sierra 上の iTerm2 上の tmux
 
 ここの設定を変えると幸せになれます。
 
-![iTerm2 の Appearance 設定の画面。 "Show tab bar even when there is only one tab" にチェックを入れている](/media/2017/02/27/iterm2-appearance.png "iTerm2 の Appearance 設定")
+![iTerm2 の Appearance 設定の画面。 "Show tab bar even when there is only one tab" にチェックを入れている](/media/2017/02/27/iterm2-appearance.png "iTerm2 の Appearance 設定")<!--more-->
 
 {{< tweet 824846849840254977 >}}
 
