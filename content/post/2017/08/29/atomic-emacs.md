@@ -8,11 +8,13 @@ tags:
   - chrome
 ---
 
-@onk さんが GhostText なる Chrome 拡張を紹介されていました。<!--more-->
+@onk さんが GhostText なる Chrome 拡張を紹介されていました。
 
 {{< tweet 901329085976109057 >}} 
 
-Emacs 用があるかなーと思って探したらありました。 [atomic-emacs](https://github.com/alpha22jp/atomic-chrome "atomic-emacs").
+Emacs 用があるかなーと思って[探したらありました][1].
+
+<!--more-->
 
 README では melpa からインストールする例がありましたが、私は el-get 使いなので以下のようにしました。
 
@@ -47,3 +49,5 @@ index 0000000..0fae668
 +(provide 'init-atomic-chrome)
 +;;; init-atomic-chrome.el ends here
 ```
+
+[1]: https://github.com/alpha22jp/atomic-chrome "Atomic Chrome for Emacs"
