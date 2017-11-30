@@ -24,7 +24,9 @@
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;Emacs 用があるかなーと思って探したらありました。 &lt;a href=&#34;https://github.com/alpha22jp/atomic-chrome&#34; title=&#34;atomic-emacs&#34;&gt;atomic-emacs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Emacs 用があるかなーと思って&lt;a href=&#34;https://github.com/alpha22jp/atomic-chrome&#34; title=&#34;Atomic Chrome for Emacs&#34;&gt;探したらありました&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;README では melpa からインストールする例がありましたが、私は el-get 使いなので以下のようにしました。&lt;/p&gt;
 
