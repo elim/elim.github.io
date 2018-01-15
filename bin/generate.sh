@@ -2,11 +2,11 @@
 
 echo -e "\033[0;32Generates site contents...\033[0m"
 
-# Clean up the existing contents.
-find public -not -name .git\* -delete
+# Clean up the existing contents other than feeds and repository data.
+find public -not -name .git\* -a -not -name \*xml -delete
 
 # Generate the contents.
-hugo
+hugo --disableKinds=RSS
 
 # Beautifying the HTML files.
 find public -name \*html -print0 \
