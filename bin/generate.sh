@@ -10,7 +10,7 @@ hugo --disableKinds=RSS
 
 # Beautifying the HTML files.
 find public -name \*html -print0 \
-  | xargs -0 $(npm bin)/html-beautify \
+  | xargs -0 "$(npm bin)/html-beautify" \
           --editorconfig \
           --indent-inner-html=true \
           --indent-size=2 \
