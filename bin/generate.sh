@@ -1,6 +1,9 @@
 #!/bin/bash -eu
 
-echo -e "\033[0;32Generates site contents...\033[0m"
+bold=$(tput bold)
+normal=$(tput sgr0)
+
+echo; echo "${bold}Generates site contents...${normal}"
 
 # Clean up the existing contents other than feeds and repository data.
 find public -not -name .git\* -a -not -name \*xml -delete
