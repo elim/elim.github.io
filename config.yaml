@@ -10,7 +10,7 @@ Copyright: elim
 DefaultContentLanguage: en
 GoogleAnalytics: UA-90004615-1
 hasCJKLanguage: true
-LanguageCode: ja-jp
+LanguageCode: ja
 Menu:
   Main:
   - name: Blog
