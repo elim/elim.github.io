@@ -1,8 +1,9 @@
 ---
 title: "Atomic Chrome for Emacs"
 date: 2017-08-28T16:33:35Z
-slug: atomic emacs
-subtitle: ""
+aliases:
+  - /2017/08/28/atomic-emacs/
+description: GhostText と Emacs で快適な投稿環境を作りました
 tags:
   - emacs
   - chrome
