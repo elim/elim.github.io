@@ -6,24 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <title>salt-ssh で TemplateNotFound がでたら</title>
-    <meta property="og:title" content="salt-ssh で TemplateNotFound がでたら" />
-    <meta name="twitter:title" content="salt-ssh で TemplateNotFound がでたら" />
-    <meta name="description" content="salt/master で extra_filerefs を設定すると、解決できるようになる。 extra_filerefs: - salt://logrotate/map.jinja - salt://logrotate/defaults.yaml Ref: saltstack/salt#21370">
-    <meta property="og:description" content="salt/master で extra_filerefs を設定すると、解決できるようになる。 extra_filerefs: - salt://logrotate/map.jinja - salt://logrotate/defaults.yaml Ref: saltstack/salt#21370">
-    <meta name="twitter:description" content="salt/master で extra_filerefs を設定すると、解決できるようになる。 extra_filerefs: - salt://logrotate/map.jinja - salt://logrotate/defaults.yaml Ref: saltstack/salt#21370">
+    <title>Atomic Chrome for Emacs</title>
+    <meta property="og:title" content="Atomic Chrome for Emacs" />
+    <meta name="twitter:title" content="Atomic Chrome for Emacs" />
+    <meta name="description" content="GhostText と Emacs で快適な投稿環境を作りました">
+    <meta property="og:description" content="GhostText と Emacs で快適な投稿環境を作りました">
+    <meta name="twitter:description" content="GhostText と Emacs で快適な投稿環境を作りました">
     <meta name="author" content="Takeru Naito" />
     <meta property="og:image" content="https://elim.github.io/media/favicons/favicon-96x96.png" />
     <meta name="twitter:image" content="https://elim.github.io/media/favicons/favicon-96x96.png" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@elim" />
     <meta name="twitter:creator" content="@elim" />
-    <meta property="og:url" content="https://elim.github.io/2017/08/23/extra_filerefs/" />
+    <meta property="og:url" content="https://elim.github.io/2017/08/28/atomic-chrome-for-emacs/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="IDIC" />
 
     <meta name="generator" content="Hugo 0.35" />
-    <link rel="canonical" href="https://elim.github.io/2017/08/23/extra_filerefs/" />
+    <link rel="canonical" href="https://elim.github.io/2017/08/28/atomic-chrome-for-emacs/" />
     <link rel="alternate" href="https://elim.github.io/index.xml" type="application/rss+xml" title="IDIC">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -176,13 +176,13 @@ ga('send', 'pageview');
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
               <div class="post-heading">
-                <h1>salt-ssh で TemplateNotFound がでたら</h1>
+                <h1>Atomic Chrome for Emacs</h1>
 
 
                 <span class="post-meta">
 
 
-                  <i class="fa fa-calendar-o"></i>&nbsp;Posted on August 23, 2017
+                  <i class="fa fa-calendar-o"></i>&nbsp;Posted on August 28, 2017
 
 
 
@@ -203,30 +203,68 @@ ga('send', 'pageview');
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           <article role="main" class="blog-post">
+            <p>@onk さんが GhostText なる Chrome 拡張を紹介されていました。</p>
+
+            <blockquote class="twitter-tweet">
+              <p lang="ja" dir="ltr">GhostText クッソ便利だ……。
+                <a href="https://t.co/u6VH1Qd2Xl">https://t.co/u6VH1Qd2Xl</a>
+              </p>&mdash; Takafumi ONAKA (@onk)
+              <a href="https://twitter.com/onk/status/901329085976109057?ref_src=twsrc%5Etfw">August 26, 2017</a>
+            </blockquote>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+            <p>Emacs 用があるかなーと思って
+              <a href="https://github.com/alpha22jp/atomic-chrome" title="Atomic Chrome for Emacs">探したらありました</a>.</p>
+
+            <p></p>
+
+            <p>README では melpa からインストールする例がありましたが、私は el-get 使いなので以下のようにしました。</p>
+
             <p>
-              <code>salt/master</code> で extra_filerefs を設定すると、解決できるようになる。</p>
-
-            <pre><code class="language-yaml">extra_filerefs:
-  - salt://logrotate/map.jinja
-  - salt://logrotate/defaults.yaml
-</code></pre>
-
-            <p>Ref:
-              <a href="https://github.com/saltstack/salt/issues/21370">saltstack/salt#21370</a>
+              <a href="https://github.com/elim/dotemacs/commit/8a6a234">https://github.com/elim/dotemacs/commit/8a6a234</a>
             </p>
 
+            <pre><code class="language-diff">diff --git a/config/packages.el b/config/packages.el
+index d93a5ba..bbadba6 100644
+--- a/config/packages.el
++++ b/config/packages.el
+@@ -19,6 +19,7 @@
+ (el-get-bundle tarao/with-eval-after-load-feature-el)
+
+ (el-get-bundle ag)
++(el-get-bundle alpha22jp/atomic-chrome :depends (let-alist websocket))
+ (el-get-bundle anzu)
+ (el-get-bundle buffer-move)
+ (el-get-bundle company-mode)
+diff --git a/config/packages/init-atomic-chrome.el b/config/packages/init-atomic-chrome.el
+new file mode 100644
+index 0000000..0fae668
+--- /dev/null
++++ b/config/packages/init-atomic-chrome.el
+@@ -0,0 +1,9 @@
++;;; init-atomic-chrome.el --- A setting of the atomic-chrome.
++;;; Commentary:
++;;; Code:
++
++(require 'atomic-chrome)
++(atomic-chrome-start-server)
++
++(provide 'init-atomic-chrome)
++;;; init-atomic-chrome.el ends here
+</code></pre>
           </article>
 
 
           <ul class="pager blog-pager">
 
             <li class="previous">
-              <a href="https://elim.github.io/2017/01/30/confirm-before-killing-emacs/" data-toggle="tooltip" data-placement="top" title="Emacs を終了する前に確認する">&larr; Previous Post</a>
+              <a href="https://elim.github.io/2017/08/28/specify-formula/" data-toggle="tooltip" data-placement="top" title="salt-ssh で formula を指定して適用する">&larr; Previous Post</a>
             </li>
 
 
             <li class="next">
-              <a href="https://elim.github.io/2017/08/28/specify-formula/" data-toggle="tooltip" data-placement="top" title="salt-ssh で formula を指定して適用する">Next Post &rarr;</a>
+              <a href="https://elim.github.io/2017/09/19/essential-process/" data-toggle="tooltip" data-placement="top" title="Essential Process">Next Post &rarr;</a>
             </li>
 
           </ul>

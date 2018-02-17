@@ -19,17 +19,17 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="IDIC" />
 
-    <meta name="generator" content="Hugo 0.30.2" />
+    <meta name="generator" content="Hugo 0.35" />
     <link rel="canonical" href="https://elim.github.io/tags/" />
-    <link rel="alternate" href="https://elim.github.io/index.xml" type="application/rss+xml" title="IDIC">
+    <link rel="alternate" href="https://elim.github.io/tags/index.xml" type="application/rss+xml" title="IDIC">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://elim.github.io/css/main.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
-    <link rel="stylesheet" href="https://elim.github.io/css/pygment_highlights.css" />
-    <link rel="stylesheet" href="https://elim.github.io/css/highlight.min.css" />
+    <link rel="stylesheet" href="https://elim.github.io/css/syntax.css" />
+    <link rel="stylesheet" href="https://elim.github.io/css/codeblock.css" />
     <script>!function(){var b="elim.github.io",c=window.location;b===c.host&&"https:"!==c.protocol&&(c.protocol="https")}()</script>
     <link rel="apple-touch-icon" sizes="57x57" href="/media/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/media/favicons/apple-icon-60x60.png">
@@ -50,8 +50,8 @@
 
 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
 
 
 
@@ -172,7 +172,7 @@ ga('send', 'pageview');
         <div class="container">
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-              <div class="page-heading">
+              <div class="tags-heading">
                 <h1>Tags</h1>
 
 
@@ -186,98 +186,403 @@ ga('send', 'pageview');
 
 
 
+
+
     <div class="container" role="main">
-      <article class="post-preview">
-        <div class="list-group col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <article class="post-preview">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
-          <a href="https://elim.github.io/tags/emacs/" class="list-group-item">
-            emacs
-            <span class="badge">3</span>
-          </a>
+            <div class="panel panel-default">
+              <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseemacs" data-parent="#accordion" href="#" aria-expanded="false" aria-controls="collapseemacs">
+                <div class="panel-heading" role="tab" id="headeremacs">
+                  <h4 class="panel-title">
+                    emacs
+                    <span class="badge">3</span>
+                  </h4>
+                </div>
+              </a>
+              <div id="collapseemacs" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingemacs">
+                <div class="panel-body">
+                  <a href="https://elim.github.io/tags/emacs/" class="list-group-item view-all">
+                    View all</a>
+                  <div class="list-group">
 
-          <a href="https://elim.github.io/tags/github/" class="list-group-item">
-            github
-            <span class="badge">2</span>
-          </a>
+                    <a href="https://elim.github.io/2017/08/28/atomic-chrome-for-emacs/" class="list-group-item">Atomic Chrome for Emacs</a>
 
-          <a href="https://elim.github.io/tags/salt-ssh/" class="list-group-item">
-            salt-ssh
-            <span class="badge">2</span>
-          </a>
+                    <a href="https://elim.github.io/2017/01/30/confirm-before-killing-emacs/" class="list-group-item">Emacs を終了する前に確認する</a>
 
-          <a href="https://elim.github.io/tags/saltstack/" class="list-group-item">
-            saltstack
-            <span class="badge">2</span>
-          </a>
+                    <a href="https://elim.github.io/2015/09/22/selects-another-powerline-for-emacs-package/" class="list-group-item">Emacs 用 Powerline を別なパッケージにした</a>
 
-          <a href="https://elim.github.io/tags/chrome/" class="list-group-item">
-            chrome
-            <span class="badge">1</span>
-          </a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-          <a href="https://elim.github.io/tags/docker/" class="list-group-item">
-            docker
-            <span class="badge">1</span>
-          </a>
+            <div class="panel panel-default">
+              <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapsegithub" data-parent="#accordion" href="#" aria-expanded="false" aria-controls="collapsegithub">
+                <div class="panel-heading" role="tab" id="headergithub">
+                  <h4 class="panel-title">
+                    github
+                    <span class="badge">2</span>
+                  </h4>
+                </div>
+              </a>
+              <div id="collapsegithub" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headinggithub">
+                <div class="panel-body">
+                  <a href="https://elim.github.io/tags/github/" class="list-group-item view-all">
+                    View all</a>
+                  <div class="list-group">
 
-          <a href="https://elim.github.io/tags/esa/" class="list-group-item">
-            esa
-            <span class="badge">1</span>
-          </a>
+                    <a href="https://elim.github.io/2015/09/09/pull-reqest-was-incorporated/" class="list-group-item">Pull Reqest が取り込まれた</a>
 
-          <a href="https://elim.github.io/tags/gpg/" class="list-group-item">
-            gpg
-            <span class="badge">1</span>
-          </a>
+                    <a href="https://elim.github.io/2013/06/28/upload-image-to-your-github-wiki-page/" class="list-group-item">GitHub の Wiki に表示する画像を git で上げる</a>
 
-          <a href="https://elim.github.io/tags/iterm2/" class="list-group-item">
-            iterm2
-            <span class="badge">1</span>
-          </a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-          <a href="https://elim.github.io/tags/keychain/" class="list-group-item">
-            keychain
-            <span class="badge">1</span>
-          </a>
+            <div class="panel panel-default">
+              <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapsesalt-ssh" data-parent="#accordion" href="#" aria-expanded="false" aria-controls="collapsesalt-ssh">
+                <div class="panel-heading" role="tab" id="headersalt-ssh">
+                  <h4 class="panel-title">
+                    salt-ssh
+                    <span class="badge">2</span>
+                  </h4>
+                </div>
+              </a>
+              <div id="collapsesalt-ssh" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingsalt-ssh">
+                <div class="panel-body">
+                  <a href="https://elim.github.io/tags/salt-ssh/" class="list-group-item view-all">
+                    View all</a>
+                  <div class="list-group">
 
-          <a href="https://elim.github.io/tags/pull-request/" class="list-group-item">
-            pull-request
-            <span class="badge">1</span>
-          </a>
+                    <a href="https://elim.github.io/2017/08/28/specify-formula/" class="list-group-item">salt-ssh で formula を指定して適用する</a>
 
-          <a href="https://elim.github.io/tags/quote/" class="list-group-item">
-            quote
-            <span class="badge">1</span>
-          </a>
+                    <a href="https://elim.github.io/2017/08/23/extra_filerefs/" class="list-group-item">salt-ssh で TemplateNotFound がでたら</a>
 
-          <a href="https://elim.github.io/tags/sierra/" class="list-group-item">
-            sierra
-            <span class="badge">1</span>
-          </a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-          <a href="https://elim.github.io/tags/startrek/" class="list-group-item">
-            startrek
-            <span class="badge">1</span>
-          </a>
+            <div class="panel panel-default">
+              <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapsesaltstack" data-parent="#accordion" href="#" aria-expanded="false" aria-controls="collapsesaltstack">
+                <div class="panel-heading" role="tab" id="headersaltstack">
+                  <h4 class="panel-title">
+                    saltstack
+                    <span class="badge">2</span>
+                  </h4>
+                </div>
+              </a>
+              <div id="collapsesaltstack" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingsaltstack">
+                <div class="panel-body">
+                  <a href="https://elim.github.io/tags/saltstack/" class="list-group-item view-all">
+                    View all</a>
+                  <div class="list-group">
 
-          <a href="https://elim.github.io/tags/tmux/" class="list-group-item">
-            tmux
-            <span class="badge">1</span>
-          </a>
+                    <a href="https://elim.github.io/2017/08/28/specify-formula/" class="list-group-item">salt-ssh で formula を指定して適用する</a>
 
-          <a href="https://elim.github.io/tags/wiki/" class="list-group-item">
-            wiki
-            <span class="badge">1</span>
-          </a>
+                    <a href="https://elim.github.io/2017/08/23/extra_filerefs/" class="list-group-item">salt-ssh で TemplateNotFound がでたら</a>
 
-          <a href="https://elim.github.io/tags/zsh/" class="list-group-item">
-            zsh
-            <span class="badge">1</span>
-          </a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        </div>
-      </article>
+            <div class="panel panel-default">
+              <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapsechrome" data-parent="#accordion" href="#" aria-expanded="false" aria-controls="collapsechrome">
+                <div class="panel-heading" role="tab" id="headerchrome">
+                  <h4 class="panel-title">
+                    chrome
+                    <span class="badge">1</span>
+                  </h4>
+                </div>
+              </a>
+              <div id="collapsechrome" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingchrome">
+                <div class="panel-body">
+                  <a href="https://elim.github.io/tags/chrome/" class="list-group-item view-all">
+                    View all</a>
+                  <div class="list-group">
+
+                    <a href="https://elim.github.io/2017/08/28/atomic-chrome-for-emacs/" class="list-group-item">Atomic Chrome for Emacs</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapsedocker" data-parent="#accordion" href="#" aria-expanded="false" aria-controls="collapsedocker">
+                <div class="panel-heading" role="tab" id="headerdocker">
+                  <h4 class="panel-title">
+                    docker
+                    <span class="badge">1</span>
+                  </h4>
+                </div>
+              </a>
+              <div id="collapsedocker" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingdocker">
+                <div class="panel-body">
+                  <a href="https://elim.github.io/tags/docker/" class="list-group-item view-all">
+                    View all</a>
+                  <div class="list-group">
+
+                    <a href="https://elim.github.io/2017/01/17/detach-keys/" class="list-group-item">detach keys</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseesa" data-parent="#accordion" href="#" aria-expanded="false" aria-controls="collapseesa">
+                <div class="panel-heading" role="tab" id="headeresa">
+                  <h4 class="panel-title">
+                    esa
+                    <span class="badge">1</span>
+                  </h4>
+                </div>
+              </a>
+              <div id="collapseesa" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingesa">
+                <div class="panel-body">
+                  <a href="https://elim.github.io/tags/esa/" class="list-group-item view-all">
+                    View all</a>
+                  <div class="list-group">
+
+                    <a href="https://elim.github.io/2017/01/17/esa-clients/" class="list-group-item">esa のクライアントをいろいろ試す</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapsegpg" data-parent="#accordion" href="#" aria-expanded="false" aria-controls="collapsegpg">
+                <div class="panel-heading" role="tab" id="headergpg">
+                  <h4 class="panel-title">
+                    gpg
+                    <span class="badge">1</span>
+                  </h4>
+                </div>
+              </a>
+              <div id="collapsegpg" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headinggpg">
+                <div class="panel-body">
+                  <a href="https://elim.github.io/tags/gpg/" class="list-group-item view-all">
+                    View all</a>
+                  <div class="list-group">
+
+                    <a href="https://elim.github.io/2017/11/21/keychain-2.8.4/" class="list-group-item">Keychain 2.8.4</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseiterm2" data-parent="#accordion" href="#" aria-expanded="false" aria-controls="collapseiterm2">
+                <div class="panel-heading" role="tab" id="headeriterm2">
+                  <h4 class="panel-title">
+                    iterm2
+                    <span class="badge">1</span>
+                  </h4>
+                </div>
+              </a>
+              <div id="collapseiterm2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingiterm2">
+                <div class="panel-body">
+                  <a href="https://elim.github.io/tags/iterm2/" class="list-group-item view-all">
+                    View all</a>
+                  <div class="list-group">
+
+                    <a href="https://elim.github.io/2017/01/27/iterm2-with-tmux-on-sierra/" class="list-group-item">Sierra 上の iTerm2 上の tmux</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapsekeychain" data-parent="#accordion" href="#" aria-expanded="false" aria-controls="collapsekeychain">
+                <div class="panel-heading" role="tab" id="headerkeychain">
+                  <h4 class="panel-title">
+                    keychain
+                    <span class="badge">1</span>
+                  </h4>
+                </div>
+              </a>
+              <div id="collapsekeychain" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingkeychain">
+                <div class="panel-body">
+                  <a href="https://elim.github.io/tags/keychain/" class="list-group-item view-all">
+                    View all</a>
+                  <div class="list-group">
+
+                    <a href="https://elim.github.io/2017/11/21/keychain-2.8.4/" class="list-group-item">Keychain 2.8.4</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapsepull-request" data-parent="#accordion" href="#" aria-expanded="false" aria-controls="collapsepull-request">
+                <div class="panel-heading" role="tab" id="headerpull-request">
+                  <h4 class="panel-title">
+                    pull-request
+                    <span class="badge">1</span>
+                  </h4>
+                </div>
+              </a>
+              <div id="collapsepull-request" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingpull-request">
+                <div class="panel-body">
+                  <a href="https://elim.github.io/tags/pull-request/" class="list-group-item view-all">
+                    View all</a>
+                  <div class="list-group">
+
+                    <a href="https://elim.github.io/2015/09/09/pull-reqest-was-incorporated/" class="list-group-item">Pull Reqest が取り込まれた</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapsequote" data-parent="#accordion" href="#" aria-expanded="false" aria-controls="collapsequote">
+                <div class="panel-heading" role="tab" id="headerquote">
+                  <h4 class="panel-title">
+                    quote
+                    <span class="badge">1</span>
+                  </h4>
+                </div>
+              </a>
+              <div id="collapsequote" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingquote">
+                <div class="panel-body">
+                  <a href="https://elim.github.io/tags/quote/" class="list-group-item view-all">
+                    View all</a>
+                  <div class="list-group">
+
+                    <a href="https://elim.github.io/2014/01/01/quote/" class="list-group-item">Quote</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapsesierra" data-parent="#accordion" href="#" aria-expanded="false" aria-controls="collapsesierra">
+                <div class="panel-heading" role="tab" id="headersierra">
+                  <h4 class="panel-title">
+                    sierra
+                    <span class="badge">1</span>
+                  </h4>
+                </div>
+              </a>
+              <div id="collapsesierra" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingsierra">
+                <div class="panel-body">
+                  <a href="https://elim.github.io/tags/sierra/" class="list-group-item view-all">
+                    View all</a>
+                  <div class="list-group">
+
+                    <a href="https://elim.github.io/2017/01/27/iterm2-with-tmux-on-sierra/" class="list-group-item">Sierra 上の iTerm2 上の tmux</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapsestartrek" data-parent="#accordion" href="#" aria-expanded="false" aria-controls="collapsestartrek">
+                <div class="panel-heading" role="tab" id="headerstartrek">
+                  <h4 class="panel-title">
+                    startrek
+                    <span class="badge">1</span>
+                  </h4>
+                </div>
+              </a>
+              <div id="collapsestartrek" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingstartrek">
+                <div class="panel-body">
+                  <a href="https://elim.github.io/tags/startrek/" class="list-group-item view-all">
+                    View all</a>
+                  <div class="list-group">
+
+                    <a href="https://elim.github.io/2017/09/19/essential-process/" class="list-group-item">Essential Process</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapsetmux" data-parent="#accordion" href="#" aria-expanded="false" aria-controls="collapsetmux">
+                <div class="panel-heading" role="tab" id="headertmux">
+                  <h4 class="panel-title">
+                    tmux
+                    <span class="badge">1</span>
+                  </h4>
+                </div>
+              </a>
+              <div id="collapsetmux" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtmux">
+                <div class="panel-body">
+                  <a href="https://elim.github.io/tags/tmux/" class="list-group-item view-all">
+                    View all</a>
+                  <div class="list-group">
+
+                    <a href="https://elim.github.io/2017/01/27/iterm2-with-tmux-on-sierra/" class="list-group-item">Sierra 上の iTerm2 上の tmux</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapsewiki" data-parent="#accordion" href="#" aria-expanded="false" aria-controls="collapsewiki">
+                <div class="panel-heading" role="tab" id="headerwiki">
+                  <h4 class="panel-title">
+                    wiki
+                    <span class="badge">1</span>
+                  </h4>
+                </div>
+              </a>
+              <div id="collapsewiki" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingwiki">
+                <div class="panel-body">
+                  <a href="https://elim.github.io/tags/wiki/" class="list-group-item view-all">
+                    View all</a>
+                  <div class="list-group">
+
+                    <a href="https://elim.github.io/2013/06/28/upload-image-to-your-github-wiki-page/" class="list-group-item">GitHub の Wiki に表示する画像を git で上げる</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapsezsh" data-parent="#accordion" href="#" aria-expanded="false" aria-controls="collapsezsh">
+                <div class="panel-heading" role="tab" id="headerzsh">
+                  <h4 class="panel-title">
+                    zsh
+                    <span class="badge">1</span>
+                  </h4>
+                </div>
+              </a>
+              <div id="collapsezsh" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingzsh">
+                <div class="panel-body">
+                  <a href="https://elim.github.io/tags/zsh/" class="list-group-item view-all">
+                    View all</a>
+                  <div class="list-group">
+
+                    <a href="https://elim.github.io/2015/05/18/temporarily-disable-the-chpwd-hooks-of-zsh/" class="list-group-item">chpwd_functions</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </article>
+      </div>
     </div>
+
+
 
     <footer>
       <div class="container">
@@ -328,7 +633,7 @@ ga('send', 'pageview');
             </p>
 
             <p class="credits theme-by text-muted">
-              <a href="http://gohugo.io">Hugo v0.30.2</a> powered &nbsp;&bull;&nbsp; Theme by
+              <a href="http://gohugo.io">Hugo v0.35</a> powered &nbsp;&bull;&nbsp; Theme by
               <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to
               <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
 
@@ -342,22 +647,15 @@ ga('send', 'pageview');
     <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="https://elim.github.io/js/main.js"></script>
-    <script src="https://elim.github.io/js/highlight.min.js"></script>
-    <script> hljs.initHighlightingOnLoad(); </script>
-    <script> renderMathInElement(document.body); </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+    <script src="https://elim.github.io/js/main.js"></script><script> renderMathInElement(document.body); </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
     <script src="https://elim.github.io/js/load-photoswipe.js"></script>
 
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=488799897828217";
-      fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+
+
+    <script id="facebook-jssdk" src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <script>window.fbAsyncInit=(()=>{window.FB.init({appId:'488799897828217',autoLogAppEvents:!0,xfbml:!0,version:'v2.12'})})</script>
 
 
   </body>
