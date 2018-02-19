@@ -6,24 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <title>Emacs 用 Powerline を別なパッケージにした</title>
-    <meta property="og:title" content="Emacs 用 Powerline を別なパッケージにした" />
-    <meta name="twitter:title" content="Emacs 用 Powerline を別なパッケージにした" />
-    <meta name="description" content="BYOD していた現場から「よかったらこの Mac Pro 使ってください」という願ってもないお話をいただきまして。 喜び勇んで Xcode やら Homebrew やら Emacs やらを入れていたわけで">
-    <meta property="og:description" content="BYOD していた現場から「よかったらこの Mac Pro 使ってください」という願ってもないお話をいただきまして。 喜び勇んで Xcode やら Homebrew やら Emacs やらを入れていたわけで">
-    <meta name="twitter:description" content="BYOD していた現場から「よかったらこの Mac Pro 使ってください」という願ってもないお話をいただきまして。 喜び勇んで Xcode やら Homebrew やら Emacs やらを入れていたわけで">
+    <title>Update the packages of the el-get&#39;s</title>
+    <meta property="og:title" content="Update the packages of the el-get&#39;s" />
+    <meta name="twitter:title" content="Update the packages of the el-get&#39;s" />
+    <meta name="description" content="どうも el-get-update-all や el-get-update では git pull 相当のことをしてくれないようです。
+
+やや乱暴ですが以下のようにして更新しました。">
+    <meta property="og:description" content="どうも el-get-update-all や el-get-update では git pull 相当のことをしてくれないようです。
+
+やや乱暴ですが以下のようにして更新しました。">
+    <meta name="twitter:description" content="どうも el-get-update-all や el-get-update では git pull 相当のことをしてくれないようです。
+
+やや乱暴ですが以下のようにして更新しました。">
     <meta name="author" content="Takeru Naito" />
     <meta property="og:image" content="https://elim.github.io/media/favicons/favicon-96x96.png" />
     <meta name="twitter:image" content="https://elim.github.io/media/favicons/favicon-96x96.png" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@elim" />
     <meta name="twitter:creator" content="@elim" />
-    <meta property="og:url" content="https://elim.github.io/2015/09/22/selects-another-powerline-for-emacs-package/" />
+    <meta property="og:url" content="https://elim.github.io/2018/01/04/update-the-packages-of-the-el-gets/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="IDIC" />
 
     <meta name="generator" content="Hugo 0.35" />
-    <link rel="canonical" href="https://elim.github.io/2015/09/22/selects-another-powerline-for-emacs-package/" />
+    <link rel="canonical" href="https://elim.github.io/2018/01/04/update-the-packages-of-the-el-gets/" />
     <link rel="alternate" href="https://elim.github.io/index.xml" type="application/rss+xml" title="IDIC">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -176,13 +182,13 @@ ga('send', 'pageview');
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
               <div class="post-heading">
-                <h1>Emacs 用 Powerline を別なパッケージにした</h1>
+                <h1>Update the packages of the el-get&#39;s</h1>
 
 
                 <span class="post-meta">
 
 
-                  <i class="fa fa-calendar-o"></i>&nbsp;Posted on September 22, 2015
+                  <i class="fa fa-calendar-o"></i>&nbsp;Posted on January 4, 2018
 
 
 
@@ -203,89 +209,43 @@ ga('send', 'pageview');
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           <article role="main" class="blog-post">
+            <p>どうも
+              <code>el-get-update-all</code> や
+              <code>el-get-update</code> では
+              <code>git pull</code> 相当のことをしてくれないようです。</p>
 
+            <p>やや乱暴ですが以下のようにして更新しました。</p>
 
-            <p>BYOD していた現場から「よかったらこの Mac Pro 使ってください」という願ってもないお話をいただきまして。</p>
-
-            <p>喜び勇んで Xcode やら Homebrew やら Emacs やらを入れていたわけですが、どうにも Emacs 用 powerline の表示がおかしい。</p>
-
-            <p>
-              <img src="/media/2015-09-22_powerline/broken.png" alt="" />
-            </p>
-
-            <p>「まったく同じ .emacs.d を使っているのになぜだろうなー」と思っていろいろ追っていたところ、このコミットを見付けました。</p>
-
-            <p>
-              <a href="https://github.com/dimitri/el-get/commit/803e2f7">803e2f7 - Use milkypostman&rsquo;s powerline fork</a>
-            </p>
-
-            <pre><code class="language-diff">commit 803e2f71de62a4503671b704c3b9084e4c5d8a3a
-Author: Fabián Ezequiel Gallina &lt;galli.87@gmail.com&gt;
-Date:   Sat Aug 24 00:03:49 2013 -0300
-
-    Use milkypostman's powerline fork
-
-    This one is actively maintained as opposed to jonathanchu's version.
----
- recipes/powerline.rcp | 6 ++++--
- 1 file changed, 4 insertions(+), 2 deletions(-)
-
-diff --git a/recipes/powerline.rcp b/recipes/powerline.rcp
-index f3eb1bb..d23b67e 100644
---- a/recipes/powerline.rcp
-+++ b/recipes/powerline.rcp
-@@ -1,6 +1,8 @@
- (:name powerline
--       :website &quot;https://github.com/jonathanchu/emacs-powerline&quot;
-+       :website &quot;https://github.com/milkypostman/powerline&quot;
-+       :depends (cl-lib)
-        :description &quot;Powerline for Emacs&quot;
-        :type github
--       :pkgname &quot;jonathanchu/emacs-powerline&quot;
-+       :pkgname &quot;milkypostman/powerline&quot;
-+       :load-path &quot;.&quot;
-        :features powerline)
+            <pre><code>$ for d in *(/); do (echo; echo $d; cd $d; test -d .git &amp;&amp; git pull); done
 </code></pre>
 
-            <p>
-              <strong>おお……アップストリームが変更されている……</strong>
-            </p>
+            <p>少し改良すれば
+              <code>apt-listchanges</code> 相当のことができそう。</p>
 
-            <p>それぞれのリポジトリをクローンしてきて、ざっと
-              <code>git log</code> を比べたり
-              <code>diff -uw</code> してみたりしましたが、共通項のが少ない……というより機能以外に共通しているところが
-              <strong>見当りません</strong>。</p>
+            <ol>
+              <li>
+                <code>git fetch</code> して</li>
+              <li>upstream との違いを
+                <code>git log</code> で見て</li>
+              <li>受け入れるなら
+                <code>y</code> を打鍵</li>
+            </ol>
 
-            <p>それにしてもこれは 2013 年の変更なのですね。今まで何度も
-              <code>M-x el-get-update-all</code> を実行していたのに、 mode-line の表示がこわれなかったところを見ると、レシピのアップストリーム変更までは追従しないようですね。</p>
+            <p>など。ただ
+              <code>read</code> を oneline で書くとかなり長くなりそう。
+              <code>git log</code> までで良いならこんな感じでしょうか。</p>
 
-            <p>新しい環境では、変更後のレシピを使ったので表示が崩れた、と。</p>
-
-            <h2 id="結局">結局</h2>
-
-            <p>
-              <a href="https://github.com/milkypostman/powerline#installation">@milkypostman 版は
-                <code>(powerline-default-theme)</code> を呼べばいい感じに表示してくれる</a>ようなので、とりあえず手持ちの Emacs 環境はそれで揃えることにしました。</p>
-
-            <p>
-              <img src="/media/2015-09-22_powerline/normal.png" alt="" />
-            </p>
-
-            <p>めでたし、めでたし。</p>
-
+            <pre><code>$ for d in *(/); do (echo; echo $d; cd $d; test -d .git &amp;&amp; git fetch &amp;&amp; git log -p HEAD..$(git rev-parse --symbolic-full-name HEAD@\{u\}) &amp;&amp; git pull); done
+</code></pre>
           </article>
 
 
           <ul class="pager blog-pager">
 
             <li class="previous">
-              <a href="https://elim.github.io/2015/09/09/pull-reqest-was-incorporated/" data-toggle="tooltip" data-placement="top" title="Pull Reqest が取り込まれた">&larr; Previous Post</a>
+              <a href="https://elim.github.io/2017/11/21/keychain-2.8.4/" data-toggle="tooltip" data-placement="top" title="Keychain 2.8.4">&larr; Previous Post</a>
             </li>
 
-
-            <li class="next">
-              <a href="https://elim.github.io/2017/01/13/retrospective/" data-toggle="tooltip" data-placement="top" title="ふりかえり">Next Post &rarr;</a>
-            </li>
 
           </ul>
 
