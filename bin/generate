@@ -40,20 +40,27 @@ while getopts cm:vxh OPT; do
   esac
 done
 
+if $generate_xml; then
+  cleaner='find . -not -name .git\* -delete'
+  generator='hugo'
+else
+  # Clean up the existing contents other than feeds and repository data.
+  cleaner='find . -not -name .git\* -o -not -name \*xml -delete'
+  generator='hugo --disableKinds RSS,sitemap'
+fi
+
 echo; echo "${bold}Generates site contents...${normal}"
 
 $verbose && set -x
 
-if $generate_xml; then
-  find public -not -name .git\* -delete
-  hugo
-else
-  # Clean up the existing contents other than feeds and repository data.
-  find public -not -name .git\* -a -not -name \*xml -delete
+(cd public
+ git checkout master
+ git reset --hard origin/master
+ git clean -fdx
+ $cleaner
+)
 
-  # Generate the contents.
-  hugo --disableKinds=RSS
-fi
+$generator
 
 # Beautifying the HTML files.
 find public -name \*html -print0 \
