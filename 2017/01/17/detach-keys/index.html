@@ -22,7 +22,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="IDIC" />
 
-    <meta name="generator" content="Hugo 0.36.1" />
+    <meta name="generator" content="Hugo 0.58.3" />
     <link rel="canonical" href="https://elim.github.io/2017/01/17/detach-keys/" />
     <link rel="alternate" href="https://elim.github.io/index.xml" type="application/rss+xml" title="IDIC">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -102,12 +102,16 @@
       </div>
     </div>
 
-    <script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-90004615-1', 'auto');
-ga('send', 'pageview');
+    <script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-90004615-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
-    <script async src='//www.google-analytics.com/analytics.js'></script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
 
   </head>
 
@@ -206,11 +210,11 @@ ga('send', 'pageview');
             <p>
               <code>docker-compose run</code> や
               <code>docker-compose exec</code> をすると
-              <code>C-p</code> の動作がおかしくてずっと困っていました。</p>
+              <code>C-p</code> の動作がおかしくてずっと困っていました</p>
 
             <p>これは Docker のデタッチが
               <code>C-p</code>
-              <code>C-q</code> だったからなんですね。</p>
+              <code>C-q</code> だったからなんですね</p>
 
             <p>デタッチ機能はときどき使っていたのに、頭の中でまったく結びついていませんでした。そうじゃないかと言ってくれたチームメイトに感謝。</p>
 
@@ -234,19 +238,51 @@ ga('send', 'pageview');
               <a href="https://docs.docker.com/engine/reference/commandline/cli/#/configuration-files">https://docs.docker.com/engine/reference/commandline/cli/#/configuration-files</a>
             </p>
 
-            <p>同様に設定したところ無事解決……と思いきや、
-              <code>docker</code> コマンドでは有効でしたが
-              <code>docker-compose</code> コマンドでは効きませんでした。残念。</p>
+            <p>
+              <del>同様に設定したところ無事解決……と思いきや、
+                <code>docker</code> コマンドでは有効でしたが
+                <code>docker-compose</code> コマンドでは効きませんでした。残念。</del>
+            </p>
 
-            <p>なので今は</p>
+            <p>
+              <del>なので今は</del>
+            </p>
 
             <pre><code>docker exec -it $(docker-compose ps -q spring) rails c
 </code></pre>
 
-            <p>こんなことをして使っています。</p>
+            <p>
+              <del>こんなことをして使っています</del>
+            </p>
 
             <p>
-              <code>C-p</code> は快適に使えるものの、コマンドラインが不恰好なようなー。</p>
+              <del>
+                <code>C-p</code> は快適に使えるものの、コマンドラインが不恰好なようなー</del>
+            </p>
+
+            <p>Docker Compose 1.20 では解決しています</p>
+
+            <ul>
+              <li>
+                <p>
+                  <a href="https://github.com/docker/compose/issues/3311#issuecomment-386647052">https://github.com/docker/compose/issues/3311#issuecomment-386647052</a>
+                </p>
+
+                <blockquote>
+                  <blockquote>
+                    <blockquote>
+                      <p>In which version of docker-compose will this feature become available?</p>
+                    </blockquote>
+                  </blockquote>
+
+                  <p>It&rsquo;s available from docker-compose 1.20.0</p>
+
+                  <p>
+                    <a href="https://github.com/docker/compose/commit/d8d484e0e19db5326afeb4cdf56864eceb81566c#diff-b4ef698db8ca845e5845c4618278f29a">d8d484e#diff-b4ef698db8ca845e5845c4618278f29a</a>
+                  </p>
+                </blockquote>
+              </li>
+            </ul>
           </article>
 
 
@@ -320,7 +356,7 @@ ga('send', 'pageview');
             </p>
 
             <p class="credits theme-by text-muted">
-              <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by
+              <a href="http://gohugo.io">Hugo v0.58.3</a> powered &nbsp;&bull;&nbsp; Theme by
               <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to
               <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
 
