@@ -15,7 +15,7 @@ Options are:
   -x      Will generate XML files such kind of RSS feeds and Sitemaps.
   -h      Display this help and exit.
 EOF
-  efxit 1
+  exit 1
 }
 
 commit=false
