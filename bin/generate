@@ -11,7 +11,7 @@ Generate the site.
 Options are:
   -c      Will make a commit after generating.
   -m msg  Specify the commit message. That use to both the source and results.
-  -v      Will generate XML files such kind of RSS feeds and Sitemaps.
+  -v      Verbose mode.
   -x      Will generate XML files such kind of RSS feeds and Sitemaps.
   -h      Display this help and exit.
 EOF
