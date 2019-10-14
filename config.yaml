@@ -21,8 +21,9 @@ Menu:
     weight: 2
 MetaDataFormat: yaml
 Params:
-  subtitle: Infinite Diversity in Infinite Combinations
+  hideAuthor: true
   logo: media/favicons/favicon-96x96.png
+  subtitle: Infinite Diversity in Infinite Combinations
 Permalinks:
   fixed: "/:slug"
   post: "/:year/:month/:day/:slug"
