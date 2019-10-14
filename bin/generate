@@ -19,7 +19,7 @@ EOF
 }
 
 commit=false
-generate_xml=false
+update_xml=false
 msg="Rebuilding site $(date)"
 verbose=false
 
@@ -31,7 +31,7 @@ while getopts cm:vxh OPT; do
         ;;
     v)  verbose=true
         ;;
-    x)  generate_xml=true
+    x)  update_xml=true
         ;;
     h)  usage_exit
         ;;
@@ -40,27 +40,19 @@ while getopts cm:vxh OPT; do
   esac
 done
 
-if $generate_xml; then
-  cleaner='find . -not -name .git\* -delete'
-  generator='hugo'
-else
-  # Clean up the existing contents other than feeds and repository data.
-  cleaner='find . -not -name .git\* -o -not -name \*xml -delete'
-  generator='hugo --disableKinds RSS,sitemap'
-fi
-
 echo; echo "${bold}Generates site contents...${normal}"
 
 $verbose && set -x
 
 (cd public
+ git fetch
  git checkout master
  git reset --hard origin/master
  git clean -fdx
- $cleaner
+ find . -not -name .git -delete
 )
 
-$generator
+hugo
 
 # Beautifying the HTML files.
 find public -name \*html -print0 \
@@ -72,6 +64,8 @@ find public -name \*html -print0 \
           --type=html \
           --unformatted=script \
           --unformatted=style
+
+$update_xml || (cd public; git restore "*xml" "**/*xml" )
 
 if $commit; then
   (
