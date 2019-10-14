@@ -1,0 +1,8 @@
+* {
+  font-feature-settings: 'palt';
+}
+
+body,
+.post-preview .post-entry {
+  font-weight: 300;
+}
