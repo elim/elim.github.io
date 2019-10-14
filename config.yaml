@@ -28,7 +28,8 @@ Permalinks:
   fixed: "/:slug"
   post: "/:year/:month/:day/:slug"
 PygmentsUseClasses: true
-PygmentCodeFences: true
+PygmentsCodeFences: true
+pygmentsCodefencesGuessSyntax: true
 Taxonomies:
   tag: tags
 enableEmoji: True
