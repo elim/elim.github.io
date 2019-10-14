@@ -8,3 +8,8 @@ body,
   font-weight: 300;
   letter-spacing: 0.05em;
 }
+
+code,
+p {
+  overflow-wrap: break-word;
+}
