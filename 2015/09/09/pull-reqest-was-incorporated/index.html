@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<html lang="ja" itemscope itemtype="http://schema.org/WebPage">
 
   <head>
 
@@ -59,7 +59,7 @@
   },
   "headline": "Pull Reqest が取り込まれた",
   "description" : "ここで使わせていただいてるテーマの Steam へ Pull Request を送ったところ、無事取り込んでいただけました。 修正点 いずれも投稿日時の表示に関するものです。 投稿日",
-  "inLanguage" : "en",
+  "inLanguage" : "ja",
   "wordCount":  312 ,
   "datePublished" : "2015-09-09T11:27:00",
   "dateModified" : "2015-09-09T11:27:00",
@@ -103,8 +103,10 @@
     <link rel="stylesheet" href="https://elim.github.io/css/syntax.css" />
     <link rel="stylesheet" href="https://elim.github.io/css/codeblock.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
-    <script>!function(){var b="elim.github.io",c=window.location;b===c.host&&"https:"!==c.protocol&&(c.protocol="https")}()</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous"><script>!function(){var b="elim.github.io",c=window.location;b===c.host&&"https:"!==c.protocol&&(c.protocol="https")}()</script>
+
+    <link rel="stylesheet" href="https://elim.github.io/css/tweaks.css" />
+
     <link rel="apple-touch-icon" sizes="57x57" href="/media/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/media/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/media/favicons/apple-icon-72x72.png">
@@ -260,13 +262,9 @@ if (!doNotTrack) {
                 <span class="post-meta">
 
 
-                  <i class="fas fa-calendar"></i>&nbsp;Posted on September 9, 2015 &nbsp;|&nbsp;
+                  <i class="fas fa-calendar"></i>&nbsp;Posted on September 9, 2015
 
 
-
-
-
-                  <i class="fas fa-user"></i>&nbsp;Takeru Naito
 
 
 
@@ -316,17 +314,15 @@ if (!doNotTrack) {
               <a href="https://gohugo.io/">Hugo</a> はテーマと同構造のディレクトリを用意すると、そちらを優先して読んでくれるようです。</p>
 
             <p>たとえば、以下のファイルを変更したい場合は</p>
-
-            <pre><code>./themes/hugo-steam-theme/layouts/partials/post-list.html
-./themes/hugo-steam-theme/layouts/post/single.html
-</code></pre>
-
+            <div class="highlight">
+              <pre class="chroma">./themes/hugo-steam-theme/layouts/partials/post-list.html
+./themes/hugo-steam-theme/layouts/post/single.html</pre>
+            </div>
             <p>以下のようにファイルを用意すると、そちらが読み込まれます。</p>
-
-            <pre><code>./layouts/partials/post-list.html
-./layouts/post/single.html
-</code></pre>
-
+            <div class="highlight">
+              <pre class="chroma">./layouts/partials/post-list.html
+./layouts/post/single.html</pre>
+            </div>
             <p>「ちょっと手を加えたいだけ」といった時にはこちらの方が簡単かも。</p>
 
 
@@ -411,7 +407,7 @@ if (!doNotTrack) {
             <p class="credits copyright text-muted">
 
 
-              Takeru Naito &nbsp;&bull;&nbsp;&copy; 2017 &nbsp;&bull;&nbsp;
+              Takeru Naito &nbsp;&bull;&nbsp;&copy; 2019 &nbsp;&bull;&nbsp;
               <a href="https://elim.github.io/">IDIC</a>
 
             </p>

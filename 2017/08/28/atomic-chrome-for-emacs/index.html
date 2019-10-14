@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<html lang="ja" itemscope itemtype="http://schema.org/WebPage">
 
   <head>
 
@@ -59,7 +59,7 @@
   },
   "headline": "Atomic Chrome for Emacs",
   "description" : "GhostText と Emacs で快適な投稿環境を作りました",
-  "inLanguage" : "en",
+  "inLanguage" : "ja",
   "wordCount":  175 ,
   "datePublished" : "2017-08-28T16:33:35",
   "dateModified" : "2017-08-28T16:33:35",
@@ -103,8 +103,10 @@
     <link rel="stylesheet" href="https://elim.github.io/css/syntax.css" />
     <link rel="stylesheet" href="https://elim.github.io/css/codeblock.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
-    <script>!function(){var b="elim.github.io",c=window.location;b===c.host&&"https:"!==c.protocol&&(c.protocol="https")}()</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous"><script>!function(){var b="elim.github.io",c=window.location;b===c.host&&"https:"!==c.protocol&&(c.protocol="https")}()</script>
+
+    <link rel="stylesheet" href="https://elim.github.io/css/tweaks.css" />
+
     <link rel="apple-touch-icon" sizes="57x57" href="/media/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/media/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/media/favicons/apple-icon-72x72.png">
@@ -260,13 +262,9 @@ if (!doNotTrack) {
                 <span class="post-meta">
 
 
-                  <i class="fas fa-calendar"></i>&nbsp;Posted on August 28, 2017 &nbsp;|&nbsp;
+                  <i class="fas fa-calendar"></i>&nbsp;Posted on August 28, 2017
 
 
-
-
-
-                  <i class="fas fa-user"></i>&nbsp;Takeru Naito
 
 
 
@@ -306,35 +304,36 @@ if (!doNotTrack) {
             <p>
               <a href="https://github.com/elim/dotemacs/commit/8a6a234">https://github.com/elim/dotemacs/commit/8a6a234</a>
             </p>
-
-            <pre><code class="language-diff">diff --git a/config/packages.el b/config/packages.el
-index d93a5ba..bbadba6 100644
---- a/config/packages.el
-+++ b/config/packages.el
-@@ -19,6 +19,7 @@
- (el-get-bundle tarao/with-eval-after-load-feature-el)
+            <div class="highlight">
+              <pre class="chroma"><code class="language-diff" data-lang="diff"><span class="gh">diff --git a/config/packages.el b/config/packages.el
+</span><span class="gh">index d93a5ba..bbadba6 100644
+</span><span class="gh"></span><span class="gd">--- a/config/packages.el
+</span><span class="gd"></span><span class="gi">+++ b/config/packages.el
+</span><span class="gi"></span><span class="gu">@@ -19,6 +19,7 @@
+</span><span class="gu"></span> (el-get-bundle tarao/with-eval-after-load-feature-el)
 
  (el-get-bundle ag)
-+(el-get-bundle alpha22jp/atomic-chrome :depends (let-alist websocket))
- (el-get-bundle anzu)
+<span class="gi">+(el-get-bundle alpha22jp/atomic-chrome :depends (let-alist websocket))
+</span><span class="gi"></span> (el-get-bundle anzu)
  (el-get-bundle buffer-move)
  (el-get-bundle company-mode)
-diff --git a/config/packages/init-atomic-chrome.el b/config/packages/init-atomic-chrome.el
-new file mode 100644
-index 0000000..0fae668
---- /dev/null
-+++ b/config/packages/init-atomic-chrome.el
-@@ -0,0 +1,9 @@
-+;;; init-atomic-chrome.el --- A setting of the atomic-chrome.
-+;;; Commentary:
-+;;; Code:
-+
-+(require 'atomic-chrome)
-+(atomic-chrome-start-server)
-+
-+(provide 'init-atomic-chrome)
-+;;; init-atomic-chrome.el ends here
-</code></pre>
+<span class="gh">diff --git a/config/packages/init-atomic-chrome.el b/config/packages/init-atomic-chrome.el
+</span><span class="gh"></span>new file mode 100644
+<span class="gh">index 0000000..0fae668
+</span><span class="gh"></span><span class="gd">--- /dev/null
+</span><span class="gd"></span><span class="gi">+++ b/config/packages/init-atomic-chrome.el
+</span><span class="gi"></span><span class="gu">@@ -0,0 +1,9 @@
+</span><span class="gu"></span><span class="gi">+;;; init-atomic-chrome.el --- A setting of the atomic-chrome.
+</span><span class="gi">+;;; Commentary:
+</span><span class="gi">+;;; Code:
+</span><span class="gi">+
+</span><span class="gi">+(require &#39;atomic-chrome)
+</span><span class="gi">+(atomic-chrome-start-server)
+</span><span class="gi">+
+</span><span class="gi">+(provide &#39;init-atomic-chrome)
+</span><span class="gi">+;;; init-atomic-chrome.el ends here
+</span></code></pre>
+            </div>
 
 
             <div class="blog-tags">
@@ -417,7 +416,7 @@ index 0000000..0fae668
             <p class="credits copyright text-muted">
 
 
-              Takeru Naito &nbsp;&bull;&nbsp;&copy; 2017 &nbsp;&bull;&nbsp;
+              Takeru Naito &nbsp;&bull;&nbsp;&copy; 2019 &nbsp;&bull;&nbsp;
               <a href="https://elim.github.io/">IDIC</a>
 
             </p>

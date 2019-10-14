@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<html lang="ja" itemscope itemtype="http://schema.org/WebPage">
 
   <head>
 
@@ -59,7 +59,7 @@
   },
   "headline": "Emacs を終了する前に確認する",
   "description" : "不意に Emacs を終了させてしまいがちだったので、対策をしました",
-  "inLanguage" : "en",
+  "inLanguage" : "ja",
   "wordCount":  287 ,
   "datePublished" : "2017-01-30T14:00:00",
   "dateModified" : "2017-01-30T14:00:00",
@@ -103,8 +103,10 @@
     <link rel="stylesheet" href="https://elim.github.io/css/syntax.css" />
     <link rel="stylesheet" href="https://elim.github.io/css/codeblock.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
-    <script>!function(){var b="elim.github.io",c=window.location;b===c.host&&"https:"!==c.protocol&&(c.protocol="https")}()</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous"><script>!function(){var b="elim.github.io",c=window.location;b===c.host&&"https:"!==c.protocol&&(c.protocol="https")}()</script>
+
+    <link rel="stylesheet" href="https://elim.github.io/css/tweaks.css" />
+
     <link rel="apple-touch-icon" sizes="57x57" href="/media/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/media/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/media/favicons/apple-icon-72x72.png">
@@ -260,13 +262,9 @@ if (!doNotTrack) {
                 <span class="post-meta">
 
 
-                  <i class="fas fa-calendar"></i>&nbsp;Posted on January 30, 2017 &nbsp;|&nbsp;
+                  <i class="fas fa-calendar"></i>&nbsp;Posted on January 30, 2017
 
 
-
-
-
-                  <i class="fas fa-user"></i>&nbsp;Takeru Naito
 
 
 
@@ -294,10 +292,9 @@ if (!doNotTrack) {
             <p>特に、気づいたら Emacs がいなくなっているので大問題です。（私は Emacs を GUI で使っています。）</p>
 
             <p>ということで当座の対処として以下を追加しました。</p>
-
-            <pre><code>(setq confirm-kill-emacs 'y-or-n-p)
-</code></pre>
-
+            <div class="highlight">
+              <pre class="chroma">(setq confirm-kill-emacs &#39;y-or-n-p)</pre>
+            </div>
             <p>こうすると
               <code>Really exit Emacs? (y or n)</code> と聞いてくれて便利です。</p>
 
@@ -313,13 +310,13 @@ if (!doNotTrack) {
               <code>open -a Emacs</code> といった形で呼び出すと問題ないことを確認しました。</p>
 
             <p>私は macOS では GUI でしか起動しませんし、勢いでエイリアスも変更してしまいました。</p>
-
-            <pre><code class="language-sh">if [[ $(uname) == &quot;Darwin&quot; ]]; then
-  alias emacs=&quot;open -a Emacs&quot;
-else
-  alias emacs=&quot;XMODIFIERS='@im=none' emacs&quot;
-fi
-</code></pre>
+            <div class="highlight">
+              <pre class="chroma"><code class="language-sh" data-lang="sh"><span class="k">if</span> <span class="o">[[</span> <span class="k">$(</span>uname<span class="k">)</span> <span class="o">==</span> <span class="s2">&#34;Darwin&#34;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+  <span class="nb">alias</span> <span class="nv">emacs</span><span class="o">=</span><span class="s2">&#34;open -a Emacs&#34;</span>
+<span class="k">else</span>
+  <span class="nb">alias</span> <span class="nv">emacs</span><span class="o">=</span><span class="s2">&#34;XMODIFIERS=&#39;@im=none&#39; emacs&#34;</span>
+<span class="k">fi</span></code></pre>
+            </div>
 
 
             <div class="blog-tags">
@@ -400,7 +397,7 @@ fi
             <p class="credits copyright text-muted">
 
 
-              Takeru Naito &nbsp;&bull;&nbsp;&copy; 2017 &nbsp;&bull;&nbsp;
+              Takeru Naito &nbsp;&bull;&nbsp;&copy; 2019 &nbsp;&bull;&nbsp;
               <a href="https://elim.github.io/">IDIC</a>
 
             </p>

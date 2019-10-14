@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<html lang="ja" itemscope itemtype="http://schema.org/WebPage">
 
   <head>
 
@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
     <title>salt-ssh で TemplateNotFound がでたら - IDIC</title>
-    <meta name="description" content="salt/master で extra_filerefs を設定すると、解決できるようになる。 extra_filerefs: - salt://logrotate/map.jinja - salt://logrotate/defaults.yaml Ref: saltstack/salt#21370">
+    <meta name="description" content="salt/master で extra_filerefs を設定すると、解決できるようになる。 extra_filerefs:-salt://logrotate/map.jinja-salt://logrotate/defaults.yaml Ref: saltstack/salt#21370">
     <meta name="author" content="Takeru Naito" /><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -58,9 +58,9 @@
     "name" : "Takeru Naito"
   },
   "headline": "salt-ssh で TemplateNotFound がでたら",
-  "description" : "salt\/master で extra_filerefs を設定すると、解決できるようになる。 extra_filerefs: - salt:\/\/logrotate\/map.jinja - salt:\/\/logrotate\/defaults.yaml Ref: saltstack\/salt#21370",
-  "inLanguage" : "en",
-  "wordCount":  28 ,
+  "description" : "salt\/master で extra_filerefs を設定すると、解決できるようになる。 extra_filerefs:-salt:\/\/logrotate\/map.jinja-salt:\/\/logrotate\/defaults.yaml Ref: saltstack\/salt#21370",
+  "inLanguage" : "ja",
+  "wordCount":  24 ,
   "datePublished" : "2017-08-23T15:49:27",
   "dateModified" : "2017-08-23T15:49:27",
   "image" : "https:\/\/elim.github.io\/media\/favicons\/favicon-96x96.png",
@@ -80,14 +80,14 @@
 </script>
 
     <meta property="og:title" content="salt-ssh で TemplateNotFound がでたら" />
-    <meta property="og:description" content="salt/master で extra_filerefs を設定すると、解決できるようになる。 extra_filerefs: - salt://logrotate/map.jinja - salt://logrotate/defaults.yaml Ref: saltstack/salt#21370">
+    <meta property="og:description" content="salt/master で extra_filerefs を設定すると、解決できるようになる。 extra_filerefs:-salt://logrotate/map.jinja-salt://logrotate/defaults.yaml Ref: saltstack/salt#21370">
     <meta property="og:image" content="https://elim.github.io/media/favicons/favicon-96x96.png" />
     <meta property="og:url" content="https://elim.github.io/2017/08/23/extra_filerefs/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="IDIC" />
 
     <meta name="twitter:title" content="salt-ssh で TemplateNotFound がでたら" />
-    <meta name="twitter:description" content="salt/master で extra_filerefs を設定すると、解決できるようになる。 extra_filerefs: - salt://logrotate/map.jinja - salt://logrotate/defaults.yaml Ref: saltstack/salt#21370">
+    <meta name="twitter:description" content="salt/master で extra_filerefs を設定すると、解決できるようになる。 extra_filerefs:-salt://logrotate/map.jinja-salt://logrotate/defaults.yaml Ref: saltstack/salt#21370">
     <meta name="twitter:image" content="https://elim.github.io/media/favicons/favicon-96x96.png" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@elim" />
@@ -103,8 +103,10 @@
     <link rel="stylesheet" href="https://elim.github.io/css/syntax.css" />
     <link rel="stylesheet" href="https://elim.github.io/css/codeblock.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
-    <script>!function(){var b="elim.github.io",c=window.location;b===c.host&&"https:"!==c.protocol&&(c.protocol="https")}()</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous"><script>!function(){var b="elim.github.io",c=window.location;b===c.host&&"https:"!==c.protocol&&(c.protocol="https")}()</script>
+
+    <link rel="stylesheet" href="https://elim.github.io/css/tweaks.css" />
+
     <link rel="apple-touch-icon" sizes="57x57" href="/media/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/media/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/media/favicons/apple-icon-72x72.png">
@@ -260,13 +262,9 @@ if (!doNotTrack) {
                 <span class="post-meta">
 
 
-                  <i class="fas fa-calendar"></i>&nbsp;Posted on August 23, 2017 &nbsp;|&nbsp;
+                  <i class="fas fa-calendar"></i>&nbsp;Posted on August 23, 2017
 
 
-
-
-
-                  <i class="fas fa-user"></i>&nbsp;Takeru Naito
 
 
 
@@ -289,12 +287,11 @@ if (!doNotTrack) {
           <article role="main" class="blog-post">
             <p>
               <code>salt/master</code> で extra_filerefs を設定すると、解決できるようになる。</p>
-
-            <pre><code class="language-yaml">extra_filerefs:
-  - salt://logrotate/map.jinja
-  - salt://logrotate/defaults.yaml
-</code></pre>
-
+            <div class="highlight">
+              <pre class="chroma"><code class="language-yaml" data-lang="yaml">extra_filerefs<span class="p">:</span><span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>salt<span class="p">:</span>//logrotate/map.jinja<span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>salt<span class="p">:</span>//logrotate/defaults.yaml</code></pre>
+            </div>
             <p>Ref:
               <a href="https://github.com/saltstack/salt/issues/21370">saltstack/salt#21370</a>
             </p>
@@ -381,7 +378,7 @@ if (!doNotTrack) {
             <p class="credits copyright text-muted">
 
 
-              Takeru Naito &nbsp;&bull;&nbsp;&copy; 2017 &nbsp;&bull;&nbsp;
+              Takeru Naito &nbsp;&bull;&nbsp;&copy; 2019 &nbsp;&bull;&nbsp;
               <a href="https://elim.github.io/">IDIC</a>
 
             </p>

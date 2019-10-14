@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<html lang="ja" itemscope itemtype="http://schema.org/WebPage">
 
   <head>
 
@@ -59,7 +59,7 @@
   },
   "headline": "Keychain 2.8.4",
   "description" : "久し振りに keychain がバージョンアップしているのを発見しました\nChangelog を見ると実に 1 年振りのようです\n",
-  "inLanguage" : "en",
+  "inLanguage" : "ja",
   "wordCount":  297 ,
   "datePublished" : "2017-11-21T14:49:25",
   "dateModified" : "2017-11-21T14:49:25",
@@ -103,8 +103,10 @@
     <link rel="stylesheet" href="https://elim.github.io/css/syntax.css" />
     <link rel="stylesheet" href="https://elim.github.io/css/codeblock.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
-    <script>!function(){var b="elim.github.io",c=window.location;b===c.host&&"https:"!==c.protocol&&(c.protocol="https")}()</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous"><script>!function(){var b="elim.github.io",c=window.location;b===c.host&&"https:"!==c.protocol&&(c.protocol="https")}()</script>
+
+    <link rel="stylesheet" href="https://elim.github.io/css/tweaks.css" />
+
     <link rel="apple-touch-icon" sizes="57x57" href="/media/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/media/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/media/favicons/apple-icon-72x72.png">
@@ -264,13 +266,9 @@ if (!doNotTrack) {
                 <span class="post-meta">
 
 
-                  <i class="fas fa-calendar"></i>&nbsp;Posted on November 21, 2017 &nbsp;|&nbsp;
+                  <i class="fas fa-calendar"></i>&nbsp;Posted on November 21, 2017
 
 
-
-
-
-                  <i class="fas fa-user"></i>&nbsp;Takeru Naito
 
 
 
@@ -318,24 +316,23 @@ if (!doNotTrack) {
             <p>いままで Ubuntu 17.04 上では手パッチした keychain を使っていたのですが、こちらに差し替えることにしました</p>
 
             <p>きちんと .deb を作って差し替えようかとも思ったのですが、実体は man と sh が 1 つずつのシンプルなコマンドですので、以下で済ませました</p>
-
-            <pre><code>$ ghq get -p git@github.com:funtoo/keychain.git
+            <div class="highlight">
+              <pre class="chroma">$ ghq get -p git@github.com:funtoo/keychain.git
 $ cd path/to/keychain
 $ git checkout 2.8.4
 $ sudo cp -v keychain.1 $(locate keychain.1)
-$ sudo cp -v keychain $(where keychain)
-</code></pre>
-
+$ sudo cp -v keychain $(where keychain)</pre>
+            </div>
             <p>ひとまず正常に動いているようです</p>
-
-            <pre><code>$ exec $SHELL -l
+            <div class="highlight">
+              <pre class="chroma">$ exec $SHELL -l
 
 * keychain 2.8.4 ~ http://www.funtoo.org
 * Found existing gpg-agent: 2833
 * Found existing ssh-agent: 2859
 * Known ssh key: /home/takeru/.ssh/id_ed25519
-* Known gpg key: 0A2D3E0E
-</code></pre>
+* Known gpg key: 0A2D3E0E</pre>
+            </div>
 
 
             <div class="blog-tags">
@@ -359,6 +356,10 @@ $ sudo cp -v keychain $(where keychain)
               <a href="https://elim.github.io/2017/09/19/essential-process/" data-toggle="tooltip" data-placement="top" title="Essential Process">&larr; Previous Post</a>
             </li>
 
+
+            <li class="next">
+              <a href="https://elim.github.io/2019/10/14/thunderbird-68/" data-toggle="tooltip" data-placement="top" title="Thunderbird 68">Next Post &rarr;</a>
+            </li>
 
           </ul>
 
@@ -414,7 +415,7 @@ $ sudo cp -v keychain $(where keychain)
             <p class="credits copyright text-muted">
 
 
-              Takeru Naito &nbsp;&bull;&nbsp;&copy; 2017 &nbsp;&bull;&nbsp;
+              Takeru Naito &nbsp;&bull;&nbsp;&copy; 2019 &nbsp;&bull;&nbsp;
               <a href="https://elim.github.io/">IDIC</a>
 
             </p>

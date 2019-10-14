@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<html lang="ja" itemscope itemtype="http://schema.org/WebPage">
 
   <head>
 
@@ -58,8 +58,8 @@
     "name" : "Takeru Naito"
   },
   "headline": "salt-ssh で formula を指定して適用する",
-  "description" : "state.apply に formula を渡す。 salt-ssh [options] \x27\x26lt;target\x26gt;\x27 state.apply users 2 つ以上渡す場合はカンマで区切る。 salt-ssh [options] \x27\x26lt;target\x26gt;\x27 state.apply users,logrotate",
-  "inLanguage" : "en",
+  "description" : "state.apply に formula を渡す。 salt-ssh [options] \x26#39;\x26lt;target\x26gt;\x26#39; state.apply users 2 つ以上渡す場合はカンマで区切る。 salt-ssh [options] \x26#39;\x26lt;target\x26gt;\x26#39; state.apply users,logrotate",
+  "inLanguage" : "ja",
   "wordCount":  34 ,
   "datePublished" : "2017-08-28T16:24:53",
   "dateModified" : "2017-08-28T16:24:53",
@@ -103,8 +103,10 @@
     <link rel="stylesheet" href="https://elim.github.io/css/syntax.css" />
     <link rel="stylesheet" href="https://elim.github.io/css/codeblock.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
-    <script>!function(){var b="elim.github.io",c=window.location;b===c.host&&"https:"!==c.protocol&&(c.protocol="https")}()</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous"><script>!function(){var b="elim.github.io",c=window.location;b===c.host&&"https:"!==c.protocol&&(c.protocol="https")}()</script>
+
+    <link rel="stylesheet" href="https://elim.github.io/css/tweaks.css" />
+
     <link rel="apple-touch-icon" sizes="57x57" href="/media/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/media/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/media/favicons/apple-icon-72x72.png">
@@ -260,13 +262,9 @@ if (!doNotTrack) {
                 <span class="post-meta">
 
 
-                  <i class="fas fa-calendar"></i>&nbsp;Posted on August 28, 2017 &nbsp;|&nbsp;
+                  <i class="fas fa-calendar"></i>&nbsp;Posted on August 28, 2017
 
 
-
-
-
-                  <i class="fas fa-user"></i>&nbsp;Takeru Naito
 
 
 
@@ -289,15 +287,13 @@ if (!doNotTrack) {
           <article role="main" class="blog-post">
             <p>
               <code>state.apply</code> に formula を渡す。</p>
-
-            <pre><code>salt-ssh [options] '&lt;target&gt;' state.apply users
-</code></pre>
-
+            <div class="highlight">
+              <pre class="chroma">salt-ssh [options] &#39;&lt;target&gt;&#39; state.apply users</pre>
+            </div>
             <p>2 つ以上渡す場合はカンマで区切る。</p>
-
-            <pre><code>salt-ssh [options] '&lt;target&gt;' state.apply users,logrotate
-</code></pre>
-
+            <div class="highlight">
+              <pre class="chroma">salt-ssh [options] &#39;&lt;target&gt;&#39; state.apply users,logrotate</pre>
+            </div>
 
 
             <div class="blog-tags">
@@ -380,7 +376,7 @@ if (!doNotTrack) {
             <p class="credits copyright text-muted">
 
 
-              Takeru Naito &nbsp;&bull;&nbsp;&copy; 2017 &nbsp;&bull;&nbsp;
+              Takeru Naito &nbsp;&bull;&nbsp;&copy; 2019 &nbsp;&bull;&nbsp;
               <a href="https://elim.github.io/">IDIC</a>
 
             </p>
