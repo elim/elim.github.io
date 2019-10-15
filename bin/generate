@@ -60,10 +60,12 @@ find public -name \*html -print0 \
           --editorconfig \
           --indent-inner-html=true \
           --indent-size=2 \
+          --max-preserve-newlines=0 \
+          --preserve-newline=true \
           --replace \
           --type=html \
           --unformatted=script \
-          --unformatted=style
+          --unformatted=style \
 
 $update_xml || (cd public; git restore "*xml" "**/*xml" )
 
