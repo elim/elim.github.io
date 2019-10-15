@@ -2,12 +2,9 @@
 <html lang="ja" itemscope itemtype="http://schema.org/WebPage">
 
   <head>
-
-
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
     <title>detach keys - IDIC</title>
     <meta name="description" content="docker-compose run や docker-compose exec をすると C-p の動作がおかしくてずっと困っていました">
     <meta name="author" content="Takeru Naito" /><script type="application/ld+json">
@@ -78,14 +75,12 @@
   }
 }
 </script>
-
     <meta property="og:title" content="detach keys" />
     <meta property="og:description" content="docker-compose run や docker-compose exec をすると C-p の動作がおかしくてずっと困っていました">
     <meta property="og:image" content="https://elim.github.io/media/favicons/favicon-96x96.png" />
     <meta property="og:url" content="https://elim.github.io/2017/01/17/detach-keys/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="IDIC" />
-
     <meta name="twitter:title" content="detach keys" />
     <meta name="twitter:description" content="docker-compose run や docker-compose exec をすると C-p の動作がおかしくてずっと困っていました">
     <meta name="twitter:image" content="https://elim.github.io/media/favicons/favicon-96x96.png" />
@@ -104,9 +99,7 @@
     <link rel="stylesheet" href="https://elim.github.io/css/codeblock.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous"><script>!function(){var b="elim.github.io",c=window.location;b===c.host&&"https:"!==c.protocol&&(c.protocol="https")}()</script>
-
     <link rel="stylesheet" href="https://elim.github.io/css/tweaks.css" />
-
     <link rel="apple-touch-icon" sizes="57x57" href="/media/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/media/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/media/favicons/apple-icon-72x72.png">
@@ -123,8 +116,6 @@
     <link rel="manifest" href="/media/favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/media/favicons/ms-icon-144x144.png">
-
-
     <script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
@@ -135,8 +126,6 @@ if (!doNotTrack) {
 }
 </script>
     <script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
   </head>
 
   <body>
@@ -151,30 +140,16 @@ if (!doNotTrack) {
           </button>
           <a class="navbar-brand" href="https://elim.github.io/">IDIC</a>
         </div>
-
         <div class="collapse navbar-collapse" id="main-navbar">
           <ul class="nav navbar-nav navbar-right">
-
-
             <li>
               <a title="Blog" href="/">Blog</a>
             </li>
-
-
-
             <li>
               <a title="About" href="/page/about/">About</a>
             </li>
-
-
-
-
-
-
           </ul>
         </div>
-
-
         <div class="avatar-container">
           <div class="avatar-img-border">
             <a title="IDIC" href="https://elim.github.io/">
@@ -182,39 +157,23 @@ if (!doNotTrack) {
             </a>
           </div>
         </div>
-
-
       </div>
     </nav>
-
-
-
-
-
-
-
     <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
       <div class="pswp__bg"></div>
-
       <div class="pswp__scroll-wrap">
-
         <div class="pswp__container">
           <div class="pswp__item"></div>
           <div class="pswp__item"></div>
           <div class="pswp__item"></div>
         </div>
-
         <div class="pswp__ui pswp__ui--hidden">
           <div class="pswp__top-bar">
-
             <div class="pswp__counter"></div>
             <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
             <button class="pswp__button pswp__button--share" title="Share"></button>
             <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
             <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-
             <div class="pswp__preloader">
               <div class="pswp__preloader__icn">
                 <div class="pswp__preloader__cut">
@@ -236,51 +195,22 @@ if (!doNotTrack) {
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-
     <header class="header-section ">
-
       <div class="intro-header no-img">
         <div class="container">
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
               <div class="post-heading">
-
                 <h1>detach keys</h1>
-
-
-
-
                 <span class="post-meta">
-
-
                   <i class="fas fa-calendar"></i>&nbsp;Posted on January 17, 2017
-
-
-
-
-
                 </span>
-
-
-
               </div>
             </div>
           </div>
         </div>
       </div>
     </header>
-
-
-
     <div class="container" role="main">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -289,15 +219,11 @@ if (!doNotTrack) {
               <code>docker-compose run</code> や
               <code>docker-compose exec</code> をすると
               <code>C-p</code> の動作がおかしくてずっと困っていました</p>
-
             <p>これは Docker のデタッチが
               <code>C-p</code>
               <code>C-q</code> だったからなんですね</p>
-
             <p>デタッチ機能はときどき使っていたのに、頭の中でまったく結びついていませんでした。そうじゃないかと言ってくれたチームメイトに感謝。</p>
-
             <p>で、デタッチキーは変更できるのだそうです</p>
-
             <blockquote>
               <p>Following is a sample config.json file:</p>
               <div class="highlight">
@@ -311,17 +237,14 @@ if (!doNotTrack) {
 <span class="p">}</span></code></pre>
               </div>
             </blockquote>
-
             <p>
               <a href="https://docs.docker.com/engine/reference/commandline/cli/#/configuration-files">https://docs.docker.com/engine/reference/commandline/cli/#/configuration-files</a>
             </p>
-
             <p>
               <del>同様に設定したところ無事解決……と思いきや、
                 <code>docker</code> コマンドでは有効でしたが
                 <code>docker-compose</code> コマンドでは効きませんでした。残念。</del>
             </p>
-
             <p>
               <del>なので今は</del>
             </p>
@@ -331,78 +254,49 @@ if (!doNotTrack) {
             <p>
               <del>こんなことをして使っています</del>
             </p>
-
             <p>
               <del>
                 <code>C-p</code> は快適に使えるものの、コマンドラインが不恰好なようなー</del>
             </p>
-
             <p>Docker Compose 1.20 では解決しています</p>
-
             <ul>
               <li>
                 <p>
                   <a href="https://github.com/docker/compose/issues/3311#issuecomment-386647052">https://github.com/docker/compose/issues/3311#issuecomment-386647052</a>
                 </p>
-
                 <blockquote>
                   <blockquote>
                     <blockquote>
                       <p>In which version of docker-compose will this feature become available?</p>
                     </blockquote>
                   </blockquote>
-
                   <p>It&rsquo;s available from docker-compose 1.20.0</p>
-
                   <p>
                     <a href="https://github.com/docker/compose/commit/d8d484e0e19db5326afeb4cdf56864eceb81566c#diff-b4ef698db8ca845e5845c4618278f29a">d8d484e#diff-b4ef698db8ca845e5845c4618278f29a</a>
                   </p>
                 </blockquote>
               </li>
             </ul>
-
-
             <div class="blog-tags">
-
               <a href="https://elim.github.io//tags/docker/">docker</a>&nbsp;
-
             </div>
-
-
-
-
-
           </article>
-
-
           <ul class="pager blog-pager">
-
             <li class="previous">
               <a href="https://elim.github.io/2017/01/17/esa-clients/" data-toggle="tooltip" data-placement="top" title="esa のクライアントをいろいろ試す">&larr; Previous Post</a>
             </li>
-
-
             <li class="next">
               <a href="https://elim.github.io/2017/01/27/iterm2-with-tmux-on-sierra/" data-toggle="tooltip" data-placement="top" title="Sierra 上の iTerm2 上の tmux">Next Post &rarr;</a>
             </li>
-
           </ul>
-
-
-
-
-
         </div>
       </div>
     </div>
-
-
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <ul class="list-inline text-center footer-links">
-
               <li>
                 <a href="https://www.facebook.com/takeru" title="Facebook">
                   <span class="fa-stack fa-lg">
@@ -435,21 +329,15 @@ if (!doNotTrack) {
                   </span>
                 </a>
               </li>
-
             </ul>
             <p class="credits copyright text-muted">
-
-
               Takeru Naito &nbsp;&bull;&nbsp;&copy; 2019 &nbsp;&bull;&nbsp;
               <a href="https://elim.github.io/">IDIC</a>
-
             </p>
-
             <p class="credits theme-by text-muted">
               <a href="https://gohugo.io">Hugo v0.58.3</a> powered &nbsp;&bull;&nbsp; Theme
               <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from
               <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
-
             </p>
           </div>
         </div>
@@ -458,20 +346,10 @@ if (!doNotTrack) {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
     <script src="https://elim.github.io/js/main.js"></script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://elim.github.io/js/load-photoswipe.js"></script>
-
-
-
-
-
-
     <script id="facebook-jssdk" src="https://connect.facebook.net/en_US/sdk.js"></script>
     <script>window.fbAsyncInit=(()=>{window.FB.init({appId:'488799897828217',autoLogAppEvents:!0,xfbml:!0,version:'v2.12'})})</script>
-
-
-
   </body>
 
 </html>
