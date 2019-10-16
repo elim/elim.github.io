@@ -1,9 +1,9 @@
-* {
+html[data-font="apple-system"] * {
   font-feature-settings: 'palt';
 }
 
-body,
-.post-preview .post-entry {
+html[data-font="apple-system"] body,
+html[data-font="apple-system"] .post-preview .post-entry, {
   font-family: system-ui;
   font-weight: 300;
   letter-spacing: 0.05em;
