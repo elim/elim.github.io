@@ -4,5 +4,5 @@ window.fbAsyncInit = function() {
     autoLogAppEvents : true,
     xfbml            : true,
     version          : 'v4.0'
-  });
-};
+  })
+}
