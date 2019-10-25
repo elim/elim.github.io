@@ -1,0 +1,107 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>thunderbird on IDIC</title>
+    <link>https://elim.github.io/tags/thunderbird/</link>
+    <description>Recent content in thunderbird on IDIC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>elim</copyright>
+    <lastBuildDate>Mon, 14 Oct 2019 06:21:49 +0000</lastBuildDate>
+    
+        <atom:link href="https://elim.github.io/tags/thunderbird/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Thunderbird 68</title>
+      <link>https://elim.github.io/2019/10/14/thunderbird-68/</link>
+      <pubDate>Mon, 14 Oct 2019 06:21:49 +0000</pubDate>
+      
+      <guid>https://elim.github.io/2019/10/14/thunderbird-68/</guid>
+      <description>&lt;p&gt;Thunderbird を 68 系に上げた&lt;/p&gt;
+
+&lt;p&gt;以前つかっていたのは 60 系だった。そのため「自動更新が働いていなかったのかな。それにしても随分と放ってしまっていたものだ」と思ったが、何のことはない 60 系の次が 68 系なのだそうな。そして 60 系から 68 系への自動更新が始まるのは、まだ先のことなのだそう。それなら気がつかなくても不思議はない&lt;/p&gt;
+
+&lt;p&gt;契機は macOS を Catalina 10.15 へ更新したことだった&lt;/p&gt;
+
+&lt;p&gt;例の Hiragino Kaku Gothic の話題に関係するのだろうか。それとも関係ないなにかのだろうか。 Catalina の上では Thunderbird のメッセージリストペインが見づらくなってしまっていた。英字部分とそれ以外が違うフォントで表示され、英字部分は未読でも太字にならなくなった。もちろん使えなくはないが、違和感は残る&lt;/p&gt;
+
+&lt;p&gt;解法を求めるうちに、自身の利用している Thunderbird が古い（実際はさほど古くもなかったわけだが）ことに気づき、更新してみたのだった&lt;/p&gt;
+
+&lt;p&gt;前置きが長くなった&lt;/p&gt;
+
+&lt;p&gt;更新することで上掲の問題は解決した。しかし今度は別の問題に直面してしまった。 アドオンの互換性がなくなり、導入していたものも軒並み動かなくなっていたのだ&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;幸い、利用しているアドオンは 1 つを除いて対応版が出されていた&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://hogi-ja.blogspot.com/2019/08/thunderbird-68.html&#34;&gt;Check and Send&lt;/a&gt; &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://addons.thunderbird.net/en-US/thunderbird/addon/enigmail/&#34;&gt;Enigmail&lt;/a&gt; &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/exteditor/exteditor/releases/tag/v2.0.1&#34;&gt;External Editor&lt;/a&gt; &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://addons.thunderbird.net/en-US/thunderbird/addon/manually-sort-folders/&#34;&gt;Manually sort folders&lt;/a&gt; &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;残りは Dorando keyconfig だ。これは Gmail 互換のキーバインドへ変更するために利用していた。 &lt;a href=&#34;https://github.com/trlkly/dorando-keyconfig/issues/30&#34;&gt;dorando-keyconfig#38 Thunderbird 68 support&lt;/a&gt; を見るとすぐに対応版を出されることはなさそうだ&lt;/p&gt;
+
+&lt;p&gt;その中で &lt;a href=&#34;https://addons.thunderbird.net/en-us/thunderbird/addon/userchromejs-2/&#34;&gt;userChromeJS&lt;/a&gt; と userChrome.js が紹介されていたので、そちらで対応することにした&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;In the meantime, you can use my &lt;a href=&#34;https://addons.thunderbird.net/en-us/thunderbird/addon/userchromejs-2/&#34;&gt;userChromeJS&lt;/a&gt; add-on to run JavaScript which modifies key bindings, though that&amp;rsquo;s obviously not as user-friendly as keyconfig.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/trlkly/dorando-keyconfig/issues/30#issuecomment-530343943&#34;&gt;https://github.com/trlkly/dorando-keyconfig/issues/30#issuecomment-530343943&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;また userChrome.js はこちらを参考にさせていただいた&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://forums.mozillazine.org/viewtopic.php?p=14845317#p14846103&#34;&gt;http://forums.mozillazine.org/viewtopic.php?p=14845317#p14846103&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;以下のように L49 から L52 にかけて j/k, J/K のサポートを追加して利用している&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-diff&#34; data-lang=&#34;diff&#34;&gt;&lt;span class=&#34;gh&#34;&gt;diff --git a/userChrome.js b/userChrome.js
+&lt;/span&gt;&lt;span class=&#34;gh&#34;&gt;index 88b178f..2441bea 100644
+&lt;/span&gt;&lt;span class=&#34;gh&#34;&gt;&lt;/span&gt;&lt;span class=&#34;gd&#34;&gt;--- a/userChrome.js
+&lt;/span&gt;&lt;span class=&#34;gd&#34;&gt;&lt;/span&gt;&lt;span class=&#34;gi&#34;&gt;+++ b/userChrome.js
+&lt;/span&gt;&lt;span class=&#34;gi&#34;&gt;&lt;/span&gt;&lt;span class=&#34;gu&#34;&gt;@@ -46,6 +46,10 @@
+&lt;/span&gt;&lt;span class=&#34;gu&#34;&gt;&lt;/span&gt;     changeKeyStrokeForKeyId(&amp;#34;key_reply&amp;#34;, &amp;#34;r&amp;#34;);
+     changeKeyStrokeForKeyId(&amp;#34;key_replyall&amp;#34;, &amp;#34;a&amp;#34;);
+     changeKeyStrokeForKeyId(&amp;#34;key_forward&amp;#34;, &amp;#34;f&amp;#34;);
+&lt;span class=&#34;gi&#34;&gt;+    changeKeyStrokeForKeyId(&amp;#34;key_nextMsg&amp;#34;, &amp;#34;j&amp;#34;);
+&lt;/span&gt;&lt;span class=&#34;gi&#34;&gt;+    changeKeyStrokeForKeyId(&amp;#34;key_previousMsg&amp;#34;, &amp;#34;k&amp;#34;);
+&lt;/span&gt;&lt;span class=&#34;gi&#34;&gt;+    changeKeyStrokeForKeyId(&amp;#34;key_nextUnreadMsg&amp;#34;, &amp;#34;j&amp;#34;, null, &amp;#34;shift&amp;#34;);
+&lt;/span&gt;&lt;span class=&#34;gi&#34;&gt;+    changeKeyStrokeForKeyId(&amp;#34;key_previousUnreadMsg&amp;#34;, &amp;#34;k&amp;#34;, null, &amp;#34;shift&amp;#34;);
+&lt;/span&gt;&lt;span class=&#34;gi&#34;&gt;&lt;/span&gt;     changeKeyStrokeForKeyId(&amp;#34;key_newMessage&amp;#34;, &amp;#34;c&amp;#34;);
+     changeKeyStrokeForKeyId(&amp;#34;key_searchMail&amp;#34;, &amp;#34;/&amp;#34;);
+     changeKeyStrokeForKeyId(&amp;#34;key_delete&amp;#34;, &amp;#34;3&amp;#34;, null, &amp;#34;shift&amp;#34;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;コード全体はこちら &lt;a href=&#34;https://gist.github.com/elim/02f9017fe6af72104a2c1a5bf02ee739&#34;&gt;https://gist.github.com/elim/02f9017fe6af72104a2c1a5bf02ee739&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://addons.thunderbird.net/en-us/thunderbird/addon/userchromejs-2/&#34;&gt;userChromeJS&lt;/a&gt; 導入後、&lt;a href=&#34;https://gist.github.com/elim/02f9017fe6af72104a2c1a5bf02ee739&#34;&gt;上記のコード&lt;/a&gt; を &lt;code&gt;~/Library/Thunderbird/Profiles/&amp;lt;random&amp;gt;.default/chrome/userChrome.js&lt;/code&gt; として置くことで、概ね以前通り動くようになった&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;ところで、 Thunderbird は次の 69 系から旧来の作りのアドオンをサポートしなくなるそうだ&lt;/p&gt;
+
+&lt;p&gt;そのときは、いよいよ移行先を検討しなければいけないかな&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;&lt;em&gt;To:&lt;/em&gt; や &lt;em&gt;Cc:&lt;/em&gt; から表示名を消去するために利用している
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;稀にデジタル署名をつけたり確認したりしたいことがある
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;文章は Emacs で書きたい
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34;&gt;よく使うアカウントを、フォルダーペインの上部に表示したい
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:4&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
