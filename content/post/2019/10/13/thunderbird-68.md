@@ -4,7 +4,7 @@ date: 2019-10-14T06:21:49Z
 slug: thunderbird 68
 subtitle: "It has familiar incompatibility."
 tags:
-  - 
+  - thunderbird
 ---
 
 Thunderbird を 68 系に上げた
